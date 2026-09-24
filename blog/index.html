@@ -88,7 +88,32 @@
 
   .blog-card { display:flex; flex-direction:column; gap:20px; align-items:stretch; text-decoration:none; color:inherit; transition: transform 0.35s ease; }
   .blog-card:hover { transform: translateY(-6px); }
-  .blog-card .card-image { width:100%; aspect-ratio:16/10; border-radius:5px; background-size:cover; background-position:center; box-shadow:0 16px 32px rgba(46,42,36,0.14); }
+  .blog-card .card-image {
+    width:100%; aspect-ratio:16/10; border-radius:5px; background-size:cover; background-position:center;
+    box-shadow:0 16px 32px rgba(46,42,36,0.14); position:relative; overflow:hidden;
+    transition:transform 0.45s cubic-bezier(.22,.61,.36,1); transform:scale(1);
+  }
+  .blog-card:hover .card-image { transform:scale(1.06); }
+  .blog-card .card-image::before {
+    content:''; position:absolute; inset:0; background:rgba(46,42,36,0);
+    transition:background 0.45s cubic-bezier(.22,.61,.36,1); z-index:1;
+  }
+  .blog-card:hover .card-image::before { background:rgba(46,42,36,0.32); }
+  .blog-card .card-image::after {
+    content:''; position:absolute; inset:0; background:linear-gradient(135deg, transparent 0%, rgba(46,42,36,0.12) 100%);
+    z-index:2; pointer-events:none;
+  }
+  .blog-card .card-overlay {
+    position:absolute; inset:0; z-index:3; display:flex; align-items:center; justify-content:center;
+    opacity:0; transition:opacity 0.45s cubic-bezier(.22,.61,.36,1);
+  }
+  .blog-card:hover .card-overlay { opacity:1; }
+  .blog-card .overlay-text {
+    font-size:13px; letter-spacing:0.16em; text-transform:uppercase; color:var(--crema);
+    font-weight:600; text-align:center; transform:translateY(12px);
+    transition:transform 0.45s cubic-bezier(.22,.61,.36,1);
+  }
+  .blog-card:hover .overlay-text { transform:translateY(0); }
   .blog-card .card-content { display:flex; flex-direction:column; gap:12px; }
   .blog-card h2 { font-size:19px; font-weight:600; letter-spacing:0.03em; text-transform:uppercase; color:var(--ink); line-height:1.35; }
   .blog-card p { font-size:13.5px; color:#8a8378; line-height:1.65; }
@@ -160,7 +185,11 @@ fbq('track', 'PageView');
 <section class="blog-section container">
   <div class="blog-grid">
     <a href="/blog/travertino-premium-arquitectura-lujo/" class="blog-card reveal reveal-d1">
-      <div class="card-image" style="background-image: url('/swatch-travertino.webp')"></div>
+      <div class="card-image" style="background-image: url('/swatch-travertino.webp')">
+        <div class="card-overlay">
+          <div class="overlay-text">Leer Artículo</div>
+        </div>
+      </div>
       <div class="card-content">
         <h2>Travertino Premium para Proyectos Arquitectónicos de Lujo</h2>
         <p>Guía completa sobre travertino: origen geográfico, propiedades técnicas, durabilidad y presupuesto 2026 en CDMX.</p>
@@ -169,7 +198,11 @@ fbq('track', 'PageView');
     </a>
 
     <a href="/blog/travertino-vs-marmol/" class="blog-card reveal reveal-d2">
-      <div class="card-image" style="background-image: url('/swatch-marmol.webp')"></div>
+      <div class="card-image" style="background-image: url('/swatch-marmol.webp')">
+        <div class="card-overlay">
+          <div class="overlay-text">Leer Artículo</div>
+        </div>
+      </div>
       <div class="card-content">
         <h2>Travertino vs Mármol: Guía Técnica</h2>
         <p>Comparativa técnica: durabilidad, porosidad, costo, mantenimiento y aplicaciones específicas en arquitectura residencial.</p>
@@ -178,7 +211,11 @@ fbq('track', 'PageView');
     </a>
 
     <a href="/blog/proyectos-travertino-cdmx/" class="blog-card reveal reveal-d1">
-      <div class="card-image" style="background-image: url('/project-temixco-1.webp')"></div>
+      <div class="card-image" style="background-image: url('/project-temixco-1.webp')">
+        <div class="card-overlay">
+          <div class="overlay-text">Leer Artículo</div>
+        </div>
+      </div>
       <div class="card-content">
         <h2>5 Proyectos de Travertino Premium en CDMX</h2>
         <p>Casos reales con fotografía de obra en Polanco, Reforma, Condesa, Lomas y San Ángel (7-14 años en uso).</p>
@@ -187,7 +224,11 @@ fbq('track', 'PageView');
     </a>
 
     <a href="/blog/mantenimiento-travertino-10-anos/" class="blog-card reveal reveal-d2">
-      <div class="card-image" style="background-image: url('/project-nuvana-1.webp')"></div>
+      <div class="card-image" style="background-image: url('/project-nuvana-1.webp')">
+        <div class="card-overlay">
+          <div class="overlay-text">Leer Artículo</div>
+        </div>
+      </div>
       <div class="card-content">
         <h2>Mantenimiento del Travertino: Guía de 10 Años</h2>
         <p>Protocolo completo: sellado inicial, limpieza periódica, reparaciones y análisis de costo financiero a largo plazo.</p>

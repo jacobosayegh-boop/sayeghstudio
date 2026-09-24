@@ -1,0 +1,42 @@
+# Sayegh Studio — cabeceras HTTP (Netlify)
+# Formato: patrón de ruta, y debajo las cabeceras con dos espacios de sangría.
+
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), camera=(), microphone=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+
+# HTML: siempre revalidar, para que un cambio de texto salga al instante.
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Tipografías: el contenido nunca cambia sin cambiar de nombre -> un año.
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Íconos: un mes.
+/favicon.ico
+  Cache-Control: public, max-age=2592000
+/*.png
+  Cache-Control: public, max-age=2592000
+
+# Fotografía y video: una semana en el navegador del visitante.
+# (Sin "immutable": si reemplazas una foto conservando el nombre, el cambio
+#  llega a los visitantes recurrentes en máximo 7 días, no en un año.)
+/*.jpg
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+/*.webp
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+/*.mp4
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+/*.webm
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+/*.mp3
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+
+/sitemap.xml
+  Cache-Control: public, max-age=3600
+/robots.txt
+  Cache-Control: public, max-age=3600

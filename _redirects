@@ -1,0 +1,11 @@
+# Sayegh Studio — redirecciones (Netlify)
+# Formato: origen  destino  código
+
+# Copia vieja de la portada que quedó publicada e indexable.
+/sayegh-homepage.html   /                               301!
+/sayegh-homepage        /                               301!
+
+# Atajos hacia la Auditoría de Viabilidad (para usar en tarjetas, firma de
+# correo, anuncios impresos: sayeghstudio.com/auditoria).
+/auditoria              https://via.sayeghstudio.com/   301!
+/viabilidad             https://via.sayeghstudio.com/   301!

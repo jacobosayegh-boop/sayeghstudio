@@ -9,20 +9,34 @@
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; background: #fafafa; }
-        nav { background: white; padding: 20px; border-bottom: 1px solid #eee; }
-        nav a { text-decoration: none; color: #000; margin-right: 30px; }
+        nav { background: white; padding: 20px 40px; border-bottom: 1px solid #eee; }
+        nav .container { max-width: 1000px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { font-weight: 600; text-decoration: none; color: #000; }
+        nav a { text-decoration: none; color: #000; margin-left: 40px; font-size: 0.95rem; transition: color 0.2s; }
+        nav a:hover { color: #666; }
         .container { max-width: 1000px; margin: 0 auto; padding: 60px 20px; }
-        h1 { font-size: 3rem; margin-bottom: 50px; }
+        h1 { font-size: 3rem; margin-bottom: 50px; font-weight: 300; }
         .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
         .blog-card { background: white; padding: 30px; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
         .blog-card h2 { margin-bottom: 15px; }
         .blog-card h2 a { text-decoration: none; color: #000; }
         .blog-card p { color: #666; margin-bottom: 10px; }
         .meta { font-size: 0.85rem; color: #999; }
+        footer { background: white; padding: 30px 20px; text-align: center; color: #666; font-size: 0.9rem; border-top: 1px solid #eee; margin-top: 60px; }
     </style>
 </head>
 <body>
-    <nav><a href="/">← Home</a> | <a href="/proyectos/">Proyectos</a> | <a href="/manifiesto/">Manifiesto</a></nav>
+    <nav>
+        <div class="container">
+            <div class="logo">SAYEGH STUDIO</div>
+            <div>
+                <a href="/">Home</a>
+                <a href="/proyectos/">Proyectos</a>
+                <a href="/blog/">Blog</a>
+                <a href="/manifiesto/">Manifiesto</a>
+            </div>
+        </div>
+    </nav>
     <div class="container">
         <h1>Blog</h1>
         <div class="blog-grid">
@@ -48,5 +62,11 @@
             </div>
         </div>
     </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Sayegh Studio | Arquitectura de Autor</p>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,100 +1,842 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sayegh Studio | Arquitectura de Autor</title>
-    <meta name="description" content="Sayegh Studio: Arquitectura residencial de lujo en CDMX.">
-    <link rel="canonical" href="https://sayeghstudio.com/">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; background: #fafafa; }
-        nav { background: white; padding: 20px 40px; border-bottom: 1px solid #eee; }
-        nav .container { max-width: 1000px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        nav .logo { font-weight: 600; text-decoration: none; color: #000; }
-        nav a { text-decoration: none; color: #000; margin-left: 40px; font-size: 0.95rem; transition: color 0.2s; }
-        nav a:hover { color: #666; }
-        .container { max-width: 1000px; margin: 0 auto; padding: 60px 20px; }
-        h1 { font-size: 3rem; margin-bottom: 30px; font-weight: 300; }
-        h2 { font-size: 2rem; margin-bottom: 30px; font-weight: 300; }
-        p { line-height: 1.7; color: #333; margin-bottom: 20px; font-size: 1.05rem; }
-        .hero { background: white; border-bottom: 1px solid #eee; text-align: center; padding: 100px 20px; }
-        .hero h1 { font-size: 3.5rem; margin-bottom: 20px; }
-        .hero p { font-size: 1.2rem; color: #666; margin-bottom: 40px; }
-        .cta { display: inline-block; padding: 14px 32px; background: #000; color: white; text-decoration: none; border-radius: 4px; transition: background 0.2s; }
-        .cta:hover { background: #333; }
-        .section { background: white; padding: 60px 20px; border-bottom: 1px solid #eee; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-        .card { background: white; padding: 30px; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
-        footer { background: white; padding: 30px 20px; text-align: center; color: #666; font-size: 0.9rem; border-top: 1px solid #eee; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sayegh Studio | Arquitectura de Autor</title>
+<meta name="description" content="Arquitectura de autor en Bosque Real, Interlomas, Polanco y San Miguel de Allende. Diseño sensorial y certeza financiera, con dirección de obra de trayectoria consolidada.">
+<link rel="canonical" href="https://sayeghstudio.com/">
+<meta name="theme-color" content="#2E2A24">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="favicon-32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="icon-192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sayegh Studio">
+<meta property="og:locale" content="es_MX">
+<meta property="og:url" content="https://sayeghstudio.com/">
+<meta property="og:title" content="Sayegh Studio | Arquitectura de Autor">
+<meta property="og:description" content="Arquitectura de autor en Bosque Real, Interlomas, Polanco y San Miguel de Allende. Diseño sensorial y certeza financiera, con dirección de obra de trayectoria consolidada.">
+<meta property="og:image" content="https://sayeghstudio.com/hero-home.jpg">
+<meta property="og:image:width" content="900">
+<meta property="og:image:height" content="514">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sayegh Studio | Arquitectura de Autor">
+<meta name="twitter:description" content="Arquitectura de autor en Bosque Real, Interlomas, Polanco y San Miguel de Allende.">
+<meta name="twitter:image" content="https://sayeghstudio.com/hero-home.jpg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "ProfessionalService"],
+  "@id": "https://sayeghstudio.com/#organization",
+  "name": "Sayegh Studio",
+  "alternateName": "Sayegh Studio Arquitectura de Autor",
+  "description": "Estudio de arquitectura de autor especializado en Brutalismo Cálido y Japandi, con dirección de obra y control absoluto de precios unitarios. Atiende proyectos residenciales de alto nivel en Bosque Real, Interlomas, Polanco y San Miguel de Allende.",
+  "url": "https://sayeghstudio.com/",
+  "logo": "https://sayeghstudio.com/sayegh-logo-ink.png",
+  "image": "https://sayeghstudio.com/hero-home.jpg",
+  "email": "contacto@sayeghstudio.com",
+  "priceRange": "$$$$",
+  "founder": {
+    "@type": "Person",
+    "name": "Jacobo Sayegh Kokhab",
+    "jobTitle": "Director y Arquitecto"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "Estado de México / Ciudad de México",
+    "addressCountry": "MX"
+  },
+  "areaServed": [
+    { "@type": "Place", "name": "Bosque Real, Estado de México" },
+    { "@type": "Place", "name": "Interlomas, Estado de México" },
+    { "@type": "Place", "name": "Polanco, Ciudad de México" },
+    { "@type": "Place", "name": "San Miguel de Allende, Guanajuato" },
+    { "@type": "Place", "name": "San Pedro Garza García, Nuevo León" },
+    { "@type": "Place", "name": "Puerto Cancún, Quintana Roo" },
+    { "@type": "Place", "name": "Punta Mita, Nayarit" },
+    { "@type": "Place", "name": "Los Cabos, Baja California Sur" },
+    { "@type": "Place", "name": "Valle de Bravo, Estado de México" },
+    { "@type": "Place", "name": "Zapopan, Jalisco" }
+  ],
+  "sameAs": [
+    "https://www.instagram.com/jacobosayegh",
+    "https://www.tiktok.com/@jacobosayegh_arquitectur",
+    "https://www.threads.net/@jacobosayegh"
+  ]
+}
+</script>
+
+<!--
+  ============================================================================
+  SAYEGH STUDIO — Homepage (código real de implementación)
+  ============================================================================
+  Este archivo es HTML/CSS puro, autocontenido, listo para subir a un hosting
+  o integrarlo en tu plataforma (WordPress, Webflow, Next.js, etc. — como
+  bloque de HTML). No depende de ningún framework.
+
+  Usa EXACTAMENTE el mismo sistema de diseño que via-viabilidad.html (mismas
+  variables de color en :root, misma tipografía, mismos botones, mismo nav
+  flotante, mismo footer) para que ambas páginas se vean como el mismo sitio.
+
+  ASSETS: este archivo espera estos archivos en la MISMA carpeta:
+  `sayegh-logo-ink.png` (logo), `hero-home.mp4` + `hero-home.webm` (video del
+  Hero, resolución nativa 1080×1920, 9.5s en loop, silencioso por defecto con
+  botón "Sonido" para activar su audio real) y `hero-home.jpg` (imagen de
+  respaldo mientras carga el video / para navegadores sin soporte de video),
+  además de 8 fotos de materiales:
+  `swatch-marmol.jpg`, `swatch-travertino.jpg`, `swatch-tzalam.jpg`,
+  `swatch-chukum.jpg`, `swatch-nogal.jpg`, `swatch-recinto.jpg`,
+  `swatch-microcemento.jpg`, `swatch-encino.jpg`, y 16 fotos reales de
+  "Proyectos Destacados" (4 por proyecto, en carrusel automático dentro de
+  cada ficha): `project-nuvana-1.jpg` a `project-nuvana-4.jpg` (Nuvana,
+  Interlomas), `project-temixco-1.jpg` a `project-temixco-4.jpg` (Temixco,
+  Mor.), `project-sma-1.jpg` a `project-sma-4.jpg` (Piedras Chinas, San
+  Miguel de Allende) y `project-bosquereal-1.jpg` a `project-bosquereal-4.jpg`
+  (Avivia Bosque Real, Edo. Méx.). Colócalos todos junto a este .html antes de
+  abrirlo (o súbelos a tu hosting en la misma ruta).
+
+  FOTOGRAFÍA: las 4 fichas de "Proyectos Destacados" ya usan fotografía REAL
+  de obra (Nuvana, Temixco, Piedras Chinas y Avivia Bosque Real) — ya no
+  quedan placeholders de color en esta sección. Cada ficha rota
+  automáticamente entre 4 fotos (carrusel con puntos de navegación, pausa
+  al pasar el mouse).
+
+  IDEAS STUDIO SAYEGH: sección nueva justo debajo de "Proyectos
+  Destacados" (id="sec-porvenir"), reemplaza el botón "Ver Todos los
+  Proyectos" que no llevaba a ningún lado. Carrusel ancho de 8 posiciones
+  (6 fotos + 2 videos cortos, todo contenido REAL elegido de la carpeta
+  "Proyectos" del usuario — no son fotos de obra construida, son
+  renders/video conceptuales, por eso llevan el aviso "Renders y video
+  conceptual" debajo del carrusel; no confundir con la fotografía real de
+  "Proyectos Destacados"). Necesita estos archivos junto al .html:
+  `idea-1.jpg` a `idea-6.jpg`, `idea-video-1.mp4` + `idea-video-1-poster.jpg`,
+  `idea-video-2.mp4` + `idea-video-2-poster.jpg`. Las fotos usan el mismo
+  patrón data-bg + carga diferida que "Proyectos Destacados"; los videos
+  van sin sonido, en loop, y solo se reproducen cuando su posición está
+  activa en el carrusel (se pausan al salir de pantalla dentro del
+  carrusel, para no gastar datos de más). Para agregar/quitar posiciones:
+  cada <div class="carousel-slide"> (con data-bg para foto, o con
+  <video>/<source> adentro para video) necesita su <button class="dot">
+  correspondiente.
+
+  RENDIMIENTO: todas las fotos de "Proyectos Destacados" y las 8 texturas
+  de "Materialidad Sayegh" usan carga diferida (atributo data-bg + un
+  IntersectionObserver al final del archivo) — no se descargan hasta que
+  su sección se acerca a la pantalla, para que la página abra rápido.
+
+  SEO/COMPARTIR: el archivo ya incluye favicon, meta descripción y
+  etiquetas Open Graph/Twitter (para que se vea bien al compartir el link
+  en WhatsApp/redes). Súbelo junto con `favicon.ico`, `favicon-32.png`,
+  `icon-192.png`, `apple-touch-icon.png`, `robots.txt` y `sitemap.xml`
+  (incluidos en este mismo ZIP) a la raíz de tu hosting.
+
+  MÚSICA AMBIENTAL: botón circular fijo arriba a la derecha (icono
+  &#9658;/&#9208;). En silencio por defecto — no autoplay. Al primer clic
+  decodifica `ambient-sayegh.mp3` (pista real del cliente, "musica web.mp3"
+  — se conserva el nombre de archivo interno `ambient-sayegh.mp3` para no
+  romper referencias, pero el contenido es la música real que proporcionó,
+  recortada a un loop de ~151s con crossfade de 4s entre el final y el
+  inicio para que no se note el corte al repetir) vía Web Audio API, a
+  bajo volumen (22%) y en bucle sin cortes. Distinto del botón "Sonido"
+  del video del Hero (ese controla el audio propio del video). Necesita
+  el archivo `ambient-sayegh.mp3` junto al .html — la misma pista se usa
+  también en via-viabilidad.html para que ambas páginas suenen igual.
+  ============================================================================
+-->
+
+<link rel="preload" as="image" href="hero-home.jpg" fetchpriority="high">
+<link rel="preload" as="font" type="font/woff2" href="/fonts/archivo-400.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/fonts/spacegrotesk-500.woff2" crossorigin>
+
+<style>
+  /* Tipografias autoalojadas (antes: fonts.googleapis.com, bloqueante) */
+  @font-face{font-family:'Archivo';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/archivo-400.woff2') format('woff2');}
+  @font-face{font-family:'Archivo';font-style:italic;font-weight:400;font-display:swap;src:url('/fonts/archivo-400i.woff2') format('woff2');}
+  @font-face{font-family:'Archivo';font-style:normal;font-weight:500;font-display:swap;src:url('/fonts/archivo-500.woff2') format('woff2');}
+  @font-face{font-family:'Archivo';font-style:normal;font-weight:600;font-display:swap;src:url('/fonts/archivo-600.woff2') format('woff2');}
+  @font-face{font-family:'Space Grotesk';font-style:normal;font-weight:500;font-display:swap;src:url('/fonts/spacegrotesk-500.woff2') format('woff2');}
+  @font-face{font-family:'Space Grotesk';font-style:normal;font-weight:600;font-display:swap;src:url('/fonts/spacegrotesk-600.woff2') format('woff2');}
+  @font-face{font-family:'Space Grotesk';font-style:normal;font-weight:700;font-display:swap;src:url('/fonts/spacegrotesk-700.woff2') format('woff2');}
+
+  :root {
+    --crema: #F4EFE6;
+    --crema-profundo: #EDE4D2;
+    --texto: #58524A;
+    --ink: #2E2A24;
+    --brass: #A9814C;
+    --tzalam: #4A3D30;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Archivo', 'Helvetica Neue', Arial, sans-serif; background: var(--crema); color: var(--texto); }
+  a { color: inherit; text-decoration: none; }
+  .serif { font-family: 'Space Grotesk', 'Helvetica Neue', Arial, sans-serif; }
+  .tracked { letter-spacing: 0.16em; text-transform: uppercase; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 64px; }
+  @media (max-width: 780px) { .container { padding: 0 24px; } }
+
+  .kicker { display:flex; align-items:center; gap:20px; }
+  .kicker .line { flex:1; height:1px; background:rgba(46,42,36,0.18); }
+
+  .btn { display:inline-block; font-family:'Archivo',sans-serif; letter-spacing:0.16em; text-transform:uppercase; font-size:12px; padding:16px 36px; border-radius:4px; cursor:pointer; transition: opacity 0.2s ease, transform 0.2s ease; border:none; }
+  .btn:hover { opacity:0.85; transform: translateY(-1px); }
+  .btn-filled { background: var(--tzalam); color: var(--crema); }
+  .btn-ghost { background: transparent; color: var(--ink); border: 1px solid rgba(46,42,36,0.28); }
+  .btn-outline-brass { background: transparent; color: var(--brass); border: 1px solid var(--brass); }
+
+  .reveal { opacity:0; transform:translateY(28px); transition: opacity 0.9s cubic-bezier(.22,.61,.36,1), transform 0.9s cubic-bezier(.22,.61,.36,1); }
+  .reveal.is-visible { opacity:1; transform:translateY(0); }
+  .reveal-d1 { transition-delay:0.1s; }
+  .reveal-d2 { transition-delay:0.2s; }
+  @media (prefers-reduced-motion: reduce) { .reveal { opacity:1 !important; transform:none !important; transition:none !important; } }
+
+  .kb-frame { position:relative; overflow:hidden; border-radius:6px; box-shadow: 0 30px 60px rgba(46,42,36,0.16); }
+  .kb-layer { position:absolute; inset:-8%; background-repeat:no-repeat; animation: kenburns 30s ease-in-out infinite; will-change:transform; }
+  @keyframes kenburns { 0%,100% { transform:scale(1) translate(0,0); } 50% { transform:scale(1.08) translate(-1.8%,-1.2%); } }
+  @media (prefers-reduced-motion: reduce) { .kb-layer { animation:none; } }
+  .carousel-slide { position:absolute; inset:-8%; background-repeat:no-repeat; background-size:cover; background-position:center; opacity:0; transition:opacity 1.1s ease; will-change:transform,opacity; }
+  .carousel-slide.is-active { opacity:1; z-index:1; }
+  .carousel-slide.is-video { inset:0; background:#141312; }
+  .carousel-slide.is-video video { width:100%; height:100%; object-fit:cover; display:block; }
+  @media (prefers-reduced-motion: reduce) { .carousel-slide { animation:none !important; } }
+  .carousel-dots { position:absolute; left:0; right:0; bottom:12px; z-index:2; display:flex; justify-content:center; gap:6px; }
+  .carousel-dots .dot { -webkit-appearance:none; appearance:none; border:none; padding:0; width:5px; height:5px; border-radius:50%; background:rgba(255,255,255,0.55); cursor:pointer; transition:background 0.3s ease, transform 0.3s ease; }
+  .carousel-dots .dot:focus-visible { outline:2px solid #fff; outline-offset:3px; }
+  .carousel-dots .dot.is-active { background:#fff; transform:scale(1.4); }
+
+  #sticky-nav { position:fixed; top:0; left:0; right:0; z-index:998; display:flex; align-items:center; justify-content:space-between; padding:18px 64px; background:rgba(244,239,230,0.88); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); border-bottom:1px solid rgba(46,42,36,0.08); opacity:0; transform:translateY(-14px); transition:opacity 0.5s ease, transform 0.5s ease; pointer-events:none; }
+  #sticky-nav.nav-visible { opacity:1; transform:translateY(0); pointer-events:auto; }
+  #sticky-nav img { width:150px; height:auto; display:block; }
+  #sticky-nav a, #sticky-nav span { cursor:pointer; }
+  #sticky-nav .links { display:flex; align-items:center; gap:36px; font-size:10px; letter-spacing:0.16em; text-transform:uppercase; color:var(--ink); }
+  #sticky-nav .links .btn-nav-audit { color:var(--brass); border:1px solid var(--brass); border-radius:3px; padding:8px 16px; }
+  @media (max-width: 780px) { #sticky-nav { padding:14px 56px 14px 20px; } #sticky-nav img { width:88px; } #sticky-nav .links { gap:16px; font-size:9px; } #sticky-nav .links .btn-nav-audit { padding:6px 11px; } }
+  @media (max-width: 560px) { #sticky-nav .links .nav-optional { display:none; } }
+  @media (prefers-reduced-motion: reduce) { #sticky-nav { transition:none; } }
+
+  .mobile-cta-bar { display:none; }
+  @media (max-width: 780px) {
+    .mobile-cta-bar { display:flex; align-items:stretch; position:fixed; left:0; right:0; bottom:0; z-index:999; background:var(--tzalam); box-shadow:0 -8px 24px rgba(46,42,36,0.22); transform:translateY(100%); transition:transform 0.4s ease; padding-bottom:env(safe-area-inset-bottom, 0); }
+    .mobile-cta-bar.bar-visible { transform:translateY(0); }
+    .mobile-cta-bar .bar-cta { flex:1; display:flex; align-items:center; justify-content:center; text-align:center; color:var(--crema); font-size:11px; letter-spacing:0.12em; text-transform:uppercase; padding:16px 8px; }
+    .mobile-cta-bar .bar-email { width:54px; flex-shrink:0; display:flex; align-items:center; justify-content:center; border-left:1px solid rgba(244,239,230,0.16); color:var(--brass); font-size:17px; }
+  }
+  @media (prefers-reduced-motion: reduce) { .mobile-cta-bar { transition:none; } }
+
+  nav.site-nav { display:flex; flex-direction:column; align-items:center; gap:14px; padding:48px 0 30px 0; }
+  nav.site-nav img { width:280px; height:auto; }
+  @media (max-width: 780px) { nav.site-nav img { width:190px; } }
+
+  .hero { display:flex; flex-direction:column; align-items:center; gap:44px; padding-bottom:130px; text-align:center; }
+  .hero .kb-frame { width:100%; max-width:1280px; height:520px; }
+  @media (max-width: 780px) { .hero .kb-frame { height:320px; } }
+  .hero-video { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; }
+  .hero-vignette { position:absolute; inset:0; background:linear-gradient(180deg, rgba(20,18,15,0.05) 0%, rgba(20,18,15,0.02) 55%, rgba(20,18,15,0.32) 100%); pointer-events:none; }
+  .video-sound-toggle { position:absolute; right:26px; bottom:26px; z-index:5; display:flex; align-items:center; gap:6px; background:rgba(20,18,15,0.45); border:1px solid rgba(244,239,230,0.5); border-radius:30px; padding:9px 13px; cursor:pointer; font-size:8.5px; color:var(--crema); letter-spacing:0.14em; text-transform:uppercase; backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px); }
+  @media (max-width: 780px) { .video-sound-toggle { right:14px; bottom:14px; padding:7px 10px; font-size:7.5px; } }
+  .hero-copy { display:flex; flex-direction:column; align-items:center; max-width:640px; }
+  .hero h1 { font-size:56px; font-weight:700; text-transform:uppercase; color:var(--ink); letter-spacing:0.01em; }
+  @media (max-width: 780px) { .hero h1 { font-size:33px; } }
+  .hero p.lede { font-size:17px; line-height:1.7; color:var(--texto); margin-top:26px; }
+  @media (max-width: 780px) { .hero p.lede { font-size:14.5px; } }
+  .hero .btn { margin-top:26px; }
+
+  .stats { display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); border-top:1px solid rgba(46,42,36,0.14); border-bottom:1px solid rgba(46,42,36,0.14); max-width:1100px; margin:0 auto 110px auto; }
+  @media (max-width: 780px) { .stats { grid-template-columns:1fr 1fr; } }
+  .stat { padding:34px 16px; text-align:center; border-right:1px solid rgba(46,42,36,0.14); }
+  .stat:last-child { border-right:none; }
+  @media (max-width: 780px) { .stat:nth-child(2n) { border-right:none; } }
+  .stat .num { font-size:38px; font-weight:700; color:var(--ink); }
+  @media (max-width: 780px) { .stat .num { font-size:24px; } }
+  .stat .label { font-size:9.5px; letter-spacing:0.16em; text-transform:uppercase; color:#8a8378; margin-top:8px; }
+
+  .projects { display:flex; flex-direction:column; align-items:center; gap:56px; padding-bottom:110px; }
+  .projects-grid { display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:32px; width:100%; }
+  @media (max-width: 780px) { .projects-grid { grid-template-columns:1fr; gap:32px; } }
+  .project-card { display:flex; flex-direction:column; gap:16px; align-items:center; text-align:center; }
+  .project-card .kb-frame { width:100%; height:230px; box-shadow:0 16px 32px rgba(46,42,36,0.14); }
+
+  .projects-future { display:flex; flex-direction:column; align-items:center; gap:26px; padding-bottom:110px; }
+  .future-lede { max-width:620px; text-align:center; font-size:14px; line-height:1.75; color:var(--texto); }
+  .future-carousel-wrap { width:100%; max-width:920px; display:flex; flex-direction:column; align-items:center; gap:14px; }
+  .future-carousel { width:100%; height:420px; box-shadow:0 24px 48px rgba(46,42,36,0.16); }
+  @media (max-width: 780px) { .future-carousel { height:260px; } }
+  .future-caption { font-size:10px; color:#a29b8e; text-align:center; }
+  .project-card h3 { font-size:17px; font-weight:600; letter-spacing:0.03em; text-transform:uppercase; color:var(--ink); }
+  .project-card .loc { font-size:9.5px; letter-spacing:0.16em; text-transform:uppercase; color:var(--brass); margin-top:5px; }
+  .project-card p { font-size:12.5px; color:#8a8378; max-width:280px; margin:6px auto 0 auto; }
+
+  .pain { display:flex; flex-direction:column; align-items:center; gap:48px; padding-bottom:110px; }
+  .pain-grid2 { display:grid; grid-template-columns:1fr 1fr; gap:20px; max-width:920px; width:100%; }
+  @media (max-width: 780px) { .pain-grid2 { grid-template-columns:1fr; } }
+  .pain-item2 { border-left:2px solid var(--brass); padding:2px 0 2px 22px; font-size:15px; line-height:1.6; color:var(--texto); text-align:left; }
+  .pain-close { font-family:'Space Grotesk',sans-serif; font-size:19px; font-weight:500; color:var(--ink); text-align:center; max-width:600px; }
+
+  .manifesto { padding-bottom:130px; text-align:center; }
+  .manifesto p { font-family:'Space Grotesk',sans-serif; font-size:27px; line-height:1.52; font-weight:500; color:var(--ink); max-width:820px; margin:0 auto; }
+  @media (max-width: 780px) { .manifesto p { font-size:19px; } }
+
+  .duality { display:grid; grid-template-columns:1fr 1fr; border-radius:6px; overflow:hidden; box-shadow:0 20px 50px rgba(46,42,36,0.08); margin-bottom:130px; }
+  @media (max-width: 780px) { .duality { grid-template-columns:1fr; } }
+  .duality-col { padding:72px 64px; display:flex; flex-direction:column; gap:20px; }
+  @media (max-width: 780px) { .duality-col { padding:44px 24px; } }
+  .duality-col:nth-child(1) { background: var(--crema); }
+  .duality-col:nth-child(2) { background: var(--crema-profundo); }
+  .duality-col .num { font-size:10px; letter-spacing:0.16em; text-transform:uppercase; color:var(--brass); }
+  .duality-col h2 { font-size:25px; font-weight:700; letter-spacing:0.02em; text-transform:uppercase; color:var(--ink); }
+  .duality-col p { font-size:14.5px; line-height:1.75; color:#726B60; }
+  .duality-col .feat { border-top:1px solid rgba(46,42,36,0.12); padding-top:11px; font-size:12.5px; margin-top:8px; }
+
+  .materials { display:flex; flex-direction:column; align-items:center; gap:48px; padding-bottom:130px; }
+  .materials-grid { display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:22px 26px; max-width:920px; width:100%; }
+  @media (max-width: 780px) { .materials-grid { grid-template-columns:repeat(2, minmax(0,1fr)); } }
+  .materials-lede { max-width:600px; text-align:center; font-size:14.5px; line-height:1.8; color:var(--texto); }
+  .materials-lede .serif { color:var(--ink); }
+  .material { display:flex; flex-direction:column; gap:8px; align-items:center; text-align:center; }
+  .material .swatch { width:100%; aspect-ratio:1/1; border-radius:5px; box-shadow:0 10px 22px rgba(46,42,36,0.12); background-size:cover; background-position:center; transition:transform 0.6s ease, box-shadow 0.6s ease; }
+  .material:hover .swatch { transform:scale(1.035); box-shadow:0 18px 34px rgba(46,42,36,0.2); }
+  .material .name { font-size:9.5px; letter-spacing:0.16em; text-transform:uppercase; color:var(--ink); margin-top:2px; }
+  .material .feel { font-size:11.5px; color:#8a8378; line-height:1.5; max-width:170px; }
+
+  .contact { display:flex; flex-direction:column; align-items:center; gap:48px; padding-bottom:110px; text-align:center; }
+  .contact-copy h2 { font-size:30px; font-weight:700; text-transform:uppercase; color:var(--ink); letter-spacing:0.01em; }
+  @media (max-width: 780px) { .contact-copy h2 { font-size:22px; } }
+  .contact-copy p { font-size:15.5px; line-height:1.7; color:var(--texto); max-width:620px; margin:16px auto 0 auto; }
+  .contact-pillars { display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:32px; max-width:920px; width:100%; text-align:left; }
+  @media (max-width: 780px) { .contact-pillars { grid-template-columns:1fr; } }
+  .contact-pillar .num { font-size:10px; letter-spacing:0.16em; text-transform:uppercase; color:var(--brass); }
+  .contact-pillar p { font-size:13px; line-height:1.65; color:var(--texto); margin-top:8px; }
+  .contact-cta { display:flex; flex-direction:column; align-items:center; gap:14px; }
+  .contact-cta .email-link { font-size:10.5px; letter-spacing:0.16em; text-transform:uppercase; color:#8a8378; }
+
+  .zones-map { display:flex; flex-direction:column; align-items:center; gap:44px; padding-bottom:120px; }
+  .zones-map-lede { max-width:600px; text-align:center; font-size:14px; line-height:1.8; color:var(--texto); }
+  .zones-map-grid { display:grid; grid-template-columns:1fr 1fr; gap:56px; max-width:920px; width:100%; }
+  @media (max-width: 780px) { .zones-map-grid { grid-template-columns:1fr; gap:36px; } }
+  .zones-map-col .col-label { font-size:10px; letter-spacing:0.16em; text-transform:uppercase; color:var(--brass); margin-bottom:16px; }
+  .zones-map-col ul { list-style:none; display:flex; flex-direction:column; gap:11px; }
+  .zones-map-col a { font-family:'Space Grotesk',sans-serif; font-size:15px; color:var(--ink); border-bottom:1px solid transparent; transition:border-color 0.2s ease, color 0.2s ease; }
+  .zones-map-col a:hover { color:var(--brass); border-color:var(--brass); }
+
+  footer.site-footer { border-top:1px solid rgba(46,42,36,0.12); padding:32px 24px; display:flex; flex-direction:column; align-items:center; gap:10px; text-align:center; }
+  footer.site-footer .copyright { font-family:'Space Grotesk',sans-serif; font-size:13px; color:#8a8378; }
+  footer.site-footer .zones { font-size:9.5px; letter-spacing:0.16em; text-transform:uppercase; color:#a29b8e; }
+  footer.site-footer .social { font-size:9px; letter-spacing:0.16em; text-transform:uppercase; color:var(--brass); }
+  footer.site-footer .contact-line { font-size:9px; letter-spacing:0.14em; text-transform:uppercase; color:#a29b8e; }
+  footer.site-footer .contact-line a { color:#a29b8e; }
+  footer.site-footer .contact-line a:hover { color:var(--brass); }
+
+  .ambient-toggle { position:fixed; top:20px; right:20px; z-index:999; width:42px; height:42px; border-radius:50%; display:flex; align-items:center; justify-content:center; background:rgba(244,239,230,0.92); border:1px solid rgba(46,42,36,0.18); box-shadow:0 8px 20px rgba(46,42,36,0.16); backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px); cursor:pointer; color:#2E2A24; font-size:15px; transition:border-color 0.25s ease, transform 0.2s ease, color 0.25s ease; }
+  .ambient-toggle:hover { transform:scale(1.06); }
+  .ambient-toggle.is-playing { border-color:var(--brass); color:var(--brass); }
+  @media (max-width:780px) { .ambient-toggle { top:14px; right:14px; width:36px; height:36px; font-size:13px; } }
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-143N31NN8J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-143N31NN8J');
+</script>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1031573579517610');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1031573579517610&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<style id="bitacora-css">
+#sec-bitacora .kicker{margin-bottom:16px}
+#sec-bitacora .bitacora-lede{max-width:600px;margin:0 0 48px}
+#sec-bitacora .bitacora-entry{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:end;gap:28px;padding:32px 0;text-decoration:none;color:inherit;border-top:1px solid rgba(46,42,36,.16);border-bottom:1px solid rgba(46,42,36,.16);transition:padding-left .35s ease}
+#sec-bitacora .bitacora-entry:hover,#sec-bitacora .bitacora-entry:focus-visible{padding-left:14px}
+#sec-bitacora .entry-place{font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--brass);margin:0 0 12px}
+#sec-bitacora .bitacora-entry h3{margin:0;max-width:46ch;line-height:1.25}
+#sec-bitacora .entry-meta{margin:14px 0 0;font-size:13.5px;color:var(--texto);opacity:.8}
+#sec-bitacora .entry-go{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--brass);white-space:nowrap;padding-bottom:6px}
+@media (max-width:640px){#sec-bitacora .bitacora-entry{grid-template-columns:1fr;align-items:start;gap:16px}#sec-bitacora .entry-go{padding-bottom:0}}
+</style>
 </head>
 <body>
-    <nav>
-        <div class="container">
-            <div class="logo">SAYEGH STUDIO</div>
-            <div>
-                <a href="/">Home</a>
-                <a href="/proyectos/">Proyectos</a>
-                <a href="/blog/">Blog</a>
-                <a href="/manifiesto/">Manifiesto</a>
-            </div>
-        </div>
-    </nav>
 
-    <section class="hero">
-        <div class="container">
-            <h1>Arquitectura de Autor</h1>
-            <p>Espacios residenciales de lujo diseñados con propósito</p>
-            <a href="#sobre" class="cta">Conocer Más</a>
-        </div>
-    </section>
+<button type="button" id="ambient-toggle" class="ambient-toggle" aria-pressed="false" aria-label="Reproducir m&uacute;sica ambiental" title="M&uacute;sica ambiental">
+  <span id="ambient-icon" aria-hidden="true">&#9658;</span>
+</button>
 
-    <section class="section" id="sobre">
-        <div class="container">
-            <h2>Sobre Sayegh Studio</h2>
-            <p>
-                Más de 15 años diseñando espacios residenciales en CDMX. Nos especializamos en arquitectura deliberada,
-                donde cada proyecto es una declaración de intención. No diseñamos casas, diseñamos hogares que envejecen
-                con propósito.
-            </p>
-            <p>
-                La especificación técnica de materiales es central en nuestro proceso. Travertino, acero, concreto.
-                Cada material cuenta una historia. Cada detalle suma.
-            </p>
-        </div>
-    </section>
+<div id="sticky-nav">
+  <img src="sayegh-logo-ink.png" alt="Sayegh Studio" width="874" height="229">
+  <div class="links">
+    <span class="nav-optional" onclick="document.getElementById('sec-proyectos').scrollIntoView({behavior:'smooth'});">Proyectos</span>
+    <span class="nav-optional" onclick="document.getElementById('sec-manifiesto').scrollIntoView({behavior:'smooth'});">Manifiesto</span>
+    <span onclick="document.getElementById('sec-contacto').scrollIntoView({behavior:'smooth'});">Contacto</span>
+    <a href="/blog/">Blog</a>
+    <a href="/privacidad">Privacidad</a>
+    <a class="btn-nav-audit" href="https://via.sayeghstudio.com" target="_blank" rel="noopener">Auditoría</a>
+  </div>
+</div>
 
-    <section class="section">
-        <div class="container">
-            <h2>Proyectos Destacados</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3 style="margin-bottom: 10px;">Penthouse Polanco</h3>
-                    <p style="color: #666; font-size: 0.95rem;">Travertino Rosso, escalera monumental, triple altura. 150 m².</p>
-                    <div style="color: #999; font-size: 0.85rem;">Polanco, CDMX | 2018</div>
-                </div>
-                <div class="card">
-                    <h3 style="margin-bottom: 10px;">Casa Reforma</h3>
-                    <p style="color: #666; font-size: 0.95rem;">Travertino Cappuccino, acero corten, brutalismo suave. 200 m².</p>
-                    <div style="color: #999; font-size: 0.85rem;">Reforma, CDMX | 2015</div>
-                </div>
-                <div class="card">
-                    <h3 style="margin-bottom: 10px;">Penthouse Condesa</h3>
-                    <p style="color: #666; font-size: 0.95rem;">Open-plan, travertino Noce Scuro, continuidad visual. 180 m².</p>
-                    <div style="color: #999; font-size: 0.85rem;">Condesa, CDMX | 2019</div>
-                </div>
-            </div>
-            <div style="text-align: center; margin-top: 40px;">
-                <a href="/proyectos/" class="cta">Ver Todos los Proyectos →</a>
-            </div>
-        </div>
-    </section>
+<nav class="site-nav">
+  <img src="sayegh-logo-ink.png" alt="Sayegh Studio" width="874" height="229">
+  <div class="tracked" style="font-size:11px; color:var(--brass);">Arquitectura de Autor</div>
+</nav>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Sayegh Studio | Arquitectura de Autor</p>
-        </div>
-    </footer>
+<header class="hero container">
+  <div class="kb-frame reveal" style="position:relative;">
+    <video class="hero-video" id="hero-video" autoplay muted loop playsinline preload="auto" poster="hero-home.jpg">
+      <source src="hero-home.webm" type="video/webm">
+      <source src="hero-home.mp4" type="video/mp4">
+    </video>
+    <div class="hero-vignette"></div>
+    <div class="video-sound-toggle" onclick="var v=document.getElementById('hero-video'); var i=document.getElementById('hero-video-icon'); v.muted=!v.muted; i.innerHTML = v.muted ? '&#128263;' : '&#128266;';">
+      <span id="hero-video-icon" style="font-size:13px; line-height:1;">&#128263;</span>
+      <span>Sonido</span>
+    </div>
+  </div>
+  <div class="hero-copy reveal">
+    <h1 class="serif">Calma Calculada</h1>
+    <p class="lede">La calma de un santuario sensorial, sostenida por una ingeniería milimétrica y una trayectoria consolidada en obra.</p>
+    <div class="contact-cta" style="margin-top:10px;">
+      <a href="https://via.sayeghstudio.com" target="_blank" rel="noopener" class="tracked btn btn-filled">Solicitar Auditoría de Viabilidad</a>
+      <a href="mailto:contacto@sayeghstudio.com" class="tracked email-link">o contáctenos por correo a contacto@sayeghstudio.com</a>
+    </div>
+  </div>
+</header>
+
+<section class="container">
+  <div class="stats reveal">
+    <div class="stat">
+      <div class="num serif">0%</div>
+      <div class="label">Sobrecostos Tolerados</div>
+    </div>
+    <div class="stat">
+      <div class="num serif">100%</div>
+      <div class="label">Precios Unitarios Blindados</div>
+    </div>
+    <div class="stat">
+      <div class="num serif">Nacional</div>
+      <div class="label">Nivel Premium</div>
+    </div>
+    <div class="stat">
+      <div class="num serif">Pericial</div>
+      <div class="label">Dirección de Obra &middot; Grado Doctoral</div>
+    </div>
+  </div>
+</section>
+
+<section id="sec-proyectos" class="projects container">
+  <div class="kicker reveal" style="width:100%; max-width:760px;">
+    <div class="line"></div>
+    <div class="tracked" style="font-size:12px; color:var(--brass); white-space:nowrap;">Proyectos Destacados</div>
+    <div class="line"></div>
+  </div>
+  <div class="projects-grid reveal">
+    <div class="project-card">
+      <div class="kb-frame project-carousel" data-interval="4500" role="img" aria-label="Fotografías del proyecto Nuvana, Interlomas, Edo. Méx.">
+        <div class="carousel-slide is-active" style="animation:kenburns 32s ease-in-out infinite;" data-bg="project-nuvana-1.jpg" aria-hidden="true"></div>
+        <div class="carousel-slide" style="animation:kenburns 34s ease-in-out infinite;" data-bg="project-nuvana-2.jpg" aria-hidden="true"></div>
+        <div class="carousel-slide" style="animation:kenburns 30s ease-in-out infinite;" data-bg="project-nuvana-3.jpg" aria-hidden="true"></div>
+        <div class="carousel-slide" style="animation:kenburns 36s ease-in-out infinite;" data-bg="project-nuvana-4.jpg" aria-hidden="true"></div>
+        <div class="carousel-dots"><button type="button" class="dot is-active" aria-label="Ver foto 1 de 4"></button><button type="button" class="dot" aria-label="Ver foto 2 de 4"></button><button type="button" class="dot" aria-label="Ver foto 3 de 4"></button><button type="button" class="dot" aria-label="Ver foto 4 de 4"></button></div>
+      </div>
+      <h3 class="serif">Nuvana</h3>
+      <div class="loc">Interlomas, Edo. Méx.</div>
+      <p>Travertino &middot; Nogal oscuro &middot; Muro cortina &mdash; ejecución milimétrica en cada corte de piedra.</p>
+    </div>
+    <div class="project-card">
+      <div class="kb-frame project-carousel" data-interval="4500" role="img" aria-label="Fotografías del proyecto Temixco, Temixco, Mor.">
+        <div class="carousel-slide is-active" style="animation:kenburns 36s ease-in-out infinite;" data-bg="project-temixco-1.jpg" aria-hidden="true"></div>
+        <div class="carousel-slide" style="animation:kenburns 32s ease-in-out infinite;" data-bg="project-temixco-2.jpg" aria-hidden="true"></div>
+        <div class="carousel-slide" style="animation:kenburns 30s ease-in-out infinite;" data-bg="project-temixco-3.jpg" aria-hidden="true"></div>
+        <div class="carousel-slide" style="animation:kenburns 34s ease-in-out infinite;" data-bg="project-temixco-4.jpg" aria-hidden="true"></div>
+        <div class="carousel-dots"><button type="button" class="dot is-active" aria-label="Ver foto 1 de 4"></button><button type="button" class="dot" aria-label="Ver foto 2 de 4"></button><button type="button" class="dot" aria-label="Ver foto 3 de 4"></button><button type="button" class="dot" aria-label="Ver foto 4 de 4"></button></div>
+      </div>
+      <h3 class="serif">Temixco</h3>
+      <div class="loc">Temixco, Mor.</div>
+      <p>Tzalam &middot; Concreto aparente &middot; Vidrio &mdash; celosía calibrada para la luz de las 5 de la tarde.</p>
+    </div>
+    <div class="project-card">
+      <div class="kb-frame project-carousel" data-interval="4500" role="img" aria-label="Fotografías del proyecto Piedras Chinas, San Miguel de Allende, Gto.">
+        <div class="carousel-slide is-active" style="animation:kenburns 24s ease-in-out infinite;" data-bg="project-sma-1.jpg" aria-hidden="true"></div>
+        <div class="carousel-slide" style="animation:kenburns 28s ease-in-out infinite;" data-bg="project-sma-2.jpg" aria-hidden="true"></div>
+        <div class="carousel-slide" style="animation:kenburns 32s ease-in-out infinite;" data-bg="project-sma-3.jpg" aria-hidden="true"></div>
+        <div class="carousel-slide" style="animation:kenburns 26s ease-in-out infinite;" data-bg="project-sma-4.jpg" aria-hidden="true"></div>
+        <div class="carousel-dots"><button type="button" class="dot is-active" aria-label="Ver foto 1 de 4"></button><button type="button" class="dot" aria-label="Ver foto 2 de 4"></button><button type="button" class="dot" aria-label="Ver foto 3 de 4"></button><button type="button" class="dot" aria-label="Ver foto 4 de 4"></button></div>
+      </div>
+      <h3 class="serif">Piedras Chinas</h3>
+      <div class="loc">San Miguel de Allende, Gto.</div>
+      <p>Cantera &middot; Herrería forjada &middot; Madera de mezquite &mdash; escalera escultórica como eje de la casa.</p>
+    </div>
+    <div class="project-card">
+      <div class="kb-frame project-carousel" data-interval="4500" role="img" aria-label="Fotografías del proyecto Avivia Bosque Real, Edo. Méx.">
+        <div class="carousel-slide is-active" style="animation:kenburns 30s ease-in-out infinite;" data-bg="project-bosquereal-1.jpg" aria-hidden="true"></div>
+        <div class="carousel-slide" style="animation:kenburns 34s ease-in-out infinite;" data-bg="project-bosquereal-2.jpg" aria-hidden="true"></div>
+        <div class="carousel-slide" style="animation:kenburns 26s ease-in-out infinite;" data-bg="project-bosquereal-3.jpg" aria-hidden="true"></div>
+        <div class="carousel-slide" style="animation:kenburns 32s ease-in-out infinite;" data-bg="project-bosquereal-4.jpg" aria-hidden="true"></div>
+        <div class="carousel-dots"><button type="button" class="dot is-active" aria-label="Ver foto 1 de 4"></button><button type="button" class="dot" aria-label="Ver foto 2 de 4"></button><button type="button" class="dot" aria-label="Ver foto 3 de 4"></button><button type="button" class="dot" aria-label="Ver foto 4 de 4"></button></div>
+      </div>
+      <h3 class="serif">Avivia Bosque Real</h3>
+      <div class="loc">Bosque Real, Edo. Méx.</div>
+      <p>Mármol &middot; Madera de nogal &middot; Vidrio &mdash; walk-in closet y baño de autor con vista panorámica.</p>
+    </div>
+  </div>
+</section>
+
+<section id="sec-porvenir" class="projects-future container">
+  <div class="kicker reveal" style="width:100%; max-width:760px;">
+    <div class="line"></div>
+    <div class="tracked" style="font-size:12px; color:var(--brass); white-space:nowrap;">Ideas Studio Sayegh</div>
+    <div class="line"></div>
+  </div>
+  <p class="future-lede reveal">Antes de ser obra construida, cada proyecto Sayegh Studio existe primero como visión: renders y estudios que anticipan la luz, los materiales y el espacio antes del primer trazo en sitio.</p>
+  <div class="future-carousel-wrap reveal">
+    <div class="kb-frame project-carousel future-carousel" data-interval="5500" role="img" aria-label="Renders y video conceptual de Studio Sayegh">
+      <div class="carousel-slide is-active" style="animation:kenburns 30s ease-in-out infinite;" data-bg="idea-1.jpg" aria-hidden="true"></div>
+      <div class="carousel-slide" style="animation:kenburns 34s ease-in-out infinite;" data-bg="idea-2.jpg" aria-hidden="true"></div>
+      <div class="carousel-slide" style="animation:kenburns 28s ease-in-out infinite;" data-bg="idea-3.jpg" aria-hidden="true"></div>
+      <div class="carousel-slide is-video" aria-hidden="true">
+        <video muted loop playsinline preload="none" poster="idea-video-1-poster.jpg">
+          <source src="idea-video-1.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="carousel-slide" style="animation:kenburns 32s ease-in-out infinite;" data-bg="idea-4.jpg" aria-hidden="true"></div>
+      <div class="carousel-slide" style="animation:kenburns 26s ease-in-out infinite;" data-bg="idea-5.jpg" aria-hidden="true"></div>
+      <div class="carousel-slide is-video" aria-hidden="true">
+        <video muted loop playsinline preload="none" poster="idea-video-2-poster.jpg">
+          <source src="idea-video-2.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="carousel-slide" style="animation:kenburns 36s ease-in-out infinite;" data-bg="idea-6.jpg" aria-hidden="true"></div>
+      <div class="carousel-dots">
+        <button type="button" class="dot is-active" aria-label="Ver imagen 1 de 8"></button>
+        <button type="button" class="dot" aria-label="Ver imagen 2 de 8"></button>
+        <button type="button" class="dot" aria-label="Ver imagen 3 de 8"></button>
+        <button type="button" class="dot" aria-label="Ver video 4 de 8"></button>
+        <button type="button" class="dot" aria-label="Ver imagen 5 de 8"></button>
+        <button type="button" class="dot" aria-label="Ver imagen 6 de 8"></button>
+        <button type="button" class="dot" aria-label="Ver video 7 de 8"></button>
+        <button type="button" class="dot" aria-label="Ver imagen 8 de 8"></button>
+      </div>
+    </div>
+    <div class="future-caption tracked">Renders y video conceptual &mdash; visi&oacute;n de Studio Sayegh, a&uacute;n no construida</div>
+  </div>
+</section>
+
+<section class="pain container">
+  <div class="kicker reveal" style="width:100%; max-width:640px;">
+    <div class="line"></div>
+    <div class="tracked" style="font-size:12px; color:var(--brass); white-space:nowrap;">La Realidad Sin Control</div>
+    <div class="line"></div>
+  </div>
+  <div class="pain-grid2 reveal">
+    <div class="pain-item2">Presupuestos &ldquo;estimados&rdquo; que se inflan inexplicablemente a la mitad de la obra.</div>
+    <div class="pain-item2">Contratistas informales y decisiones tomadas sin visión de conjunto.</div>
+    <div class="pain-item2">Diseños que enamoran en render y resultan financieramente inviables en obra.</div>
+    <div class="pain-item2">Meses de retraso sin una sola explicación técnica real.</div>
+  </div>
+  <p class="pain-close serif reveal reveal-d1">Sayegh Studio existe para que ninguno de estos escenarios sea el suyo.</p>
+</section>
+
+<section id="sec-manifiesto" class="manifesto container reveal">
+  <div class="kicker" style="width:100%; max-width:500px; margin:0 auto 40px auto;">
+    <div class="line"></div>
+    <div class="tracked" style="font-size:12px; color:var(--brass); white-space:nowrap;">Manifiesto</div>
+    <div class="line"></div>
+  </div>
+  <p>El verdadero lujo es la tranquilidad absoluta. Un espacio solo se convierte en un refugio cuando la estética que te inspira y la inversión que realizas están bajo control desde el primer trazo. Detrás de la iluminación, las texturas y los acabados que curamos para darle alma a tu proyecto, opera una estricta ingeniería técnica y financiera. Diseñamos atmósferas de armonía y bienestar; ejecutamos con números exactos para blindar tu patrimonio. Proyectamos con sensibilidad, construimos con precisión.</p>
+</section>
+
+<div class="container">
+  <div class="duality reveal">
+    <div class="duality-col">
+      <div class="num">01 &mdash; Armonía Espacial</div>
+      <h2 class="serif">El Santuario Sensorial</h2>
+      <p>Cada espacio se diseña como un ritual de calma: luz que se filtra a través de celosías de tzalam, el frío pulido del mármol Santo Tomás bajo los pies descalzos, y la calidez del encino que envejece con dignidad.</p>
+      <div class="feat">Diseño lumínico circadiano</div>
+      <div class="feat">Materialidad táctil seleccionada a mano</div>
+    </div>
+    <div class="duality-col">
+      <div class="num">02 &mdash; Certeza Constructiva</div>
+      <h2 class="serif">El Dominio Técnico</h2>
+      <p>Una trayectoria consolidada dirigiendo obra y un grado doctoral respaldan cada decisión. Dominamos el precio unitario con precisión absoluta: cero sobrecostos y blindaje normativo frente a la Ciudad de México y el Estado de México.</p>
+      <div class="feat">Dirección de obra con grado doctoral</div>
+      <div class="feat">Control absoluto de precios unitarios</div>
+    </div>
+  </div>
+</div>
+
+<section class="materials container">
+  <div class="kicker reveal" style="width:100%; max-width:560px;">
+    <div class="line"></div>
+    <div class="tracked" style="font-size:12px; color:var(--brass); white-space:nowrap;">Materialidad Sayegh</div>
+    <div class="line"></div>
+  </div>
+  <p class="materials-lede reveal">Un santuario no se diseña solo para la vista: se construye para la piel. Cada textura se eligió por cómo <span class="serif">se siente</span> &mdash; la piedra fresca al amanecer, la madera tibia al atardecer &mdash; antes que por cómo luce en foto.</p>
+  <div class="materials-grid reveal">
+    <div class="material"><div class="swatch" style="background-color:#c2beb4;" data-bg="swatch-marmol.jpg" aria-hidden="true"></div><div class="name">Mármol Santo Tomás</div><div class="feel">Vetas que calman la mirada al primer contacto.</div></div>
+    <div class="material"><div class="swatch" style="background-color:#d8cbb0;" data-bg="swatch-travertino.jpg" aria-hidden="true"></div><div class="name">Travertino</div><div class="feel">Luz de la tarde, atrapada en la piedra.</div></div>
+    <div class="material"><div class="swatch" style="background-color:#8a5a3c;" data-bg="swatch-tzalam.jpg" aria-hidden="true"></div><div class="name">Tzalam</div><div class="feel">La calidez que invita a descalzarse.</div></div>
+    <div class="material"><div class="swatch" style="background-color:#c2a97e;" data-bg="swatch-chukum.jpg" aria-hidden="true"></div><div class="name">Chukum</div><div class="feel">El tacto de la tierra, pulido hasta la seda.</div></div>
+    <div class="material"><div class="swatch" style="background-color:#4a3020;" data-bg="swatch-nogal.jpg" aria-hidden="true"></div><div class="name">Nogal Oscuro</div><div class="feel">Profundidad que envuelve, nunca oscurece.</div></div>
+    <div class="material"><div class="swatch" style="background-color:#2b2a28;" data-bg="swatch-recinto.jpg" aria-hidden="true"></div><div class="name">Recinto Laminado</div><div class="feel">Solidez silenciosa bajo la mano.</div></div>
+    <div class="material"><div class="swatch" style="background-color:#9b978c;" data-bg="swatch-microcemento.jpg" aria-hidden="true"></div><div class="name">Microcemento</div><div class="feel">Continuidad sin juntas, paz para la vista.</div></div>
+    <div class="material"><div class="swatch" style="background-color:#b98f52;" data-bg="swatch-encino.jpg" aria-hidden="true"></div><div class="name">Encino Americano</div><div class="feel">Una calidez que madura, como el hogar.</div></div>
+  </div>
+</section>
+
+<section id="sec-contacto" class="contact container">
+  <div class="kicker reveal" style="width:100%; max-width:460px;">
+    <div class="line"></div>
+    <div class="tracked" style="font-size:12px; color:var(--brass); white-space:nowrap;">Certeza Antes de Construir</div>
+    <div class="line"></div>
+  </div>
+  <div class="contact-copy reveal">
+    <h2 class="serif">Certeza en su capital.<br>Cero desgaste en su obra.</h2>
+    <p>No partimos del diseño. Antes de trazar una sola línea, auditamos la viabilidad técnica y financiera de su proyecto &mdash; para que cada decisión estética llegue respaldada por precios unitarios inquebrantables.</p>
+  </div>
+  <div class="contact-pillars reveal reveal-d1">
+    <div class="contact-pillar">
+      <div class="num">01 &mdash; Ingeniería Financiera</div>
+      <p>Precios unitarios inquebrantables, fijados antes de la primera excavación.</p>
+    </div>
+    <div class="contact-pillar">
+      <div class="num">02 &mdash; Paz Absoluta</div>
+      <p>Absorbemos toda la complejidad operativa: usted no coordina contratistas ni apaga incendios.</p>
+    </div>
+    <div class="contact-pillar">
+      <div class="num">03 &mdash; Rigor Constructivo</div>
+      <p>Una trayectoria dirigiendo obra de alto nivel, con acabados de edición limitada.</p>
+    </div>
+  </div>
+</section>
+
+<section id="sec-zonas" class="zones-map container">
+  <div class="kicker reveal" style="width:100%; max-width:460px;">
+    <div class="line"></div>
+    <div class="tracked" style="font-size:12px; color:var(--brass); white-space:nowrap;">Dónde Operamos</div>
+    <div class="line"></div>
+  </div>
+  <p class="zones-map-lede reveal">Cuatro zonas donde ya dirigimos obra, y seis zonas AAA adicionales donde extendemos el mismo estándar de dirección de obra pericial y materialidad sensorial.</p>
+  <div class="zones-map-grid reveal">
+    <div class="zones-map-col">
+      <div class="col-label">Zonas de Operación</div>
+      <ul>
+        <li><a href="/bosque-real">Bosque Real, Edo. Méx.</a></li>
+        <li><a href="/interlomas">Interlomas, Edo. Méx.</a></li>
+        <li><a href="/polanco">Polanco, CDMX</a></li>
+        <li><a href="/san-miguel-de-allende">San Miguel de Allende, Gto.</a></li>
+      </ul>
+    </div>
+    <div class="zones-map-col">
+      <div class="col-label">Zonas de Expansión</div>
+      <ul>
+        <li><a href="/san-pedro-garza-garcia">San Pedro Garza García, N.L.</a></li>
+        <li><a href="/puerto-cancun">Puerto Cancún, Q. Roo</a></li>
+        <li><a href="/punta-mita">Punta Mita, Nayarit</a></li>
+        <li><a href="/los-cabos">Los Cabos, B.C.S.</a></li>
+        <li><a href="/valle-de-bravo">Valle de Bravo, Edo. Méx.</a></li>
+        <li><a href="/puerta-de-hierro-zapopan">Puerta de Hierro, Zapopan, Jal.</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<section id="sec-bitacora" class="bitacora container">
+<div class="kicker reveal">Bitácora de Obra y Casos de Estudio</div>
+<p class="bitacora-lede reveal">Documentamos las decisiones técnicas y financieras detrás de cada intervención: lo que se auditó antes de trazar, lo que se blindó en el precio unitario y lo que se protegió durante la ejecución.</p>
+<div class="bitacora-list reveal">
+<a class="bitacora-entry" href="/articulo-coyoacan">
+<div>
+<p class="entry-place">Francisco Sosa, Coyoacán &middot; CDMX</p>
+<h3 class="serif">Interiorismo en Mármol Santo Tomás: Intervención en Casa Habitada en Coyoacán</h3>
+<p class="entry-meta">Veta corrida y espejeo &middot; Sellado nanosilano-siloxano &middot; Precios unitarios blindados</p>
+</div>
+<span class="entry-go" aria-hidden="true">Leer el caso</span>
+</a>
+</div>
+</section>
+
+<footer class="site-footer">
+  <div class="copyright">Sayegh Studio &copy; 2026</div>
+  <div class="zones">Bosque Real &middot; Interlomas &middot; Polanco &middot; San Miguel de Allende &middot; San Pedro Garza García &middot; Puerto Cancún &middot; Punta Mita &middot; Los Cabos &middot; Valle de Bravo &middot; Zapopan</div>
+  <div class="social">Instagram @jacobosayegh &middot; TikTok @jacobosayegh_arquitectur &middot; Threads @jacobosayegh</div>
+  <div class="contact-line"><a href="mailto:contacto@sayeghstudio.com">contacto@sayeghstudio.com</a> &middot; <a href="/privacidad">Aviso de Privacidad</a></div>
+</footer>
+
+<div id="mobile-cta-bar" class="mobile-cta-bar">
+  <a href="https://via.sayeghstudio.com" target="_blank" rel="noopener" class="tracked bar-cta">Solicitar Auditoría de Viabilidad</a>
+  <a href="mailto:contacto@sayeghstudio.com" class="bar-email" aria-label="Contactar por correo">&#9993;</a>
+</div>
+
+<script>
+(function(){
+  function ready(fn){ if(document.readyState!=='loading'){fn();} else {document.addEventListener('DOMContentLoaded', fn);} }
+  ready(function(){
+    var els = document.querySelectorAll('.reveal');
+    if('IntersectionObserver' in window){
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(entry){
+          if(entry.isIntersecting){ entry.target.classList.add('is-visible'); io.unobserve(entry.target); }
+        });
+      }, {threshold:0.15, rootMargin:'0px 0px -60px 0px'});
+      els.forEach(function(e){ io.observe(e); });
+    } else {
+      els.forEach(function(e){ e.classList.add('is-visible'); });
+    }
+
+    var nav = document.getElementById('sticky-nav');
+    var mobileBar = document.getElementById('mobile-cta-bar');
+    var heroEnd = 460;
+    window.addEventListener('scroll', function(){
+      var past = window.scrollY > heroEnd;
+      if(nav){ if(past){ nav.classList.add('nav-visible'); } else { nav.classList.remove('nav-visible'); } }
+      if(mobileBar){ if(past){ mobileBar.classList.add('bar-visible'); } else { mobileBar.classList.remove('bar-visible'); } }
+    }, {passive:true});
+
+    // Carga diferida: las fotos de Proyectos Destacados y las texturas de
+    // Materialidad Sayegh no se descargan hasta que su sección se acerca al
+    // viewport, para no cargar ~4MB de fotos de golpe al abrir la página.
+    (function lazyBackgrounds(){
+      var targets = document.querySelectorAll('[data-bg]');
+      function reveal(el){
+        var url = el.getAttribute('data-bg');
+        if(!url) return;
+        el.style.backgroundImage = "image-set(url('" + url.replace(/\.jpg$/, '.webp') + "') type('image/webp'), url('" + url + "') type('image/jpeg'))";
+        if(!el.style.backgroundImage){ el.style.backgroundImage = "url('" + url + "')"; }
+        el.removeAttribute('data-bg');
+      }
+      if('IntersectionObserver' in window){
+        var bgIo = new IntersectionObserver(function(entries){
+          entries.forEach(function(entry){
+            if(entry.isIntersecting){ reveal(entry.target); bgIo.unobserve(entry.target); }
+          });
+        }, {rootMargin:'400px 0px'});
+        targets.forEach(function(el){ bgIo.observe(el); });
+      } else {
+        targets.forEach(reveal);
+      }
+    })();
+
+    document.querySelectorAll('.project-carousel').forEach(function(car){
+      var slides = car.querySelectorAll('.carousel-slide');
+      var dots = car.querySelectorAll('.dot');
+      if(slides.length < 2) return;
+      var idx = 0;
+      var interval = parseInt(car.getAttribute('data-interval') || '4500', 10);
+      var timer = null;
+      function show(i){
+        slides.forEach(function(s,j){
+          var active = j===i;
+          s.classList.toggle('is-active', active);
+          var vid = s.querySelector('video');
+          if(vid){
+            if(active){ vid.currentTime = 0; vid.play().catch(function(){}); }
+            else { vid.pause(); }
+          }
+        });
+        dots.forEach(function(d,j){ d.classList.toggle('is-active', j===i); });
+        idx = i;
+      }
+      function next(){ show((idx+1) % slides.length); }
+      function start(){ stop(); timer = setInterval(next, interval); }
+      function stop(){ if(timer){ clearInterval(timer); timer=null; } }
+      dots.forEach(function(d,i){
+        d.addEventListener('click', function(e){ e.stopPropagation(); show(i); start(); });
+      });
+      car.addEventListener('mouseenter', stop);
+      car.addEventListener('mouseleave', start);
+      start();
+    });
+  });
+})();
+</script>
+
+<script>
+(function(){
+  var TARGET_SECONDS = 151.45;
+  var ctx, gainNode, buffer, source, isPlaying=false, loading=false;
+  var btn = document.getElementById('ambient-toggle');
+  var icon = document.getElementById('ambient-icon');
+  if(!btn) return;
+
+  function trimToLoop(decoded){
+    var sr = decoded.sampleRate;
+    var target = Math.round(TARGET_SECONDS * sr);
+    if(decoded.length <= target){ return decoded; }
+    var extra = decoded.length - target;
+    var trimmed = ctx.createBuffer(decoded.numberOfChannels, target, sr);
+    for(var ch=0; ch<decoded.numberOfChannels; ch++){
+      var chData = decoded.getChannelData(ch).subarray(extra, extra+target);
+      trimmed.copyToChannel(chData, ch);
+    }
+    return trimmed;
+  }
+
+  function ensureContext(){
+    if(!ctx){
+      ctx = new (window.AudioContext||window.webkitAudioContext)();
+      gainNode = ctx.createGain();
+      gainNode.gain.value = 0.22;
+      gainNode.connect(ctx.destination);
+    }
+  }
+
+  function loadBuffer(cb){
+    if(buffer){ cb(); return; }
+    if(loading) return;
+    loading = true;
+    fetch('ambient-sayegh.mp3').then(function(r){ return r.arrayBuffer(); })
+      .then(function(ab){ return ctx.decodeAudioData(ab); })
+      .then(function(decoded){ buffer = trimToLoop(decoded); loading=false; cb(); })
+      .catch(function(e){ loading=false; console.warn('Musica ambiental no disponible:', e); });
+  }
+
+  function setPlayingUI(playing){
+    isPlaying = playing;
+    icon.innerHTML = playing ? '&#9208;' : '&#9658;';
+    btn.classList.toggle('is-playing', playing);
+    btn.setAttribute('aria-pressed', playing ? 'true' : 'false');
+    btn.setAttribute('aria-label', playing ? 'Pausar m\u00fasica ambiental' : 'Reproducir m\u00fasica ambiental');
+  }
+
+  function play(){
+    ensureContext();
+    if(ctx.state === 'suspended'){ ctx.resume(); }
+    loadBuffer(function(){
+      source = ctx.createBufferSource();
+      source.buffer = buffer;
+      source.loop = true;
+      source.connect(gainNode);
+      source.start(0);
+      setPlayingUI(true);
+    });
+  }
+
+  function pause(){
+    if(source){ try{ source.stop(); }catch(e){} try{ source.disconnect(); }catch(e){} source=null; }
+    setPlayingUI(false);
+  }
+
+  btn.addEventListener('click', function(){
+    if(isPlaying){ pause(); } else { play(); }
+  });
+})();
+</script>
+
 </body>
 </html>
+<script async src="/.netlify/scripts/hud?variant=public" data-nf-variant="public" data-netlify-site-id="07e7df0b-493e-4543-bef9-3f77185873d5" data-app-host="app.netlify.com"></script>

@@ -1,72 +1,286 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog | Sayegh Studio</title>
-    <meta name="description" content="Artículos sobre arquitectura, materiales premium y especificación técnica.">
-    <link rel="canonical" href="https://sayeghstudio.com/blog/">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; background: #fafafa; }
-        nav { background: white; padding: 20px 40px; border-bottom: 1px solid #eee; }
-        nav .container { max-width: 1000px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        nav .logo { font-weight: 600; text-decoration: none; color: #000; }
-        nav a { text-decoration: none; color: #000; margin-left: 40px; font-size: 0.95rem; transition: color 0.2s; }
-        nav a:hover { color: #666; }
-        .container { max-width: 1000px; margin: 0 auto; padding: 60px 20px; }
-        h1 { font-size: 3rem; margin-bottom: 50px; font-weight: 300; }
-        .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-        .blog-card { background: white; padding: 30px; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
-        .blog-card h2 { margin-bottom: 15px; }
-        .blog-card h2 a { text-decoration: none; color: #000; }
-        .blog-card p { color: #666; margin-bottom: 10px; }
-        .meta { font-size: 0.85rem; color: #999; }
-        footer { background: white; padding: 30px 20px; text-align: center; color: #666; font-size: 0.9rem; border-top: 1px solid #eee; margin-top: 60px; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog | Sayegh Studio</title>
+<meta name="description" content="Artículos sobre arquitectura, materiales premium y especificación técnica. Travertino, diseño sensorial y certeza financiera.">
+<link rel="canonical" href="https://sayeghstudio.com/blog/">
+<meta name="theme-color" content="#2E2A24">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/icon-192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sayegh Studio">
+<meta property="og:locale" content="es_MX">
+<meta property="og:url" content="https://sayeghstudio.com/blog/">
+<meta property="og:title" content="Blog | Sayegh Studio">
+<meta property="og:description" content="Artículos sobre arquitectura, materiales premium y especificación técnica.">
+<meta property="og:image" content="https://sayeghstudio.com/swatch-travertino.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Blog | Sayegh Studio">
+<meta name="twitter:description" content="Artículos sobre arquitectura, materiales premium y especificación técnica.">
+<meta name="twitter:image" content="https://sayeghstudio.com/swatch-travertino.jpg">
+
+<link rel="preload" as="font" type="font/woff2" href="/fonts/archivo-400.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/fonts/spacegrotesk-500.woff2" crossorigin>
+
+<style>
+  @font-face{font-family:'Archivo';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/archivo-400.woff2') format('woff2');}
+  @font-face{font-family:'Archivo';font-style:italic;font-weight:400;font-display:swap;src:url('/fonts/archivo-400i.woff2') format('woff2');}
+  @font-face{font-family:'Archivo';font-style:normal;font-weight:500;font-display:swap;src:url('/fonts/archivo-500.woff2') format('woff2');}
+  @font-face{font-family:'Archivo';font-style:normal;font-weight:600;font-display:swap;src:url('/fonts/archivo-600.woff2') format('woff2');}
+  @font-face{font-family:'Space Grotesk';font-style:normal;font-weight:500;font-display:swap;src:url('/fonts/spacegrotesk-500.woff2') format('woff2');}
+  @font-face{font-family:'Space Grotesk';font-style:normal;font-weight:600;font-display:swap;src:url('/fonts/spacegrotesk-600.woff2') format('woff2');}
+  @font-face{font-family:'Space Grotesk';font-style:normal;font-weight:700;font-display:swap;src:url('/fonts/spacegrotesk-700.woff2') format('woff2');}
+
+  :root {
+    --crema: #F4EFE6;
+    --crema-profundo: #EDE4D2;
+    --texto: #58524A;
+    --ink: #2E2A24;
+    --brass: #A9814C;
+    --tzalam: #4A3D30;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Archivo', 'Helvetica Neue', Arial, sans-serif; background: var(--crema); color: var(--texto); }
+  a { color: inherit; text-decoration: none; }
+  .serif { font-family: 'Space Grotesk', 'Helvetica Neue', Arial, sans-serif; }
+  .tracked { letter-spacing: 0.16em; text-transform: uppercase; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 64px; }
+  @media (max-width: 780px) { .container { padding: 0 24px; } }
+
+  .btn { display:inline-block; font-family:'Archivo',sans-serif; letter-spacing:0.16em; text-transform:uppercase; font-size:12px; padding:16px 36px; border-radius:4px; cursor:pointer; transition: opacity 0.2s ease, transform 0.2s ease; border:none; }
+  .btn:hover { opacity:0.85; transform: translateY(-1px); }
+  .btn-filled { background: var(--tzalam); color: var(--crema); }
+  .btn-outline-brass { background: transparent; color: var(--brass); border: 1px solid var(--brass); }
+
+  .reveal { opacity:0; transform:translateY(28px); transition: opacity 0.9s cubic-bezier(.22,.61,.36,1), transform 0.9s cubic-bezier(.22,.61,.36,1); }
+  .reveal.is-visible { opacity:1; transform:translateY(0); }
+  .reveal-d1 { transition-delay:0.1s; }
+  .reveal-d2 { transition-delay:0.2s; }
+  @media (prefers-reduced-motion: reduce) { .reveal { opacity:1 !important; transform:none !important; transition:none !important; } }
+
+  #sticky-nav { position:fixed; top:0; left:0; right:0; z-index:998; display:flex; align-items:center; justify-content:space-between; padding:18px 64px; background:rgba(244,239,230,0.88); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); border-bottom:1px solid rgba(46,42,36,0.08); opacity:0; transform:translateY(-14px); transition:opacity 0.5s ease, transform 0.5s ease; pointer-events:none; }
+  #sticky-nav.nav-visible { opacity:1; transform:translateY(0); pointer-events:auto; }
+  #sticky-nav img { width:150px; height:auto; display:block; }
+  #sticky-nav a, #sticky-nav span { cursor:pointer; }
+  #sticky-nav .links { display:flex; align-items:center; gap:36px; font-size:10px; letter-spacing:0.16em; text-transform:uppercase; color:var(--ink); }
+  #sticky-nav .links .btn-nav-audit { color:var(--brass); border:1px solid var(--brass); border-radius:3px; padding:8px 16px; }
+  @media (max-width: 780px) { #sticky-nav { padding:14px 56px 14px 20px; } #sticky-nav img { width:88px; } #sticky-nav .links { gap:16px; font-size:9px; } #sticky-nav .links .btn-nav-audit { padding:6px 11px; } }
+  @media (max-width: 560px) { #sticky-nav .links .nav-optional { display:none; } }
+
+  nav.site-nav { display:flex; flex-direction:column; align-items:center; gap:14px; padding:48px 0 30px 0; }
+  nav.site-nav img { width:280px; height:auto; }
+  @media (max-width: 780px) { nav.site-nav img { width:190px; } }
+
+  .blog-hero { display:flex; flex-direction:column; align-items:center; gap:24px; padding-bottom:80px; text-align:center; }
+  .blog-hero h1 { font-size:48px; font-weight:700; text-transform:uppercase; color:var(--ink); letter-spacing:0.01em; }
+  @media (max-width: 780px) { .blog-hero h1 { font-size:28px; } }
+  .blog-hero .lede { font-size:16px; line-height:1.7; color:var(--texto); max-width:620px; }
+  @media (max-width: 780px) { .blog-hero .lede { font-size:14px; } }
+
+  .blog-section { display:flex; flex-direction:column; align-items:center; gap:48px; padding-bottom:110px; }
+  .blog-grid { display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:36px; width:100%; max-width:1100px; }
+  @media (max-width: 900px) { .blog-grid { grid-template-columns:1fr; } }
+
+  .blog-card { display:flex; flex-direction:column; gap:20px; align-items:stretch; text-decoration:none; color:inherit; transition: transform 0.35s ease; }
+  .blog-card:hover { transform: translateY(-6px); }
+  .blog-card .card-image { width:100%; aspect-ratio:16/10; border-radius:5px; background-size:cover; background-position:center; box-shadow:0 16px 32px rgba(46,42,36,0.14); }
+  .blog-card .card-content { display:flex; flex-direction:column; gap:12px; }
+  .blog-card h2 { font-size:19px; font-weight:600; letter-spacing:0.03em; text-transform:uppercase; color:var(--ink); line-height:1.35; }
+  .blog-card p { font-size:13.5px; color:#8a8378; line-height:1.65; }
+  .blog-card .meta { font-size:10px; color:var(--brass); letter-spacing:0.16em; text-transform:uppercase; margin-top:4px; }
+
+  .mobile-cta-bar { display:none; }
+  @media (max-width: 780px) {
+    .mobile-cta-bar { display:flex; align-items:stretch; position:fixed; left:0; right:0; bottom:0; z-index:999; background:var(--tzalam); box-shadow:0 -8px 24px rgba(46,42,36,0.22); transform:translateY(100%); transition:transform 0.4s ease; padding-bottom:env(safe-area-inset-bottom, 0); }
+    .mobile-cta-bar.bar-visible { transform:translateY(0); }
+    .mobile-cta-bar .bar-cta { flex:1; display:flex; align-items:center; justify-content:center; text-align:center; color:var(--crema); font-size:11px; letter-spacing:0.12em; text-transform:uppercase; padding:16px 8px; }
+    .mobile-cta-bar .bar-email { width:54px; flex-shrink:0; display:flex; align-items:center; justify-content:center; border-left:1px solid rgba(244,239,230,0.16); color:var(--brass); font-size:17px; }
+  }
+
+  footer.site-footer { border-top:1px solid rgba(46,42,36,0.12); padding:32px 24px; display:flex; flex-direction:column; align-items:center; gap:10px; text-align:center; }
+  footer.site-footer .copyright { font-family:'Space Grotesk',sans-serif; font-size:13px; color:#8a8378; }
+  footer.site-footer .zones { font-size:9.5px; letter-spacing:0.16em; text-transform:uppercase; color:#a29b8e; }
+  footer.site-footer .social { font-size:9px; letter-spacing:0.16em; text-transform:uppercase; color:var(--brass); }
+  footer.site-footer .contact-line { font-size:9px; letter-spacing:0.14em; text-transform:uppercase; color:#a29b8e; }
+  footer.site-footer .contact-line a { color:#a29b8e; }
+  footer.site-footer .contact-line a:hover { color:var(--brass); }
+
+  .ambient-toggle { position:fixed; top:20px; right:20px; z-index:999; width:42px; height:42px; border-radius:50%; display:flex; align-items:center; justify-content:center; background:rgba(244,239,230,0.92); border:1px solid rgba(46,42,36,0.18); box-shadow:0 8px 20px rgba(46,42,36,0.16); backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px); cursor:pointer; color:#2E2A24; font-size:15px; transition:border-color 0.25s ease, transform 0.2s ease, color 0.25s ease; }
+  .ambient-toggle:hover { transform:scale(1.06); }
+  .ambient-toggle.is-playing { border-color:var(--brass); color:var(--brass); }
+  @media (max-width:780px) { .ambient-toggle { top:14px; right:14px; width:36px; height:36px; font-size:13px; } }
+</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-143N31NN8J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-143N31NN8J');
+</script>
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1031573579517610');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1031573579517610&ev=PageView&noscript=1" /></noscript>
 </head>
 <body>
-    <nav>
-        <div class="container">
-            <div class="logo">SAYEGH STUDIO</div>
-            <div>
-                <a href="/">Home</a>
-                <a href="/proyectos/">Proyectos</a>
-                <a href="/blog/">Blog</a>
-                <a href="/manifiesto/">Manifiesto</a>
-            </div>
-        </div>
-    </nav>
-    <div class="container">
-        <h1>Blog</h1>
-        <div class="blog-grid">
-            <div class="blog-card">
-                <h2><a href="/blog/travertino-premium-arquitectura-lujo/">Travertino Premium para Proyectos Arquitectónicos de Lujo</a></h2>
-                <p>Guía completa sobre travertino: origen, propiedades, aplicaciones y presupuesto 2026.</p>
-                <div class="meta">~1,100 palabras | 5 min lectura</div>
-            </div>
-            <div class="blog-card">
-                <h2><a href="/blog/travertino-vs-marmol/">Travertino vs Mármol: Guía Técnica</a></h2>
-                <p>Comparativa técnica: durabilidad, porosidad, costo y aplicaciones específicas.</p>
-                <div class="meta">~1,000 palabras | 4 min lectura</div>
-            </div>
-            <div class="blog-card">
-                <h2><a href="/blog/proyectos-travertino-cdmx/">5 Proyectos de Travertino Premium en CDMX</a></h2>
-                <p>Casos reales en Polanco, Reforma, Condesa, Lomas y San Ángel (7-14 años en uso).</p>
-                <div class="meta">~1,200 palabras | 6 min lectura</div>
-            </div>
-            <div class="blog-card">
-                <h2><a href="/blog/mantenimiento-travertino-10-anos/">Mantenimiento del Travertino: Guía de 10 Años</a></h2>
-                <p>Protocolo completo: sellado, limpieza, reparaciones y análisis de costo.</p>
-                <div class="meta">~1,200 palabras | 6 min lectura</div>
-            </div>
-        </div>
-    </div>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Sayegh Studio | Arquitectura de Autor</p>
-        </div>
-    </footer>
+<button type="button" id="ambient-toggle" class="ambient-toggle" aria-pressed="false" aria-label="Reproducir música ambiental" title="Música ambiental">
+  <span id="ambient-icon" aria-hidden="true">&#9658;</span>
+</button>
+
+<div id="sticky-nav">
+  <img src="/sayegh-logo-ink.png" alt="Sayegh Studio" width="874" height="229">
+  <div class="links">
+    <span class="nav-optional" onclick="window.location.href='/#sec-proyectos'">Proyectos</span>
+    <span class="nav-optional" onclick="window.location.href='/#sec-manifiesto'">Manifiesto</span>
+    <span onclick="window.location.href='/#sec-contacto'">Contacto</span>
+    <a href="/blog/">📖 Blog</a>
+    <a href="/privacidad">Privacidad</a>
+    <a class="btn-nav-audit" href="https://via.sayeghstudio.com" target="_blank" rel="noopener">Auditoría</a>
+  </div>
+</div>
+
+<nav class="site-nav">
+  <img src="/sayegh-logo-ink.png" alt="Sayegh Studio" width="874" height="229">
+  <div class="tracked" style="font-size:11px; color:var(--brass);">Arquitectura de Autor</div>
+</nav>
+
+<section class="blog-hero container">
+  <h1>Blog</h1>
+  <p class="lede">Artículos sobre arquitectura de autor, materiales premium y especificación técnica. Travertino, materialidad y envejecimiento con propósito.</p>
+</section>
+
+<section class="blog-section container">
+  <div class="blog-grid">
+    <a href="/blog/travertino-premium-arquitectura-lujo/" class="blog-card reveal reveal-d1">
+      <div class="card-image" style="background-image: url('/swatch-travertino.webp')"></div>
+      <div class="card-content">
+        <h2>Travertino Premium para Proyectos Arquitectónicos de Lujo</h2>
+        <p>Guía completa sobre travertino: origen geográfico, propiedades técnicas, durabilidad y presupuesto 2026 en CDMX.</p>
+        <div class="meta">~1,100 palabras | 5 min lectura</div>
+      </div>
+    </a>
+
+    <a href="/blog/travertino-vs-marmol/" class="blog-card reveal reveal-d2">
+      <div class="card-image" style="background-image: url('/swatch-marmol.webp')"></div>
+      <div class="card-content">
+        <h2>Travertino vs Mármol: Guía Técnica</h2>
+        <p>Comparativa técnica: durabilidad, porosidad, costo, mantenimiento y aplicaciones específicas en arquitectura residencial.</p>
+        <div class="meta">~1,000 palabras | 4 min lectura</div>
+      </div>
+    </a>
+
+    <a href="/blog/proyectos-travertino-cdmx/" class="blog-card reveal reveal-d1">
+      <div class="card-image" style="background-image: url('/project-temixco-1.webp')"></div>
+      <div class="card-content">
+        <h2>5 Proyectos de Travertino Premium en CDMX</h2>
+        <p>Casos reales con fotografía de obra en Polanco, Reforma, Condesa, Lomas y San Ángel (7-14 años en uso).</p>
+        <div class="meta">~1,200 palabras | 6 min lectura</div>
+      </div>
+    </a>
+
+    <a href="/blog/mantenimiento-travertino-10-anos/" class="blog-card reveal reveal-d2">
+      <div class="card-image" style="background-image: url('/project-nuvana-1.webp')"></div>
+      <div class="card-content">
+        <h2>Mantenimiento del Travertino: Guía de 10 Años</h2>
+        <p>Protocolo completo: sellado inicial, limpieza periódica, reparaciones y análisis de costo financiero a largo plazo.</p>
+        <div class="meta">~1,200 palabras | 6 min lectura</div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<div class="mobile-cta-bar" id="mobile-cta-bar">
+  <div class="bar-cta">Especificación Técnica de Materiales</div>
+  <div class="bar-email"><a href="mailto:contacto@sayeghstudio.com">✉</a></div>
+</div>
+
+<footer class="site-footer">
+  <div class="copyright">© 2026 Sayegh Studio | Arquitectura de Autor</div>
+  <div class="zones">Bosque Real · Interlomas · Polanco · San Miguel de Allende</div>
+  <div class="social"><a href="https://www.instagram.com/jacobosayegh" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.tiktok.com/@jacobosayegh_arquitectur" target="_blank" rel="noopener">TikTok</a></div>
+  <div class="contact-line"><a href="mailto:contacto@sayeghstudio.com">contacto@sayeghstudio.com</a></div>
+</footer>
+
+<script>
+(function(){
+  const stickyNav = document.getElementById('sticky-nav');
+  const mobileCtaBar = document.getElementById('mobile-cta-bar');
+  const ambientToggle = document.getElementById('ambient-toggle');
+  const ambientIcon = document.getElementById('ambient-icon');
+  let audioContext = null;
+  let audioBuffer = null;
+  let audioSource = null;
+  let isPlaying = false;
+
+  // Sticky navigation reveal
+  window.addEventListener('scroll', () => {
+    if(window.scrollY > 200) {
+      stickyNav.classList.add('nav-visible');
+    } else {
+      stickyNav.classList.remove('nav-visible');
+    }
+    if(window.innerHeight < 800 && window.scrollY > 400) {
+      mobileCtaBar.classList.add('bar-visible');
+    } else {
+      mobileCtaBar.classList.remove('bar-visible');
+    }
+  });
+
+  // Reveal animations on scroll
+  const revealElements = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+      }
+    });
+  }, { threshold: 0.15 });
+  revealElements.forEach(el => observer.observe(el));
+
+  // Ambient audio (Web Audio API)
+  ambientToggle.addEventListener('click', async (e) => {
+    e.preventDefault();
+    if(!audioContext) {
+      audioContext = new (window.AudioContext || window.webkitAudioContext)();
+      try {
+        const res = await fetch('/ambient-sayegh.mp3');
+        const data = await res.arrayBuffer();
+        audioBuffer = await audioContext.decodeAudioData(data);
+      } catch(err) {
+        console.warn('Ambient audio not available:', err);
+        return;
+      }
+    }
+    if(isPlaying) {
+      if(audioSource) audioSource.stop();
+      isPlaying = false;
+      ambientToggle.classList.remove('is-playing');
+      ambientIcon.textContent = '▶';
+      ambientToggle.setAttribute('aria-pressed', 'false');
+    } else {
+      audioSource = audioContext.createBufferSource();
+      audioSource.buffer = audioBuffer;
+      audioSource.loop = true;
+      const gainNode = audioContext.createGain();
+      gainNode.gain.value = 0.22;
+      audioSource.connect(gainNode);
+      gainNode.connect(audioContext.destination);
+      audioSource.start(0);
+      isPlaying = true;
+      ambientToggle.classList.add('is-playing');
+      ambientIcon.textContent = '⏸';
+      ambientToggle.setAttribute('aria-pressed', 'true');
+    }
+  });
+})();
+</script>
 </body>
 </html>

@@ -1,6 +1,10 @@
 # Sayegh Studio — redirecciones (Netlify)
 # Formato: origen  destino  código
 
+# Canonicalización de dominio: www -> apex (evita contenido duplicado,
+# consolida señales de SEO en un único host).
+https://www.sayeghstudio.com/*  https://sayeghstudio.com/:splat  301!
+
 # Copia vieja de la portada que quedó publicada e indexable.
 /sayegh-homepage.html   /                               301!
 /sayegh-homepage        /                               301!

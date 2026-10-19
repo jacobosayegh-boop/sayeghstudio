@@ -1,15 +1,62 @@
 # Sayegh Studio — redirecciones (Netlify)
 # Formato: origen  destino  código
+# Preserva equity de SEO al reemplazar la estructura plana anterior
+# (polanco.html, interlomas.html, etc.) por la nueva estructura anidada.
 
-# Canonicalización de dominio: www -> apex (evita contenido duplicado,
-# consolida señales de SEO en un único host).
-https://www.sayeghstudio.com/*  https://sayeghstudio.com/:splat  301!
+# Atajos hacia la Auditoría de Viabilidad (tarjetas, firma de correo,
+# anuncios impresos: sayeghstudio.com/auditoria).
+/auditoria              https://via.sayeghstudio.com/   301!
+/viabilidad             https://via.sayeghstudio.com/   301!
 
 # Copia vieja de la portada que quedó publicada e indexable.
 /sayegh-homepage.html   /                               301!
 /sayegh-homepage        /                               301!
 
-# Atajos hacia la Auditoría de Viabilidad (para usar en tarjetas, firma de
-# correo, anuncios impresos: sayeghstudio.com/auditoria).
-/auditoria              https://via.sayeghstudio.com/   301!
-/viabilidad             https://via.sayeghstudio.com/   301!
+# Zonas con landing page equivalente en la nueva estructura.
+/interlomas.html               /zonas-landing/interlomas/       301!
+/interlomas                    /zonas-landing/interlomas/       301!
+/polanco.html                   /zonas-landing/polanco/          301!
+/polanco                        /zonas-landing/polanco/          301!
+/valle-de-bravo.html             /zonas-landing/valle-de-bravo/    301!
+/valle-de-bravo                  /zonas-landing/valle-de-bravo/    301!
+
+# Zonas con landing page equivalente en la nueva estructura.
+/bosque-real.html                    /zonas-landing/bosque-real/   301!
+/bosque-real                         /zonas-landing/bosque-real/   301!
+
+# Zonas sin landing page propia todavía en el sitio nuevo: caen a home.
+/los-cabos.html                      /   301!
+/los-cabos                           /   301!
+/puerta-de-hierro-zapopan.html       /   301!
+/puerta-de-hierro-zapopan            /   301!
+/puerto-cancun.html                  /   301!
+/puerto-cancun                       /   301!
+/punta-mita.html                     /   301!
+/punta-mita                          /   301!
+/san-miguel-de-allende.html          /   301!
+/san-miguel-de-allende               /   301!
+/san-pedro-garza-garcia.html         /   301!
+/san-pedro-garza-garcia              /   301!
+
+# Páginas independientes viejas -> anclas/páginas equivalentes.
+/manifiesto.html         /#manifiesto   301!
+/manifiesto              /#manifiesto   301!
+/proyectos.html          /#proyectos    301!
+/proyectos               /#proyectos    301!
+/privacidad.html         /privacidad/   301!
+
+# Artículo del blog viejo -> equivalente temático más cercano.
+/articulo-coyoacan.html  /blog/zonas/coyoacan-remodelacion-lujo/   301!
+/articulo-coyoacan       /blog/zonas/coyoacan-remodelacion-lujo/   301!
+
+# Herramientas internas: nunca deben quedar públicamente accesibles.
+# Netlify publica el repo completo (netlify.toml -> publish = raíz del
+# proyecto), así que sin esto scripts/ y n8n/ quedan servidos tal cual
+# (confirmado: scripts/generate-sitemap.js respondía 200 en producción).
+/scripts/*               /404.html   404!
+/n8n/*                   /404.html   404!
+
+# El aviso real vive en /privacidad/ (enlaces externos y perfiles antiguos
+# apuntan a /aviso-de-privacidad).
+/aviso-de-privacidad     /privacidad/   301!
+/aviso-de-privacidad/    /privacidad/   301!

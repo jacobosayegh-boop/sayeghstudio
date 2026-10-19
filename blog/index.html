@@ -1,327 +1,315 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" dir="ltr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Blog | Sayegh Studio</title>
-<meta name="description" content="Artículos sobre arquitectura, materiales premium y especificación técnica. Travertino, diseño sensorial y certeza financiera.">
-<link rel="canonical" href="https://sayeghstudio.com/blog/">
-<meta name="theme-color" content="#2E2A24">
-<link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/icon-192.png" sizes="192x192">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Sayegh Studio">
-<meta property="og:locale" content="es_MX">
-<meta property="og:url" content="https://sayeghstudio.com/blog/">
-<meta property="og:title" content="Blog | Sayegh Studio">
-<meta property="og:description" content="Artículos sobre arquitectura, materiales premium y especificación técnica.">
-<meta property="og:image" content="https://sayeghstudio.com/swatch-travertino.jpg">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Blog | Sayegh Studio">
-<meta name="twitter:description" content="Artículos sobre arquitectura, materiales premium y especificación técnica.">
-<meta name="twitter:image" content="https://sayeghstudio.com/swatch-travertino.jpg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | Ideas Sayegh Studio — Arquitectura de Autor</title>
+  <meta name="description" content="Bitácora de obra de Sayegh Studio: materialidad, dirección de obra pericial y auditoría de viabilidad para arquitectura de lujo en México.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://sayeghstudio.com/blog/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sayegh Studio">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:title" content="Blog | Ideas Sayegh Studio — Arquitectura de Autor">
+  <meta property="og:description" content="Bitácora de obra de Sayegh Studio: materialidad, dirección de obra pericial y auditoría de viabilidad para arquitectura de lujo en México.">
+  <meta property="og:url" content="https://sayeghstudio.com/blog/">
+  <meta property="og:image" content="https://sayeghstudio.com/assets/images/projects/nuvana.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" href="/fonts/archivo-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/spacegrotesk-500.woff2" as="font" type="font/woff2" crossorigin>
 
-<link rel="preload" as="font" type="font/woff2" href="/fonts/archivo-400.woff2" crossorigin>
-<link rel="preload" as="font" type="font/woff2" href="/fonts/spacegrotesk-500.woff2" crossorigin>
-
-<style>
-  @font-face{font-family:'Archivo';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/archivo-400.woff2') format('woff2');}
-  @font-face{font-family:'Archivo';font-style:italic;font-weight:400;font-display:swap;src:url('/fonts/archivo-400i.woff2') format('woff2');}
-  @font-face{font-family:'Archivo';font-style:normal;font-weight:500;font-display:swap;src:url('/fonts/archivo-500.woff2') format('woff2');}
-  @font-face{font-family:'Archivo';font-style:normal;font-weight:600;font-display:swap;src:url('/fonts/archivo-600.woff2') format('woff2');}
-  @font-face{font-family:'Space Grotesk';font-style:normal;font-weight:500;font-display:swap;src:url('/fonts/spacegrotesk-500.woff2') format('woff2');}
-  @font-face{font-family:'Space Grotesk';font-style:normal;font-weight:600;font-display:swap;src:url('/fonts/spacegrotesk-600.woff2') format('woff2');}
-  @font-face{font-family:'Space Grotesk';font-style:normal;font-weight:700;font-display:swap;src:url('/fonts/spacegrotesk-700.woff2') format('woff2');}
-
-  :root {
-    --crema: #F4EFE6;
-    --crema-profundo: #EDE4D2;
-    --texto: #58524A;
-    --ink: #2E2A24;
-    --brass: #A9814C;
-    --tzalam: #4A3D30;
-  }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  html { scroll-behavior: smooth; }
-  body { font-family: 'Archivo', 'Helvetica Neue', Arial, sans-serif; background: var(--crema); color: var(--texto); }
-  a { color: inherit; text-decoration: none; }
-  .serif { font-family: 'Space Grotesk', 'Helvetica Neue', Arial, sans-serif; }
-  .tracked { letter-spacing: 0.16em; text-transform: uppercase; }
-  .container { max-width: 1200px; margin: 0 auto; padding: 0 64px; }
-  @media (max-width: 780px) { .container { padding: 0 24px; } }
-
-  .btn { display:inline-block; font-family:'Archivo',sans-serif; letter-spacing:0.16em; text-transform:uppercase; font-size:12px; padding:16px 36px; border-radius:4px; cursor:pointer; transition: opacity 0.2s ease, transform 0.2s ease; border:none; }
-  .btn:hover { opacity:0.85; transform: translateY(-1px); }
-  .btn-filled { background: var(--tzalam); color: var(--crema); }
-  .btn-outline-brass { background: transparent; color: var(--brass); border: 1px solid var(--brass); }
-
-  .reveal { opacity:0; transform:translateY(28px); transition: opacity 0.9s cubic-bezier(.22,.61,.36,1), transform 0.9s cubic-bezier(.22,.61,.36,1); }
-  .reveal.is-visible { opacity:1; transform:translateY(0); }
-  .reveal-d1 { transition-delay:0.1s; }
-  .reveal-d2 { transition-delay:0.2s; }
-  @media (prefers-reduced-motion: reduce) { .reveal { opacity:1 !important; transform:none !important; transition:none !important; } }
-
-  #sticky-nav { position:fixed; top:0; left:0; right:0; z-index:998; display:flex; align-items:center; justify-content:space-between; padding:18px 64px; background:rgba(244,239,230,0.88); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); border-bottom:1px solid rgba(46,42,36,0.08); opacity:0; transform:translateY(-14px); transition:opacity 0.5s ease, transform 0.5s ease; pointer-events:none; }
-  #sticky-nav.nav-visible { opacity:1; transform:translateY(0); pointer-events:auto; }
-  #sticky-nav img { width:150px; height:auto; display:block; }
-  #sticky-nav a, #sticky-nav span { cursor:pointer; }
-  #sticky-nav .links { display:flex; align-items:center; gap:36px; font-size:10px; letter-spacing:0.16em; text-transform:uppercase; color:var(--ink); }
-  #sticky-nav .links .btn-nav-audit { color:var(--brass); border:1px solid var(--brass); border-radius:3px; padding:8px 16px; }
-  @media (max-width: 780px) { #sticky-nav { padding:14px 56px 14px 20px; } #sticky-nav img { width:88px; } #sticky-nav .links { gap:16px; font-size:9px; } #sticky-nav .links .btn-nav-audit { padding:6px 11px; } }
-  @media (max-width: 560px) { #sticky-nav .links .nav-optional { display:none; } }
-
-  nav.site-nav { display:flex; flex-direction:column; align-items:center; gap:14px; padding:48px 0 30px 0; }
-  nav.site-nav img { width:280px; height:auto; }
-  @media (max-width: 780px) { nav.site-nav img { width:190px; } }
-
-  .blog-hero { display:flex; flex-direction:column; align-items:center; gap:24px; padding-bottom:80px; text-align:center; }
-  .blog-hero h1 { font-size:48px; font-weight:700; text-transform:uppercase; color:var(--ink); letter-spacing:0.01em; }
-  @media (max-width: 780px) { .blog-hero h1 { font-size:28px; } }
-  .blog-hero .lede { font-size:16px; line-height:1.7; color:var(--texto); max-width:620px; }
-  @media (max-width: 780px) { .blog-hero .lede { font-size:14px; } }
-
-  .blog-section { display:flex; flex-direction:column; align-items:center; gap:48px; padding-bottom:110px; }
-  .blog-grid { display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:36px; width:100%; max-width:1100px; }
-  @media (max-width: 900px) { .blog-grid { grid-template-columns:1fr; } }
-
-  .blog-card { display:flex; flex-direction:column; gap:20px; align-items:stretch; text-decoration:none; color:inherit; transition: transform 0.35s ease; }
-  .blog-card:hover { transform: translateY(-6px); }
-  .blog-card .card-image {
-    width:100%; aspect-ratio:16/10; border-radius:5px; background-size:cover; background-position:center;
-    box-shadow:0 16px 32px rgba(46,42,36,0.14); position:relative; overflow:hidden;
-    transition:transform 0.45s cubic-bezier(.22,.61,.36,1); transform:scale(1);
-  }
-  .blog-card:hover .card-image { transform:scale(1.06); }
-  .blog-card .card-image::before {
-    content:''; position:absolute; inset:0; background:rgba(46,42,36,0);
-    transition:background 0.45s cubic-bezier(.22,.61,.36,1); z-index:1;
-  }
-  .blog-card:hover .card-image::before { background:rgba(46,42,36,0.32); }
-  .blog-card .card-image::after {
-    content:''; position:absolute; inset:0; background:linear-gradient(135deg, transparent 0%, rgba(46,42,36,0.12) 100%);
-    z-index:2; pointer-events:none;
-  }
-  .blog-card .card-overlay {
-    position:absolute; inset:0; z-index:3; display:flex; align-items:center; justify-content:center;
-    opacity:0; transition:opacity 0.45s cubic-bezier(.22,.61,.36,1);
-  }
-  .blog-card:hover .card-overlay { opacity:1; }
-  .blog-card .overlay-text {
-    font-size:13px; letter-spacing:0.16em; text-transform:uppercase; color:var(--crema);
-    font-weight:600; text-align:center; transform:translateY(12px);
-    transition:transform 0.45s cubic-bezier(.22,.61,.36,1);
-  }
-  .blog-card:hover .overlay-text { transform:translateY(0); }
-  .blog-card .card-content { display:flex; flex-direction:column; gap:12px; }
-  .blog-card h2 { font-size:19px; font-weight:600; letter-spacing:0.03em; text-transform:uppercase; color:var(--ink); line-height:1.35; }
-  .blog-card p { font-size:13.5px; color:#8a8378; line-height:1.65; }
-  .blog-card .meta { font-size:10px; color:var(--brass); letter-spacing:0.16em; text-transform:uppercase; margin-top:4px; }
-
-  .mobile-cta-bar { display:none; }
-  @media (max-width: 780px) {
-    .mobile-cta-bar { display:flex; align-items:stretch; position:fixed; left:0; right:0; bottom:0; z-index:999; background:var(--tzalam); box-shadow:0 -8px 24px rgba(46,42,36,0.22); transform:translateY(100%); transition:transform 0.4s ease; padding-bottom:env(safe-area-inset-bottom, 0); }
-    .mobile-cta-bar.bar-visible { transform:translateY(0); }
-    .mobile-cta-bar .bar-cta { flex:1; display:flex; align-items:center; justify-content:center; text-align:center; color:var(--crema); font-size:11px; letter-spacing:0.12em; text-transform:uppercase; padding:16px 8px; }
-    .mobile-cta-bar .bar-email { width:54px; flex-shrink:0; display:flex; align-items:center; justify-content:center; border-left:1px solid rgba(244,239,230,0.16); color:var(--brass); font-size:17px; }
-  }
-
-  footer.site-footer { border-top:1px solid rgba(46,42,36,0.12); padding:32px 24px; display:flex; flex-direction:column; align-items:center; gap:10px; text-align:center; }
-  footer.site-footer .copyright { font-family:'Space Grotesk',sans-serif; font-size:13px; color:#8a8378; }
-  footer.site-footer .zones { font-size:9.5px; letter-spacing:0.16em; text-transform:uppercase; color:#a29b8e; }
-  footer.site-footer .social { font-size:9px; letter-spacing:0.16em; text-transform:uppercase; color:var(--brass); }
-  footer.site-footer .contact-line { font-size:9px; letter-spacing:0.14em; text-transform:uppercase; color:#a29b8e; }
-  footer.site-footer .contact-line a { color:#a29b8e; }
-  footer.site-footer .contact-line a:hover { color:var(--brass); }
-
-  .ambient-toggle { position:fixed; top:20px; right:20px; z-index:999; width:42px; height:42px; border-radius:50%; display:flex; align-items:center; justify-content:center; background:rgba(244,239,230,0.92); border:1px solid rgba(46,42,36,0.18); box-shadow:0 8px 20px rgba(46,42,36,0.16); backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px); cursor:pointer; color:#2E2A24; font-size:15px; transition:border-color 0.25s ease, transform 0.2s ease, color 0.25s ease; }
-  .ambient-toggle:hover { transform:scale(1.06); }
-  .ambient-toggle.is-playing { border-color:var(--brass); color:var(--brass); }
-  @media (max-width:780px) { .ambient-toggle { top:14px; right:14px; width:36px; height:36px; font-size:13px; } }
-</style>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/subpages.css">
+  <link rel="icon" href="/sayegh-logo-ink.png" type="image/png">
+<!-- Google Analytics with Consent Gate -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-143N31NN8J"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-143N31NN8J');
-</script>
-<script>
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1031573579517610');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1031573579517610&ev=PageView&noscript=1" /></noscript>
-</head>
-<body>
 
-<button type="button" id="ambient-toggle" class="ambient-toggle" aria-pressed="false" aria-label="Reproducir música ambiental" title="Música ambiental">
-  <span id="ambient-icon" aria-hidden="true">&#9658;</span>
-</button>
-
-<div id="sticky-nav">
-  <img src="/sayegh-logo-ink.png" alt="Sayegh Studio" width="874" height="229">
-  <div class="links">
-    <span class="nav-optional" onclick="window.location.href='/#sec-proyectos'">Proyectos</span>
-    <span class="nav-optional" onclick="window.location.href='/#sec-manifiesto'">Manifiesto</span>
-    <span onclick="window.location.href='/#sec-contacto'">Contacto</span>
-    <a href="/blog/">📖 Blog</a>
-    <a href="/privacidad">Privacidad</a>
-    <a class="btn-nav-audit" href="https://via.sayeghstudio.com" target="_blank" rel="noopener">Auditoría</a>
-  </div>
-</div>
-
-<nav class="site-nav">
-  <img src="/sayegh-logo-ink.png" alt="Sayegh Studio" width="874" height="229">
-  <div class="tracked" style="font-size:11px; color:var(--brass);">Arquitectura de Autor</div>
-</nav>
-
-<section class="blog-hero container">
-  <h1>Blog</h1>
-  <p class="lede">Artículos sobre arquitectura de autor, materiales premium y especificación técnica. Travertino, materialidad y envejecimiento con propósito.</p>
-</section>
-
-<section class="blog-section container">
-  <div class="blog-grid">
-    <a href="/blog/travertino-premium-arquitectura-lujo/" class="blog-card reveal reveal-d1">
-      <div class="card-image" style="background-image: url('/swatch-travertino.webp')">
-        <div class="card-overlay">
-          <div class="overlay-text">Leer Artículo</div>
-        </div>
-      </div>
-      <div class="card-content">
-        <h2>Travertino Premium para Proyectos Arquitectónicos de Lujo</h2>
-        <p>Guía completa sobre travertino: origen geográfico, propiedades técnicas, durabilidad y presupuesto 2026 en CDMX.</p>
-        <div class="meta">~1,100 palabras | 5 min lectura</div>
-      </div>
-    </a>
-
-    <a href="/blog/travertino-vs-marmol/" class="blog-card reveal reveal-d2">
-      <div class="card-image" style="background-image: url('/swatch-marmol.webp')">
-        <div class="card-overlay">
-          <div class="overlay-text">Leer Artículo</div>
-        </div>
-      </div>
-      <div class="card-content">
-        <h2>Travertino vs Mármol: Guía Técnica</h2>
-        <p>Comparativa técnica: durabilidad, porosidad, costo, mantenimiento y aplicaciones específicas en arquitectura residencial.</p>
-        <div class="meta">~1,000 palabras | 4 min lectura</div>
-      </div>
-    </a>
-
-    <a href="/blog/proyectos-travertino-cdmx/" class="blog-card reveal reveal-d1">
-      <div class="card-image" style="background-image: url('/project-temixco-1.webp')">
-        <div class="card-overlay">
-          <div class="overlay-text">Leer Artículo</div>
-        </div>
-      </div>
-      <div class="card-content">
-        <h2>5 Proyectos de Travertino Premium en CDMX</h2>
-        <p>Casos reales con fotografía de obra en Polanco, Reforma, Condesa, Lomas y San Ángel (7-14 años en uso).</p>
-        <div class="meta">~1,200 palabras | 6 min lectura</div>
-      </div>
-    </a>
-
-    <a href="/blog/mantenimiento-travertino-10-anos/" class="blog-card reveal reveal-d2">
-      <div class="card-image" style="background-image: url('/project-nuvana-1.webp')">
-        <div class="card-overlay">
-          <div class="overlay-text">Leer Artículo</div>
-        </div>
-      </div>
-      <div class="card-content">
-        <h2>Mantenimiento del Travertino: Guía de 10 Años</h2>
-        <p>Protocolo completo: sellado inicial, limpieza periódica, reparaciones y análisis de costo financiero a largo plazo.</p>
-        <div class="meta">~1,200 palabras | 6 min lectura</div>
-      </div>
-    </a>
-  </div>
-</section>
-
-<div class="mobile-cta-bar" id="mobile-cta-bar">
-  <div class="bar-cta">Especificación Técnica de Materiales</div>
-  <div class="bar-email"><a href="mailto:contacto@sayeghstudio.com">✉</a></div>
-</div>
-
-<footer class="site-footer">
-  <div class="copyright">© 2026 Sayegh Studio | Arquitectura de Autor</div>
-  <div class="zones">Bosque Real · Interlomas · Polanco · San Miguel de Allende</div>
-  <div class="social"><a href="https://www.instagram.com/jacobosayegh" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.tiktok.com/@jacobosayegh_arquitectur" target="_blank" rel="noopener">TikTok</a></div>
-  <div class="contact-line"><a href="mailto:contacto@sayeghstudio.com">contacto@sayeghstudio.com</a></div>
-</footer>
-
-<script>
-(function(){
-  const stickyNav = document.getElementById('sticky-nav');
-  const mobileCtaBar = document.getElementById('mobile-cta-bar');
-  const ambientToggle = document.getElementById('ambient-toggle');
-  const ambientIcon = document.getElementById('ambient-icon');
-  let audioContext = null;
-  let audioBuffer = null;
-  let audioSource = null;
-  let isPlaying = false;
-
-  // Sticky navigation reveal
-  window.addEventListener('scroll', () => {
-    if(window.scrollY > 200) {
-      stickyNav.classList.add('nav-visible');
-    } else {
-      stickyNav.classList.remove('nav-visible');
-    }
-    if(window.innerHeight < 800 && window.scrollY > 400) {
-      mobileCtaBar.classList.add('bar-visible');
-    } else {
-      mobileCtaBar.classList.remove('bar-visible');
-    }
+  gtag('consent', 'default', {
+    'analytics_storage': 'denied',
+    'ad_storage': 'denied',
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied'
   });
 
-  // Reveal animations on scroll
-  const revealElements = document.querySelectorAll('.reveal');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
+  const storedConsent = localStorage.getItem('ga_consent_status');
+  if (storedConsent === 'accepted') {
+    gtag('consent', 'update', {
+      'analytics_storage': 'granted',
+      'ad_storage': 'granted',
+      'ad_user_data': 'granted',
+      'ad_personalization': 'granted'
+    });
+    gtag('config', 'G-143N31NN8J', {
+      'allow_google_signals': true,
+      'anonymize_ip': true,
+      'linker': {
+        'domains': ['sayeghstudio.com', 'via.sayeghstudio.com']
       }
     });
-  }, { threshold: 0.15 });
-  revealElements.forEach(el => observer.observe(el));
-
-  // Ambient audio (Web Audio API)
-  ambientToggle.addEventListener('click', async (e) => {
-    e.preventDefault();
-    if(!audioContext) {
-      audioContext = new (window.AudioContext || window.webkitAudioContext)();
-      try {
-        const res = await fetch('/ambient-sayegh.mp3');
-        const data = await res.arrayBuffer();
-        audioBuffer = await audioContext.decodeAudioData(data);
-      } catch(err) {
-        console.warn('Ambient audio not available:', err);
-        return;
-      }
-    }
-    if(isPlaying) {
-      if(audioSource) audioSource.stop();
-      isPlaying = false;
-      ambientToggle.classList.remove('is-playing');
-      ambientIcon.textContent = '▶';
-      ambientToggle.setAttribute('aria-pressed', 'false');
-    } else {
-      audioSource = audioContext.createBufferSource();
-      audioSource.buffer = audioBuffer;
-      audioSource.loop = true;
-      const gainNode = audioContext.createGain();
-      gainNode.gain.value = 0.22;
-      audioSource.connect(gainNode);
-      gainNode.connect(audioContext.destination);
-      audioSource.start(0);
-      isPlaying = true;
-      ambientToggle.classList.add('is-playing');
-      ambientIcon.textContent = '⏸';
-      ambientToggle.setAttribute('aria-pressed', 'true');
-    }
-  });
-})();
+  }
 </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://sayeghstudio.com/#website",
+        "url": "https://sayeghstudio.com/",
+        "name": "Sayegh Studio",
+        "inLanguage": "es-MX",
+        "publisher": {
+          "@id": "https://sayeghstudio.com/#organization"
+        }
+      },
+      {
+        "@type": "CollectionPage",
+        "@id": "https://sayeghstudio.com/blog/#webpage",
+        "url": "https://sayeghstudio.com/blog/",
+        "name": "Blog | Ideas Sayegh Studio — Arquitectura de Autor",
+        "description": "Bitácora de obra de Sayegh Studio: materialidad, dirección de obra pericial y auditoría de viabilidad para arquitectura de lujo en México.",
+        "inLanguage": "es-MX",
+        "isPartOf": {
+          "@id": "https://sayeghstudio.com/#website"
+        },
+        "publisher": {
+          "@id": "https://sayeghstudio.com/#organization"
+        },
+        "breadcrumb": {
+          "@id": "https://sayeghstudio.com/blog/#breadcrumb"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://sayeghstudio.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://sayeghstudio.com/blog/"
+          }
+        ],
+        "@id": "https://sayeghstudio.com/blog/#breadcrumb"
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="subpage">
+<header>
+    <nav class="nav" role="navigation" aria-label="Navegación principal">
+      <a href="/" class="nav-logo" aria-label="Sayegh Studio — Inicio">
+        <img src="/sayegh-logo-ink.png" alt="Sayegh Studio" width="120" height="32">
+      </a>
+      <ul class="nav-links">
+        <li><a href="/#proyectos">Proyectos</a></li>
+        <li><a href="/blog/">Blog</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="https://via.sayeghstudio.com" class="btn btn-primary" target="_blank" rel="noopener" data-event="cta_click" data-event-label="Auditoría gratuita (nav)">Auditoría gratuita</a>
+      </div>
+      <button class="nav-hamburger" aria-label="Menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <div class="blog-wrapper" style="max-width: var(--max-width);">
+      <p class="section-tag">Bitácora de obra</p>
+      <h1>Ideas Sayegh Studio</h1>
+      <p class="section-lead" style="margin-bottom: 56px;">Materialidad, dirección de obra y auditoría de viabilidad — todo lo que publicamos, en un solo lugar.</p>
+
+      <div class="blog-grid" role="list">
+        <a href="estrategia/auditoria-viabilidad/" class="blog-featured-card" role="listitem">
+          <div class="blog-card-image" style="background: url('/assets/images/projects/nuvana.jpg') center/cover no-repeat;"></div>
+          <div class="blog-card-body">
+            <p class="blog-card-meta">Proceso · 24 de septiembre de 2026</p>
+            <h2 class="blog-card-title">¿Qué es una auditoría de viabilidad y por qué pedirla antes de construir?</h2>
+            <p class="blog-card-excerpt">El paso que casi ningún estudio ofrece antes de la primera línea de diseño.</p>
+          </div>
+        </a>
+        <a href="estrategia/sobrecostos-construccion/" class="blog-featured-card" role="listitem">
+          <div class="blog-card-image" style="background: url('/assets/images/projects/temixco.jpg') center/cover no-repeat;"></div>
+          <div class="blog-card-body">
+            <p class="blog-card-meta">Obra · 24 de septiembre de 2026</p>
+            <h2 class="blog-card-title">Sobrecostos en obra: las causas más comunes y cómo blindarse antes de construir</h2>
+            <p class="blog-card-excerpt">Cambios de diseño, especulación de precios y riesgos estructurales.</p>
+          </div>
+        </a>
+      </div>
+
+      <p class="section-tag" style="margin-top: 64px;">Recién publicado</p>
+      <h2 style="margin-bottom: 32px;">Lo último de Sayegh Studio</h2>
+
+      <div class="blog-grid" id="recent-articles-grid" role="list">
+        <!-- RECENT_ARTICLES_START -->
+        <a href="/blog/?post=contrato-precio-alzado-obra" class="blog-featured-card" role="listitem">
+          <div class="blog-card-image" style="background: url('https://afocirmbqdxnkyescnev.supabase.co/storage/v1/object/public/featured-images/a9b10370-3368-4f20-a420-827cf2401e6d/workflows/4cd0eb95-cce9-4683-8c6a-9a5b01a3782f.webp') center/cover no-repeat;"></div>
+          <div class="blog-card-body">
+            <p class="blog-card-meta">Bitácora de obra · 9 de octubre de 2026</p>
+            <h2 class="blog-card-title">Contrato a precio alzado de obra: control real</h2>
+            <p class="blog-card-excerpt">El contrato precio alzado obra parece dar certeza, pero solo funciona con alcance, planos y exclusiones auditadas antes de firmar sin sorpresas.</p>
+          </div>
+        </a>
+        <!-- RECENT_ARTICLES_END -->
+      </div>
+
+      <p class="section-tag" style="margin-top: 64px;">Explora por categoría</p>
+      <h2 style="margin-bottom: 32px;">Todos los artículos</h2>
+
+      <div class="blog-grid" role="list">
+        <a href="materiales/" class="blog-featured-card" role="listitem">
+          <div class="blog-card-image" style="background: url('/assets/images/materials/travertino.jpg') center/cover no-repeat;"></div>
+          <div class="blog-card-body">
+            <p class="blog-card-meta">Categoría</p>
+            <h2 class="blog-card-title">Materiales</h2>
+            <p class="blog-card-excerpt">Travertino, concreto aparente, maderas nobles y acabados que no envejecen.</p>
+          </div>
+        </a>
+        <a href="proceso/" class="blog-featured-card" role="listitem">
+          <div class="blog-card-image" style="background: url('/assets/images/projects/piedras_chinas.jpg') center/cover no-repeat;"></div>
+          <div class="blog-card-body">
+            <p class="blog-card-meta">Categoría</p>
+            <h2 class="blog-card-title">Proceso</h2>
+            <p class="blog-card-excerpt">Diseño, permisos, presupuesto y supervisión de obra de lujo, paso a paso.</p>
+          </div>
+        </a>
+        <a href="inversion/" class="blog-featured-card" role="listitem">
+          <div class="blog-card-image" style="background: url('/assets/images/audiencias/inversion.jpg') center/cover no-repeat;"></div>
+          <div class="blog-card-body">
+            <p class="blog-card-meta">Categoría</p>
+            <h2 class="blog-card-title">Inversión</h2>
+            <p class="blog-card-excerpt">Plusvalía, mercado y arquitectura como activo para inversionistas.</p>
+          </div>
+        </a>
+        <a href="tendencias/" class="blog-featured-card" role="listitem">
+          <div class="blog-card-image" style="background: url('/assets/images/materials/microcemento.jpg') center/cover no-repeat;"></div>
+          <div class="blog-card-body">
+            <p class="blog-card-meta">Categoría</p>
+            <h2 class="blog-card-title">Tendencias</h2>
+            <p class="blog-card-excerpt">Minimalismo cálido, fachadas, baños spa y diseño residencial de lujo en 2026.</p>
+          </div>
+        </a>
+        <a href="zonas/" class="blog-featured-card" role="listitem">
+          <div class="blog-card-image" style="background: url('/assets/images/audiencias/santuario.jpg') center/cover no-repeat;"></div>
+          <div class="blog-card-body">
+            <p class="blog-card-meta">Categoría</p>
+            <h2 class="blog-card-title">Zonas</h2>
+            <p class="blog-card-excerpt">Coyoacán, Interlomas, Polanco, Querétaro, Valle de Bravo y Huixquilucan.</p>
+          </div>
+        </a>
+      </div>
+
+      <p class="section-tag" style="margin-top: 64px;">Más contenido</p>
+      <div id="soro-blog"></div>
+    </div>
+  </main>
+  <script src="https://app.trysoro.com/api/embed/cdb974da-4251-40d2-9ad6-3778e1063a87" defer></script>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div>
+          <img src="/sayegh-logo-ink.png" alt="Sayegh Studio" class="footer-brand-logo" width="120" height="28" loading="lazy">
+          <p class="footer-brand-desc">Arquitectura de autor y dirección de obra de lujo en México. Materiales que no envejecen. Certeza financiera absoluta.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/jacobosayegh" class="footer-social-link" target="_blank" rel="noopener" aria-label="Instagram">📸</a>
+            <a href="https://www.tiktok.com/@sayeghstudio" class="footer-social-link" target="_blank" rel="noopener" aria-label="TikTok">🎵</a>
+            <a href="https://www.threads.net/@jacobosayegh" class="footer-social-link" target="_blank" rel="noopener" aria-label="Threads">🧵</a>
+            <a href="https://www.pinterest.com/sayeghstudio" class="footer-social-link" target="_blank" rel="noopener" aria-label="Pinterest">📌</a>
+            <a href="https://www.linkedin.com/company/sayeghstudio" class="footer-social-link" target="_blank" rel="noopener" aria-label="LinkedIn">🔗</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-title">Servicios</div>
+          <ul class="footer-col-list">
+            <li><a href="/#auditoria">Auditoría de Viabilidad</a></li>
+            <li><a href="/#proyectos">Proyectos Residenciales</a></li>
+            <li><a href="/#audiencias">Dirección de Obra</a></li>
+            <li><a href="/#materialidad">Interiorismo de Lujo</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Zonas</div>
+          <ul class="footer-col-list">
+            <li><a href="/zonas-landing/bosque-real/">Bosque Real</a></li>
+            <li><a href="/zonas-landing/interlomas/">Interlomas</a></li>
+            <li><a href="/zonas-landing/polanco/">Polanco</a></li>
+            <li><a href="/#zonas">San Miguel de Allende</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Contacto</div>
+          <ul class="footer-col-list">
+            <li><a href="mailto:contacto@sayeghstudio.com">contacto@sayeghstudio.com</a></li>
+            <li><a href="https://via.sayeghstudio.com" target="_blank" rel="noopener" data-event="cta_click" data-event-label="Iniciar auditoría (footer)">Iniciar auditoría</a></li>
+            <li><a href="https://sayeghstudio.com" target="_blank" rel="noopener">sayeghstudio.com</a></li>
+            <li><a href="/privacidad/">Aviso de Privacidad</a></li>
+            <li><a href="#" data-modal-trigger="terms">Términos y Condiciones</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">Sayegh Studio © 2026 · Bosque Real · Interlomas · Polanco · San Miguel de Allende</p>
+        <nav class="footer-legal" aria-label="Legal">
+          <a href="/privacidad/">Aviso de Privacidad</a>
+          <a href="#" data-modal-trigger="terms">Términos y Condiciones</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+  <div id="modal-terms" class="legal-modal" role="dialog" aria-modal="true" aria-labelledby="terms-title">
+    <div class="legal-modal-content">
+      <button class="legal-modal-close" aria-label="Cerrar">✕</button>
+      <p style="font-size:12px;color:var(--brass);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:12px;">Borrador — pendiente de revisión legal</p>
+      <h2 id="terms-title">Términos y Condiciones</h2>
+      <p><strong>Sayegh Studio</strong> presta servicios de arquitectura de autor, dirección de obra pericial, diseño de interiores de lujo y auditoría de viabilidad técnica y financiera en México, bajo los términos descritos a continuación.</p>
+      <h3>Alcance de los servicios</h3>
+      <p>El alcance específico de cada proyecto (diseño, dirección de obra, interiorismo o combinación de estos) se define por escrito en una propuesta individual antes de iniciar cualquier trabajo. La auditoría de viabilidad no constituye un contrato de servicios; es un análisis previo sin costo ni compromiso.</p>
+      <h3>Honorarios y precios unitarios</h3>
+      <p>Los precios unitarios se fijan por escrito antes de iniciar la construcción, conforme a lo descrito en la sección de Auditoría de Viabilidad. Cambios de alcance solicitados por el cliente después de fijado el precio pueden generar ajustes, que se documentan y autorizan por escrito antes de ejecutarse.</p>
+      <h3>Propiedad intelectual</h3>
+      <p>Los diseños, planos, renders y material conceptual desarrollados por Sayegh Studio son propiedad intelectual del estudio hasta la liquidación total de los honorarios correspondientes, momento en el cual se transfieren los derechos de uso al cliente para el proyecto específico contratado.</p>
+      <h3>Confidencialidad</h3>
+      <p>La información del proyecto y del cliente se trata de forma confidencial. La publicación de un proyecto en portafolio, redes sociales o prensa requiere autorización previa del cliente.</p>
+      <h3>Limitación de responsabilidad</h3>
+      <p>Sayegh Studio responde por la dirección de obra y especificación de materiales conforme al estándar profesional pactado. No es responsable por retrasos o sobrecostos derivados de causas de fuerza mayor, cambios normativos posteriores a la auditoría, o modificaciones de alcance no autorizadas por escrito.</p>
+      <h3>Jurisdicción</h3>
+      <p>Estos términos se rigen por las leyes de México. Cualquier controversia se someterá a los tribunales competentes de la Ciudad de México.</p>
+      <p style="font-size:13px;color:var(--muted);">Este es un borrador de trabajo generado como parte del desarrollo del sitio — requiere revisión de un abogado antes de publicarse como vinculante. Última actualización: septiembre 2026.</p>
+    </div>
+  </div>
+
+  <div id="consent-banner" class="consent-banner" role="dialog" aria-label="Notificación de privacidad y cookies">
+    <div class="consent-banner-content">
+      <div class="consent-banner-text">
+        <h3>Privacidad y transparencia</h3>
+        <p>Usamos Google Analytics para entender cómo interactúas con nuestro sitio, pero solo con tu consentimiento explícito. Tus datos se anonimizan y nunca se comparten sin tu autorización.</p>
+      </div>
+      <div class="consent-banner-actions">
+        <button id="consent-decline" class="btn btn-ghost" aria-label="Rechazar análisis (se mantiene privacidad)">
+          Rechazar
+        </button>
+        <button id="consent-accept" class="btn btn-primary" aria-label="Aceptar análisis de datos">
+          Aceptar
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/main.js" defer></script>
+  <script src="/js/subpages.js" defer></script>
+
 </body>
 </html>

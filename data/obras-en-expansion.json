@@ -1,0 +1,23 @@
+[
+  {
+    "status": "En construcción",
+    "title": "Francisco Sosa · Coyoacán",
+    "description": "Interiorismo en Mármol Santo Tomás. Veta corrida y espejeo. Sellado nanosilano-siloxano.",
+    "progress": 72,
+    "note": "72% completado"
+  },
+  {
+    "status": "Ideas Studio",
+    "title": "Renders & Conceptuales",
+    "description": "Visión de Sayegh Studio antes de convertirse en obra. Renders 4K y video conceptual.",
+    "progress": 100,
+    "note": "Catálogo activo"
+  },
+  {
+    "status": "Próximamente",
+    "title": "San Pedro Garza García",
+    "description": "Residencia de autor en zona AAA. Travertino Romano y muro cortina de doble piel.",
+    "progress": 18,
+    "note": "Auditoría de viabilidad en curso"
+  }
+]

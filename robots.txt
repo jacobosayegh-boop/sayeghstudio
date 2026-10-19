@@ -1,4 +1,44 @@
+# Sayegh Studio - https://sayeghstudio.com
+# Acceso abierto a buscadores y asistentes de IA para el contenido público.
+# Cada rastreador con grupo propio ignora el grupo "*": por eso las reglas de
+# rutas internas van en un único grupo compartido por todos.
+
 User-agent: *
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: Bingbot
 Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /data/obras-en-expansion.json
+
+# Rutas internas, pruebas y documentos de trabajo (no son contenido del sitio)
+Disallow: /graphify-out/
+Disallow: /scripts/
+Disallow: /n8n/
+Disallow: /tests/
+Disallow: /e2e/
+Disallow: /e2e-screenshots/
+Disallow: /e2e-test
+Disallow: /marketing_automatizado/
+Disallow: /components/
+Disallow: /netlify/
+Disallow: /webp-test.html
+Disallow: /focus-test-visual.html
+Disallow: /*.md$
+Disallow: /*.sh$
+Disallow: /*.ts$
+Disallow: /*.txt$
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /playwright.config.ts
 
 Sitemap: https://sayeghstudio.com/sitemap.xml

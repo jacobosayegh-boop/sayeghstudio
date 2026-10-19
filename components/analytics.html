@@ -1,0 +1,31 @@
+<!-- Google Analytics with Consent Gate -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-143N31NN8J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('consent', 'default', {
+    'analytics_storage': 'denied',
+    'ad_storage': 'denied',
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied'
+  });
+
+  const storedConsent = localStorage.getItem('ga_consent_status');
+  if (storedConsent === 'accepted') {
+    gtag('consent', 'update', {
+      'analytics_storage': 'granted',
+      'ad_storage': 'granted',
+      'ad_user_data': 'granted',
+      'ad_personalization': 'granted'
+    });
+    gtag('config', 'G-143N31NN8J', {
+      'allow_google_signals': true,
+      'anonymize_ip': true,
+      'linker': {
+        'domains': ['sayeghstudio.com', 'via.sayeghstudio.com']
+      }
+    });
+  }
+</script>

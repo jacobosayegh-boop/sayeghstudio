@@ -1,115 +1,201 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" dir="ltr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Página no encontrada | Sayegh Studio</title>
-<meta name="robots" content="noindex">
-<link rel="canonical" href="https://sayeghstudio.com/404.html">
-<meta name="theme-color" content="#2E2A24">
-<link rel="icon" href="favicon.ico" sizes="any">
-<link rel="icon" type="image/png" href="favicon-32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="icon-192.png" sizes="192x192">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<link rel="preload" as="font" type="font/woff2" href="/fonts/archivo-400.woff2" crossorigin>
-<link rel="preload" as="font" type="font/woff2" href="/fonts/spacegrotesk-500.woff2" crossorigin>
+  <title>Página no encontrada | Sayegh Studio</title>
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://sayeghstudio.com/404.html">
 
-<style>
-  /* Tipografias autoalojadas (antes: fonts.googleapis.com, bloqueante) */
-  @font-face{font-family:'Archivo';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/archivo-400.woff2') format('woff2');}
-  @font-face{font-family:'Archivo';font-style:italic;font-weight:400;font-display:swap;src:url('/fonts/archivo-400i.woff2') format('woff2');}
-  @font-face{font-family:'Archivo';font-style:normal;font-weight:500;font-display:swap;src:url('/fonts/archivo-500.woff2') format('woff2');}
-  @font-face{font-family:'Archivo';font-style:normal;font-weight:600;font-display:swap;src:url('/fonts/archivo-600.woff2') format('woff2');}
-  @font-face{font-family:'Space Grotesk';font-style:normal;font-weight:500;font-display:swap;src:url('/fonts/spacegrotesk-500.woff2') format('woff2');}
-  @font-face{font-family:'Space Grotesk';font-style:normal;font-weight:600;font-display:swap;src:url('/fonts/spacegrotesk-600.woff2') format('woff2');}
-  @font-face{font-family:'Space Grotesk';font-style:normal;font-weight:700;font-display:swap;src:url('/fonts/spacegrotesk-700.woff2') format('woff2');}
+  <link rel="preload" href="/fonts/archivo-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/spacegrotesk-500.woff2" as="font" type="font/woff2" crossorigin>
 
-  :root { --crema:#F4EFE6; --crema-profundo:#EDE4D2; --texto:#58524A; --ink:#2E2A24; --brass:#A9814C; --tzalam:#4A3D30; }
-  * { box-sizing:border-box; margin:0; padding:0; }
-  body { font-family:'Archivo','Helvetica Neue',Arial,sans-serif; background:var(--crema); color:var(--texto); min-height:100vh; display:flex; flex-direction:column; }
-  a { color:inherit; text-decoration:none; }
-  .serif { font-family:'Space Grotesk','Helvetica Neue',Arial,sans-serif; }
-  .tracked { letter-spacing:0.16em; text-transform:uppercase; }
-  .container { max-width:1200px; margin:0 auto; padding:0 64px; width:100%; }
-  @media (max-width:780px) { .container { padding:0 24px; } }
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/subpages.css">
+  <link rel="icon" href="/sayegh-logo-ink.png" type="image/png">
 
-  nav.site-nav { display:flex; flex-direction:column; align-items:center; gap:14px; padding:48px 0 30px 0; }
-  nav.site-nav img { width:220px; height:auto; }
-  @media (max-width:780px) { nav.site-nav img { width:160px; } }
+  <style>
+    .error-main { min-height: 60vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 24px; padding: 120px 24px 100px; }
+    .error-code { font-family: var(--font-display); font-size: 14px; letter-spacing: 0.2em; color: var(--brass); text-transform: uppercase; }
+    .error-title { max-width: 620px; }
+    .error-lede { font-size: 15px; line-height: 1.7; color: var(--texto); max-width: 480px; }
+    .error-actions { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; margin-top: 8px; }
+    .error-zones { margin-top: 36px; font-size: 12px; letter-spacing: 0.04em; color: var(--muted-light); max-width: 560px; line-height: 2.1; }
+    .error-zones a { color: var(--texto); border-bottom: 1px solid rgba(46,42,36,0.2); }
+    .error-zones a:hover { color: var(--brass); border-color: var(--brass); }
+  </style>
 
-  main { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; gap:30px; padding:60px 24px 110px; }
-  .code { font-family:'Space Grotesk',sans-serif; font-size:15px; letter-spacing:0.2em; color:var(--brass); }
-  h1 { font-family:'Space Grotesk',sans-serif; font-size:36px; font-weight:700; color:var(--ink); max-width:620px; line-height:1.3; }
-  @media (max-width:780px) { h1 { font-size:24px; } }
-  p.lede { font-size:14.5px; line-height:1.7; color:var(--texto); max-width:480px; }
-  .actions { display:flex; gap:16px; flex-wrap:wrap; justify-content:center; margin-top:6px; }
-  .btn { display:inline-block; font-family:'Archivo',sans-serif; letter-spacing:0.16em; text-transform:uppercase; font-size:12px; padding:16px 34px; border-radius:4px; cursor:pointer; transition:opacity 0.2s ease, transform 0.2s ease; border:none; }
-  .btn:hover { opacity:0.85; transform:translateY(-1px); }
-  .btn-filled { background:var(--tzalam); color:var(--crema); }
-  .btn-ghost { background:transparent; color:var(--ink); border:1px solid rgba(46,42,36,0.28); }
+  <!-- Google Analytics with Consent Gate -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-143N31NN8J"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  .zones-hint { margin-top:34px; font-size:11px; letter-spacing:0.1em; color:#a29b8e; max-width:520px; line-height:2; }
-  .zones-hint a { color:var(--texto); border-bottom:1px solid rgba(46,42,36,0.2); }
-  .zones-hint a:hover { color:var(--brass); border-color:var(--brass); }
+    gtag('consent', 'default', {
+      'analytics_storage': 'denied',
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied'
+    });
 
-  footer.site-footer { border-top:1px solid rgba(46,42,36,0.12); padding:32px 24px; display:flex; flex-direction:column; align-items:center; gap:10px; text-align:center; }
-  footer.site-footer .copyright { font-family:'Space Grotesk',sans-serif; font-size:13px; color:#8a8378; }
-  footer.site-footer .contact-line { font-size:9.5px; letter-spacing:0.12em; text-transform:uppercase; color:#a29b8e; }
-  footer.site-footer .contact-line a { color:#a29b8e; }
-  footer.site-footer .contact-line a:hover { color:var(--brass); }
-</style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-143N31NN8J"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-143N31NN8J');
-</script>
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1031573579517610');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1031573579517610&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+    const storedConsent = localStorage.getItem('ga_consent_status');
+    if (storedConsent === 'accepted') {
+      gtag('consent', 'update', {
+        'analytics_storage': 'granted',
+        'ad_storage': 'granted',
+        'ad_user_data': 'granted',
+        'ad_personalization': 'granted'
+      });
+      gtag('config', 'G-143N31NN8J', {
+        'allow_google_signals': true,
+        'anonymize_ip': true,
+        'linker': {
+          'domains': ['sayeghstudio.com', 'via.sayeghstudio.com']
+        }
+      });
+    }
+  </script>
 </head>
-<body>
 
-<nav class="site-nav">
-  <img src="sayegh-logo-ink.png" alt="Sayegh Studio" width="874" height="229">
-  <div class="tracked" style="font-size:11px; color:var(--brass);">Arquitectura de Autor</div>
-</nav>
+<body class="subpage">
 
-<main class="container">
-  <div class="code tracked">Error 404</div>
-  <h1 class="serif">Esta página no existe &mdash; pero el proyecto que busca sí puede.</h1>
-  <p class="lede">El enlace que siguió está roto o la página se movió. Puede volver al inicio o explorar directamente una de nuestras zonas.</p>
-  <div class="actions">
-    <a href="/" class="btn btn-filled">Volver al Inicio</a>
-    <a href="https://via.sayeghstudio.com" class="btn btn-ghost">Solicitar Auditoría de Viabilidad</a>
+  <header>
+    <nav class="nav" role="navigation" aria-label="Navegación principal">
+      <a href="/" class="nav-logo" aria-label="Sayegh Studio — Inicio">
+        <img src="/sayegh-logo-ink.png" alt="Sayegh Studio" width="120" height="32">
+      </a>
+      <ul class="nav-links">
+        <li><a href="/#proyectos">Proyectos</a></li>
+        <li><a href="/blog/">Blog</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="https://via.sayeghstudio.com" class="btn btn-primary" target="_blank" rel="noopener" data-event="cta_click" data-event-label="Auditoría gratuita (nav)">Auditoría gratuita</a>
+      </div>
+      <button class="nav-hamburger" aria-label="Menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main class="error-main">
+    <div class="error-code">Error 404</div>
+    <h1 class="error-title">Esta página no existe &mdash; pero el proyecto que busca sí puede.</h1>
+    <p class="error-lede">El enlace que siguió está roto o la página se movió. Puede volver al inicio o explorar directamente una de nuestras zonas.</p>
+    <div class="error-actions">
+      <a href="/" class="btn btn-primary">Volver al Inicio</a>
+      <a href="https://via.sayeghstudio.com" class="btn btn-outline" target="_blank" rel="noopener">Solicitar Auditoría de Viabilidad</a>
+    </div>
+    <div class="error-zones">
+      <a href="/zonas-landing/bosque-real/">Bosque Real</a> &middot;
+      <a href="/zonas-landing/polanco/">Polanco</a> &middot;
+      <a href="/zonas-landing/interlomas/">Interlomas</a> &middot;
+      <a href="/zonas-landing/coyoacan/">Coyoacán</a> &middot;
+      <a href="/zonas-landing/huixquilucan/">Huixquilucan</a> &middot;
+      <a href="/zonas-landing/san-angel/">San Ángel</a><br>
+      <a href="/zonas-landing/santa-fe/">Santa Fe</a> &middot;
+      <a href="/zonas-landing/valle-de-bravo/">Valle de Bravo</a> &middot;
+      <a href="/zonas-landing/bosques-de-las-lomas/">Bosques de las Lomas</a> &middot;
+      <a href="/zonas-landing/lomas-de-chapultepec/">Lomas de Chapultepec</a> &middot;
+      <a href="/zonas-landing/zibata-juriquilla-queretaro/">Zibatá, Querétaro</a>
+    </div>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div>
+          <img src="/sayegh-logo-ink.png" alt="Sayegh Studio" class="footer-brand-logo" width="120" height="28" loading="lazy">
+          <p class="footer-brand-desc">Arquitectura de autor y dirección de obra de lujo en México. Materiales que no envejecen. Certeza financiera absoluta.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/jacobosayegh" class="footer-social-link" target="_blank" rel="noopener" aria-label="Instagram">📸</a>
+            <a href="https://www.tiktok.com/@sayeghstudio" class="footer-social-link" target="_blank" rel="noopener" aria-label="TikTok">🎵</a>
+            <a href="https://www.threads.net/@jacobosayegh" class="footer-social-link" target="_blank" rel="noopener" aria-label="Threads">🧵</a>
+            <a href="https://www.pinterest.com/sayeghstudio" class="footer-social-link" target="_blank" rel="noopener" aria-label="Pinterest">📌</a>
+            <a href="https://www.linkedin.com/company/sayeghstudio" class="footer-social-link" target="_blank" rel="noopener" aria-label="LinkedIn">🔗</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-title">Servicios</div>
+          <ul class="footer-col-list">
+            <li><a href="/#auditoria">Auditoría de Viabilidad</a></li>
+            <li><a href="/#proyectos">Proyectos Residenciales</a></li>
+            <li><a href="/#audiencias">Dirección de Obra</a></li>
+            <li><a href="/#materialidad">Interiorismo de Lujo</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Zonas</div>
+          <ul class="footer-col-list">
+            <li><a href="/zonas-landing/bosque-real/">Bosque Real</a></li>
+            <li><a href="/zonas-landing/interlomas/">Interlomas</a></li>
+            <li><a href="/zonas-landing/polanco/">Polanco</a></li>
+            <li><a href="/#zonas">San Miguel de Allende</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Contacto</div>
+          <ul class="footer-col-list">
+            <li><a href="mailto:contacto@sayeghstudio.com">contacto@sayeghstudio.com</a></li>
+            <li><a href="https://via.sayeghstudio.com" target="_blank" rel="noopener" data-event="cta_click" data-event-label="Iniciar auditoría (footer)">Iniciar auditoría</a></li>
+            <li><a href="https://sayeghstudio.com" target="_blank" rel="noopener">sayeghstudio.com</a></li>
+            <li><a href="/privacidad/">Aviso de Privacidad</a></li>
+            <li><a href="#" data-modal-trigger="terms">Términos y Condiciones</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">Sayegh Studio © 2026 · Bosque Real · Interlomas · Polanco · San Miguel de Allende</p>
+        <nav class="footer-legal" aria-label="Legal">
+          <a href="/privacidad/">Aviso de Privacidad</a>
+          <a href="#" data-modal-trigger="terms">Términos y Condiciones</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+  <div id="modal-terms" class="legal-modal" role="dialog" aria-modal="true" aria-labelledby="terms-title">
+    <div class="legal-modal-content">
+      <button class="legal-modal-close" aria-label="Cerrar">✕</button>
+      <p style="font-size:12px;color:var(--brass);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:12px;">Borrador — pendiente de revisión legal</p>
+      <h2 id="terms-title">Términos y Condiciones</h2>
+      <p><strong>Sayegh Studio</strong> presta servicios de arquitectura de autor, dirección de obra pericial, diseño de interiores de lujo y auditoría de viabilidad técnica y financiera en México, bajo los términos descritos a continuación.</p>
+      <h3>Alcance de los servicios</h3>
+      <p>El alcance específico de cada proyecto (diseño, dirección de obra, interiorismo o combinación de estos) se define por escrito en una propuesta individual antes de iniciar cualquier trabajo. La auditoría de viabilidad no constituye un contrato de servicios; es un análisis previo sin costo ni compromiso.</p>
+      <h3>Honorarios y precios unitarios</h3>
+      <p>Los precios unitarios se fijan por escrito antes de iniciar la construcción, conforme a lo descrito en la sección de Auditoría de Viabilidad. Cambios de alcance solicitados por el cliente después de fijado el precio pueden generar ajustes, que se documentan y autorizan por escrito antes de ejecutarse.</p>
+      <h3>Propiedad intelectual</h3>
+      <p>Los diseños, planos, renders y material conceptual desarrollados por Sayegh Studio son propiedad intelectual del estudio hasta la liquidación total de los honorarios correspondientes, momento en el cual se transfieren los derechos de uso al cliente para el proyecto específico contratado.</p>
+      <h3>Confidencialidad</h3>
+      <p>La información del proyecto y del cliente se trata de forma confidencial. La publicación de un proyecto en portafolio, redes sociales o prensa requiere autorización previa del cliente.</p>
+      <h3>Limitación de responsabilidad</h3>
+      <p>Sayegh Studio responde por la dirección de obra y especificación de materiales conforme al estándar profesional pactado. No es responsable por retrasos o sobrecostos derivados de causas de fuerza mayor, cambios normativos posteriores a la auditoría, o modificaciones de alcance no autorizadas por escrito.</p>
+      <h3>Jurisdicción</h3>
+      <p>Estos términos se rigen por las leyes de México. Cualquier controversia se someterá a los tribunales competentes de la Ciudad de México.</p>
+      <p style="font-size:13px;color:var(--muted);">Este es un borrador de trabajo generado como parte del desarrollo del sitio — requiere revisión de un abogado antes de publicarse como vinculante. Última actualización: septiembre 2026.</p>
+    </div>
   </div>
-  <div class="zones-hint">
-    <a href="/bosque-real">Bosque Real</a> &middot; <a href="/interlomas">Interlomas</a> &middot; <a href="/polanco">Polanco</a> &middot; <a href="/san-miguel-de-allende">San Miguel de Allende</a> &middot; <a href="/san-pedro-garza-garcia">San Pedro Garza García</a> &middot; <a href="/puerto-cancun">Puerto Cancún</a><br>
-    <a href="/punta-mita">Punta Mita</a> &middot; <a href="/los-cabos">Los Cabos</a> &middot; <a href="/valle-de-bravo">Valle de Bravo</a> &middot; <a href="/puerta-de-hierro-zapopan">Puerta de Hierro, Zapopan</a>
-  </div>
-</main>
 
-<footer class="site-footer">
-  <div class="copyright">Sayegh Studio &copy; 2026</div>
-  <div class="contact-line"><a href="mailto:contacto@sayeghstudio.com">contacto@sayeghstudio.com</a> &middot; <a href="/privacidad">Aviso de Privacidad</a></div>
-</footer>
+  <div id="consent-banner" class="consent-banner" role="dialog" aria-label="Notificación de privacidad y cookies">
+    <div class="consent-banner-content">
+      <div class="consent-banner-text">
+        <h3>Privacidad y transparencia</h3>
+        <p>Usamos Google Analytics para entender cómo interactúas con nuestro sitio, pero solo con tu consentimiento explícito. Tus datos se anonimizan y nunca se comparten sin tu autorización.</p>
+      </div>
+      <div class="consent-banner-actions">
+        <button id="consent-decline" class="btn btn-ghost" aria-label="Rechazar análisis (se mantiene privacidad)">
+          Rechazar
+        </button>
+        <button id="consent-accept" class="btn btn-primary" aria-label="Aceptar análisis de datos">
+          Aceptar
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/main.js" defer></script>
+  <script src="/js/subpages.js" defer></script>
 
 </body>
 </html>

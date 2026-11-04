@@ -7,6 +7,7 @@ Sayegh Studio, Bosque de Duraznos 127, Colonia Bosques de las Lomas, Miguel Hida
 ## Páginas principales
 - [Inicio](https://sayeghstudio.com/): servicios, proyectos destacados, materialidad, manifiesto y zonas de operación
 - [Auditoría de Viabilidad (VIA)](https://via.sayeghstudio.com/): diagnóstico técnico y financiero previo a construir, con precios unitarios fijados por escrito
+- [Alianzas e inversión](https://sayeghstudio.com/aliados/): Auditoría de Viabilidad para desarrolladores boutique, family offices y brokers de residencias de alto nivel; colaboración por convenio escrito
 - [Blog / Bitácora de obra](https://sayeghstudio.com/blog/): guías técnicas de materiales, proceso, inversión, zonas y estrategia financiera
 - [Aviso de privacidad](https://sayeghstudio.com/privacidad/)
 

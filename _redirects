@@ -8,6 +8,10 @@
 /auditoria              https://via.sayeghstudio.com/   301!
 /viabilidad             https://via.sayeghstudio.com/   301!
 
+# Atajo para mensajes a desarrolladores, family offices y brokers.
+/alianzas               /aliados/                        301!
+/inversionistas         /aliados/                        301!
+
 # Copia vieja de la portada que quedó publicada e indexable.
 /sayegh-homepage.html   /                               301!
 /sayegh-homepage        /                               301!

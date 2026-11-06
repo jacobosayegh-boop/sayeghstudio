@@ -44,9 +44,8 @@ const PINES = [
   {
     id: 'pin-02-patrimonial',
     modo: 'split', tono: 'claro', mediaH: 860, textoTop: 924, h1: 78,
-    fotos: [{ src: repo('assets/images/projects/piedras_chinas.jpg'), pos: 'center 18%' }],
-    esRender: false,
-    credito: 'Piedras Chinas,<br>San Miguel de Allende',
+    fotos: [{ src: render('lomas_vestibulo.jpg'), pos: '45% center' }],
+    esRender: true,
     kicker: 'Remodelación patrimonial',
     titular: 'Usted no coordina contratistas',
     apoyo: 'Dirección de obra pericial: un solo responsable de la demolición a la entrega.',
@@ -64,13 +63,12 @@ const PINES = [
     id: 'pin-04-materiales',
     modo: 'split', tono: 'claro', mediaH: 860, textoTop: 924, h1: 74,
     fotos: [
-      { src: repo('assets/images/materials/travertino.jpg'), pos: 'center', etiqueta: 'Travertino' },
-      { src: repo('assets/images/materials/concreto.jpg'), pos: '70% center' },
+      { src: repo('assets/images/materials/travertino.jpg'), pos: 'center', etiqueta: 'Travertino' }
     ],
     esRender: false,
     kicker: 'Materialidad atemporal',
     titular: 'Materiales que no envejecen',
-    apoyo: 'Travertino y concreto aparente, elegidos para durar décadas y no temporadas.',
+    apoyo: 'Travertino a la veta, elegido para durar décadas y no temporadas.',
   },
   {
     id: 'pin-05-bano',

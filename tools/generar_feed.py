@@ -94,7 +94,9 @@ EXCLUIR_SI_SIN_OG_IMAGE = {"/guia/"}
 # Se comparan en minúsculas y sin acentos (así "económico" atrapa "economico").
 FRASES_PROHIBIDAS = [
     "gratis", "gratuita", "gratuito", "0% sobrecostos", "sin sobrecostos",
-    "garantizad", "barato", "económico",
+    "garantizad", "barato", "económico", "elimina sobrecostos",
+    "eliminan sobrecostos", "bonito", "bonita", "$x", "$y", "$z", "$w",
+    "sin sorpresas", "la única estrategia",
 ]
 
 # --------------------------------------------------------------------------

@@ -524,9 +524,146 @@ if (GA4_Tracking) {
 }
 
 /* ═══════════════════════════════════════════════════════════════════════════════
+   ── ATRIBUCIÓN HACIA LA AUDITORÍA ──
+   Lleva los parámetros utm_* (o el origen detectado por referrer) a todo enlace
+   hacia via.sayeghstudio.com, /auditoria y /viabilidad, para que el formulario
+   de la Auditoría registre de dónde llegó el prospecto (Pinterest, buscadores…).
+   Sin cookies, sin datos personales, sin llamadas de red. Solo sessionStorage.
+   ═════════════════════════════════════════════════════════════════════════════ */
+(() => {
+  const CLAVE = 'sayegh_utm';
+  const CAMPOS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
+  const HOST_VIA = 'via.sayeghstudio.com';
+  let enMemoria = null; // respaldo si sessionStorage no está disponible
+
+  // Solo [A-Za-z0-9_.-], máximo n caracteres
+  const limpiar = (v, n) => String(v == null ? '' : v).replace(/[^A-Za-z0-9_.\-]/g, '').slice(0, n || 60);
+
+  const leer = () => {
+    try {
+      const raw = sessionStorage.getItem(CLAVE);
+      if (raw) { const o = JSON.parse(raw); if (o && typeof o === 'object') return o; }
+    } catch (e) { /* sin acceso a sessionStorage */ }
+    return enMemoria;
+  };
+
+  const guardar = (obj) => {
+    enMemoria = obj;
+    try { sessionStorage.setItem(CLAVE, JSON.stringify(obj)); } catch (e) { /* se queda en memoria */ }
+  };
+
+  const slugPagina = () => {
+    const s = limpiar(String(location.pathname || '').replace(/^\/+|\/+$/g, '').replace(/\//g, '_'), 40);
+    return s || 'inicio';
+  };
+
+  const desdeReferrer = (ref) => {
+    let url, host;
+    try { url = new URL(ref); host = url.hostname.toLowerCase().replace(/^www\./, ''); } catch (e) { return null; }
+    if (!host) return null;
+    const contenido = 'ref-' + slugPagina();
+    const mk = (src, med, camp) => ({ utm_source: src, utm_medium: med, utm_campaign: camp, utm_content: contenido });
+    // Apps de Android: el referrer llega como android-app://<paquete>
+    if (url.protocol === 'android-app:') {
+      if (host === 'com.pinterest') return mk('pinterest', 'organic_pin', 'conversion_auditoria');
+      if (host === 'com.google.android.googlequicksearchbox') return mk('google', 'organic', 'seo');
+      if (host === 'com.instagram.android') return mk('instagram', 'social', 'referral');
+      if (host === 'com.facebook.katana') return mk('facebook', 'social', 'referral');
+      return mk(limpiar(host, 60) || 'desconocido', 'referral', 'referral');
+    }
+    if (url.protocol !== 'http:' && url.protocol !== 'https:') return null;
+    let propio = '';
+    try { propio = location.hostname.toLowerCase().replace(/^www\./, ''); } catch (e) { /* nada */ }
+    if (host === propio || host === 'sayeghstudio.com' || host.endsWith('.sayeghstudio.com')) return null;
+    const es = (re) => re.test(host);
+    if (es(/(^|\.)pinterest\.[a-z.]+$/) || host === 'pin.it') {
+      return mk('pinterest', 'organic_pin', 'conversion_auditoria');
+    }
+    // Buscadores: solo el host principal de búsqueda (no mail.google.com, docs, drive, etc.)
+    const buscadores = {
+      google: /^google\.[a-z.]+$/,
+      bing: /^bing\.com$/,
+      duckduckgo: /^duckduckgo\.com$/,
+      yahoo: /^(search\.)?yahoo\.[a-z.]+$/,
+      ecosia: /^ecosia\.org$/
+    };
+    for (const k in buscadores) {
+      if (es(buscadores[k])) return mk(k, 'organic', 'seo');
+    }
+    const redes = { instagram: /(^|\.)instagram\.com$/, facebook: /(^|\.)facebook\.com$/, tiktok: /(^|\.)tiktok\.com$/, linkedin: /(^|\.)linkedin\.com$|^lnkd\.in$/, twitter: /^t\.co$/, threads: /(^|\.)threads\.(net|com)$/ };
+    for (const k in redes) {
+      if (es(redes[k])) return mk(k, 'social', 'referral');
+    }
+    return mk(limpiar(host, 60) || 'desconocido', 'referral', 'referral');
+  };
+
+  const capturar = () => {
+    try {
+      const p = new URLSearchParams(location.search);
+      const o = {};
+      let hay = false;
+      CAMPOS.forEach((c) => {
+        if (p.has(c)) { const v = limpiar(p.get(c)); if (v) { o[c] = v; hay = true; } }
+      });
+      if (hay) { guardar(o); return; }
+      if (leer()) return;
+      if (document.referrer) {
+        const r = desdeReferrer(document.referrer);
+        if (r) guardar(r);
+      }
+    } catch (e) { /* nunca romper la página */ }
+  };
+
+  const esDestino = (u) => {
+    if (u.hostname.toLowerCase() === HOST_VIA) return true;
+    if (u.origin !== location.origin) return false;
+    return /^\/(auditoria|viabilidad)\/?$/i.test(u.pathname);
+  };
+
+  const decorar = (a) => {
+    try {
+      const href = a && a.getAttribute && a.getAttribute('href');
+      if (!href) return;
+      const u = new URL(href, location.href);
+      if (u.protocol !== 'http:' && u.protocol !== 'https:') return;
+      if (!esDestino(u)) return;
+      let datos = leer();
+      if (!datos || !Object.keys(datos).length) {
+        datos = { utm_source: 'sayeghstudio', utm_medium: 'sitio', utm_campaign: 'cta', utm_content: slugPagina() };
+      }
+      let cambio = false;
+      CAMPOS.forEach((c) => {
+        if (datos[c] && !u.searchParams.has(c)) { u.searchParams.set(c, datos[c]); cambio = true; }
+      });
+      if (cambio) a.setAttribute('href', u.toString());
+    } catch (e) { /* href raro: se deja intacto */ }
+  };
+
+  const decorarTodos = () => {
+    try { document.querySelectorAll('a[href]').forEach(decorar); } catch (e) { /* nada */ }
+  };
+
+  const alInteractuar = (e) => {
+    try {
+      const t = e.target;
+      const a = t && t.closest ? t.closest('a[href]') : null;
+      if (a) decorar(a);
+    } catch (err) { /* nada */ }
+  };
+
+  capturar();
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', decorarTodos);
+  else decorarTodos();
+  ['click', 'auxclick', 'contextmenu'].forEach((ev) => document.addEventListener(ev, alInteractuar, true));
+})();
+/* ── FIN ATRIBUCIÓN HACIA LA AUDITORÍA ── */
+
+/* ═══════════════════════════════════════════════════════════════════════════════
    ── PINTEREST TAG ──
    Solo se carga con consentimiento aceptado (misma clave que GA: ga_consent_status).
-   Eventos: pagevisit al cargar, lead al clic hacia via.sayeghstudio.com.
+   Eventos: pagevisit y viewcategory (solo zonas-landing, blog y blog/materiales) al cargar;
+   custom clic_auditoria al clic hacia via.sayeghstudio.com. El evento lead se envía
+   únicamente desde el formulario de via (evita contarlo dos veces).
    ═════════════════════════════════════════════════════════════════════════════ */
 const PinterestTag = (() => {
   const TAG_ID = '2614257025875';
@@ -537,6 +674,17 @@ const PinterestTag = (() => {
     try { return localStorage.getItem(CONSENT_KEY) === 'accepted'; } catch (e) { return false; }
   };
 
+  // Categoría para viewcategory según la ruta; null en cualquier otra página
+  const limpiar = (t) => String(t || '').toLowerCase().replace(/[^a-z0-9-]/g, '').slice(0, 60);
+  const categoria = () => {
+    let m;
+    const ruta = (location.pathname || '').toLowerCase();
+    if ((m = ruta.match(/^\/zonas-landing\/([^/]+)\/?/))) { const s = limpiar(m[1]); return s ? 'zona-' + s : null; }
+    if ((m = ruta.match(/^\/blog\/materiales\/([^/]+)\/?/)) && m[1] !== 'index.html') { const s = limpiar(m[1]); return s ? 'material-' + s : null; }
+    if (/^\/blog(\/|$)/.test(ruta)) return 'blog';
+    return null;
+  };
+
   // Código base oficial de Pinterest
   const cargar = () => {
     if (cargado || !hayConsentimiento()) return;
@@ -545,6 +693,8 @@ const PinterestTag = (() => {
     window.pintrk('load', TAG_ID);
     window.pintrk('page');
     window.pintrk('track', 'pagevisit');
+    const cat = categoria();
+    if (cat) window.pintrk('track', 'viewcategory', { category: cat });
   };
 
   // Al cargar la página, si ya había consentimiento
@@ -555,11 +705,11 @@ const PinterestTag = (() => {
     if (e.target.closest && e.target.closest('#consent-accept')) cargar();
   });
 
-  // Lead: mismo clic que dispara cta_click en GA4
+  // clic_auditoria: mismo clic que dispara cta_click en GA4
   document.addEventListener('click', (e) => {
     if (!cargado || typeof window.pintrk !== 'function') return;
     if (e.target.closest && e.target.closest('a[href*="via.sayeghstudio.com"]')) {
-      window.pintrk('track', 'lead', { lead_type: 'Auditoría de Viabilidad' });
+      window.pintrk('track', 'custom', { event_name: 'clic_auditoria' });
     }
   });
 

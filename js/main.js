@@ -566,6 +566,18 @@ const PinterestTag = (() => {
   return { cargar };
 })();
 
+/* ── GA4: clic en "Seguir en Pinterest" del pie ──
+   Usa el gtag ya definido con Consent Mode; si no hay consentimiento, GA4 no guarda cookies. */
+document.addEventListener('click', (e) => {
+  const link = e.target.closest && e.target.closest('a.pinterest-follow');
+  if (!link || typeof gtag !== 'function') return;
+  gtag('event', 'click_pinterest_follow', {
+    'event_category': 'social',
+    'link_url': link.href,
+    'page_path': window.location.pathname
+  });
+});
+
 /* ── MANIFIESTO VIDEO SOUND TOGGLE ── */
 const manifiestoVideo = document.querySelector('.manifiesto-video-media');
 const manifiestoSoundBtn = document.getElementById('manifiesto-sound-toggle');

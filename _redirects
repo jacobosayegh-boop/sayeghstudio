@@ -27,6 +27,8 @@
 # Zonas con landing page equivalente en la nueva estructura.
 /bosque-real.html                    /zonas-landing/bosque-real/   301!
 /bosque-real                         /zonas-landing/bosque-real/   301!
+/san-miguel-de-allende.html          /zonas-landing/san-miguel-de-allende/   301!
+/san-miguel-de-allende               /zonas-landing/san-miguel-de-allende/   301!
 
 # Zonas sin landing page propia todavía en el sitio nuevo: caen a home.
 /los-cabos.html                      /   301!
@@ -37,8 +39,6 @@
 /puerto-cancun                       /   301!
 /punta-mita.html                     /   301!
 /punta-mita                          /   301!
-/san-miguel-de-allende.html          /   301!
-/san-miguel-de-allende               /   301!
 /san-pedro-garza-garcia.html         /   301!
 /san-pedro-garza-garcia              /   301!
 

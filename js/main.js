@@ -558,26 +558,43 @@ if (GA4_Tracking) {
   };
 
   const desdeReferrer = (ref) => {
-    let host;
-    try { host = new URL(ref).hostname.toLowerCase().replace(/^www\./, ''); } catch (e) { return null; }
+    let url, host;
+    try { url = new URL(ref); host = url.hostname.toLowerCase().replace(/^www\./, ''); } catch (e) { return null; }
     if (!host) return null;
+    const contenido = 'ref-' + slugPagina();
+    const mk = (src, med, camp) => ({ utm_source: src, utm_medium: med, utm_campaign: camp, utm_content: contenido });
+    // Apps de Android: el referrer llega como android-app://<paquete>
+    if (url.protocol === 'android-app:') {
+      if (host === 'com.pinterest') return mk('pinterest', 'organic_pin', 'conversion_auditoria');
+      if (host === 'com.google.android.googlequicksearchbox') return mk('google', 'organic', 'seo');
+      if (host === 'com.instagram.android') return mk('instagram', 'social', 'referral');
+      if (host === 'com.facebook.katana') return mk('facebook', 'social', 'referral');
+      return mk(limpiar(host, 60) || 'desconocido', 'referral', 'referral');
+    }
+    if (url.protocol !== 'http:' && url.protocol !== 'https:') return null;
     let propio = '';
     try { propio = location.hostname.toLowerCase().replace(/^www\./, ''); } catch (e) { /* nada */ }
     if (host === propio || host === 'sayeghstudio.com' || host.endsWith('.sayeghstudio.com')) return null;
-    const contenido = 'ref-' + slugPagina();
     const es = (re) => re.test(host);
     if (es(/(^|\.)pinterest\.[a-z.]+$/) || host === 'pin.it') {
-      return { utm_source: 'pinterest', utm_medium: 'organic_pin', utm_campaign: 'conversion_auditoria', utm_content: contenido };
+      return mk('pinterest', 'organic_pin', 'conversion_auditoria');
     }
-    const buscadores = { google: /(^|\.)google\.[a-z.]+$/, bing: /(^|\.)bing\.com$/, duckduckgo: /(^|\.)duckduckgo\.com$/, yahoo: /(^|\.)yahoo\.[a-z.]+$/, ecosia: /(^|\.)ecosia\.org$/ };
+    // Buscadores: solo el host principal de búsqueda (no mail.google.com, docs, drive, etc.)
+    const buscadores = {
+      google: /^google\.[a-z.]+$/,
+      bing: /^bing\.com$/,
+      duckduckgo: /^duckduckgo\.com$/,
+      yahoo: /^(search\.)?yahoo\.[a-z.]+$/,
+      ecosia: /^ecosia\.org$/
+    };
     for (const k in buscadores) {
-      if (es(buscadores[k])) return { utm_source: k, utm_medium: 'organic', utm_campaign: 'seo', utm_content: contenido };
+      if (es(buscadores[k])) return mk(k, 'organic', 'seo');
     }
     const redes = { instagram: /(^|\.)instagram\.com$/, facebook: /(^|\.)facebook\.com$/, tiktok: /(^|\.)tiktok\.com$/, linkedin: /(^|\.)linkedin\.com$|^lnkd\.in$/, twitter: /^t\.co$/, threads: /(^|\.)threads\.(net|com)$/ };
     for (const k in redes) {
-      if (es(redes[k])) return { utm_source: k, utm_medium: 'social', utm_campaign: 'referral', utm_content: contenido };
+      if (es(redes[k])) return mk(k, 'social', 'referral');
     }
-    return { utm_source: limpiar(host, 60) || 'desconocido', utm_medium: 'referral', utm_campaign: 'referral', utm_content: contenido };
+    return mk(limpiar(host, 60) || 'desconocido', 'referral', 'referral');
   };
 
   const capturar = () => {

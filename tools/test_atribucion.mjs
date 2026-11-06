@@ -163,6 +163,27 @@ prueba('enlaces tardíos: click/auxclick/contextmenu en captura', () => {
   }
 });
 
+prueba('android-app:// mapea apps conocidas', () => {
+  const casos = { 'android-app://com.pinterest': ['pinterest', 'organic_pin'], 'android-app://com.google.android.googlequicksearchbox/': ['google', 'organic'], 'android-app://com.instagram.android': ['instagram', 'social'], 'android-app://com.facebook.katana': ['facebook', 'social'], 'android-app://com.otra.app': ['com.otra.app', 'referral'], 'android-app://com.google.android.gm': ['com.google.android.gm', 'referral'] };
+  for (const [r, [src, med]] of Object.entries(casos)) {
+    const e = escenario({ url: 'https://sayeghstudio.com/', referrer: r, hrefs: ['https://via.sayeghstudio.com'] });
+    assert.equal(params(e.hrefs()[0]).get('utm_source'), src, r);
+    assert.equal(params(e.hrefs()[0]).get('utm_medium'), med, r);
+  }
+});
+
+prueba('subdominios de buscadores que no son búsqueda cuentan como referral', () => {
+  for (const r of ['https://mail.google.com/', 'https://docs.google.com/x', 'https://drive.google.com/', 'https://mail.yahoo.com/']) {
+    const e = escenario({ url: 'https://sayeghstudio.com/', referrer: r, hrefs: ['https://via.sayeghstudio.com'] });
+    assert.equal(params(e.hrefs()[0]).get('utm_medium'), 'referral', r);
+  }
+  for (const [r, src] of [['https://www.google.com/', 'google'], ['https://google.com.mx/', 'google'], ['https://www.bing.com/', 'bing'], ['https://search.yahoo.com/', 'yahoo'], ['https://duckduckgo.com/', 'duckduckgo'], ['https://www.ecosia.org/', 'ecosia']]) {
+    const e = escenario({ url: 'https://sayeghstudio.com/', referrer: r, hrefs: ['https://via.sayeghstudio.com'] });
+    assert.equal(params(e.hrefs()[0]).get('utm_source'), src, r);
+    assert.equal(params(e.hrefs()[0]).get('utm_medium'), 'organic', r);
+  }
+});
+
 prueba('selector de lead de Pinterest sigue coincidiendo', () => {
   const e = escenario({ url: 'https://sayeghstudio.com/?utm_source=pinterest', hrefs: ['https://via.sayeghstudio.com'] });
   assert.ok(e.hrefs()[0].includes('via.sayeghstudio.com'));

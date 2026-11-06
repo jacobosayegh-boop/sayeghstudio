@@ -523,6 +523,49 @@ if (GA4_Tracking) {
   GA4_Tracking.init();
 }
 
+/* ═══════════════════════════════════════════════════════════════════════════════
+   ── PINTEREST TAG ──
+   Solo se carga con consentimiento aceptado (misma clave que GA: ga_consent_status).
+   Eventos: pagevisit al cargar, lead al clic hacia via.sayeghstudio.com.
+   ═════════════════════════════════════════════════════════════════════════════ */
+const PinterestTag = (() => {
+  const TAG_ID = '2614257025875';
+  const CONSENT_KEY = 'ga_consent_status';
+  let cargado = false;
+
+  const hayConsentimiento = () => {
+    try { return localStorage.getItem(CONSENT_KEY) === 'accepted'; } catch (e) { return false; }
+  };
+
+  // Código base oficial de Pinterest
+  const cargar = () => {
+    if (cargado || !hayConsentimiento()) return;
+    cargado = true;
+    !function(e){if(!window.pintrk){window.pintrk=function(){window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var n=window.pintrk;n.queue=[],n.version="3.0";var t=document.createElement("script");t.async=!0,t.src=e;var r=document.getElementsByTagName("script")[0];r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
+    window.pintrk('load', TAG_ID);
+    window.pintrk('page');
+    window.pintrk('track', 'pagevisit');
+  };
+
+  // Al cargar la página, si ya había consentimiento
+  cargar();
+
+  // En el momento en que el usuario acepta (el banner guarda la clave en su propio listener)
+  document.addEventListener('click', (e) => {
+    if (e.target.closest && e.target.closest('#consent-accept')) cargar();
+  });
+
+  // Lead: mismo clic que dispara cta_click en GA4
+  document.addEventListener('click', (e) => {
+    if (!cargado || typeof window.pintrk !== 'function') return;
+    if (e.target.closest && e.target.closest('a[href*="via.sayeghstudio.com"]')) {
+      window.pintrk('track', 'lead', { lead_type: 'Auditoría de Viabilidad' });
+    }
+  });
+
+  return { cargar };
+})();
+
 /* ── MANIFIESTO VIDEO SOUND TOGGLE ── */
 const manifiestoVideo = document.querySelector('.manifiesto-video-media');
 const manifiestoSoundBtn = document.getElementById('manifiesto-sound-toggle');

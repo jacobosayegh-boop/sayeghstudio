@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+  <channel>
+    <title>Sayegh Studio · Concreto y minimalismo</title>
+    <link>https://sayeghstudio.com/</link>
+    <description>Arquitectura, remodelación y diseño de interiores de lujo en Ciudad de México, Estado de México, Querétaro y Guanajuato.</description>
+    <language>es-MX</language>
+    <atom:link href="https://sayeghstudio.com/feed-concreto-minimalismo.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 25 Sep 2026 12:00:00 -0600</lastBuildDate>
+    <item>
+      <title>Minimalismo Cálido: La Tendencia que Domina el Diseño Residencial de Lujo en 2026</title>
+      <link>https://sayeghstudio.com/blog/tendencias/minimalismo-calido-2026/</link>
+      <guid isPermaLink="true">https://sayeghstudio.com/blog/tendencias/minimalismo-calido-2026/</guid>
+      <pubDate>Fri, 25 Sep 2026 12:00:00 -0600</pubDate>
+      <description>El minimalismo cálido es la tendencia de diseño de lujo dominante en 2026. Conoce sus claves y materiales.</description>
+      <category>Tendencias</category>
+      <enclosure url="https://sayeghstudio.com/assets/images/materials/microcemento.jpg" type="image/jpeg" length="40340" />
+      <media:content url="https://sayeghstudio.com/assets/images/materials/microcemento.jpg" type="image/jpeg" medium="image" fileSize="40340" />
+    </item>
+    <item>
+      <title>Fachadas que Definen Estatus: Tendencias de Diseño Exterior en Vivienda de Lujo</title>
+      <link>https://sayeghstudio.com/blog/tendencias/fachadas-lujo-tendencias/</link>
+      <guid isPermaLink="true">https://sayeghstudio.com/blog/tendencias/fachadas-lujo-tendencias/</guid>
+      <pubDate>Fri, 25 Sep 2026 12:00:00 -0600</pubDate>
+      <description>Las tendencias de fachadas que definen el estatus en la vivienda de lujo mexicana: materiales, luz y composición.</description>
+      <category>Tendencias</category>
+      <enclosure url="https://sayeghstudio.com/assets/images/materials/concreto.jpg" type="image/jpeg" length="109978" />
+      <media:content url="https://sayeghstudio.com/assets/images/materials/concreto.jpg" type="image/jpeg" medium="image" fileSize="109978" />
+    </item>
+    <item>
+      <title>Cocinas de Autor: Diseño, Materiales y Funcionalidad en Proyectos High-End</title>
+      <link>https://sayeghstudio.com/blog/tendencias/cocinas-de-autor-lujo/</link>
+      <guid isPermaLink="true">https://sayeghstudio.com/blog/tendencias/cocinas-de-autor-lujo/</guid>
+      <pubDate>Fri, 25 Sep 2026 12:00:00 -0600</pubDate>
+      <description>Cómo se diseña una cocina de autor de lujo: materiales, ergonomía y tecnología integrada.</description>
+      <category>Tendencias</category>
+      <enclosure url="https://sayeghstudio.com/assets/images/materials/encino.jpg" type="image/jpeg" length="65775" />
+      <media:content url="https://sayeghstudio.com/assets/images/materials/encino.jpg" type="image/jpeg" medium="image" fileSize="65775" />
+    </item>
+    <item>
+      <title>Casas de Lujo con Doble Altura: Impacto Arquitectónico y Consideraciones Técnicas</title>
+      <link>https://sayeghstudio.com/blog/tendencias/casas-doble-altura-lujo/</link>
+      <guid isPermaLink="true">https://sayeghstudio.com/blog/tendencias/casas-doble-altura-lujo/</guid>
+      <pubDate>Fri, 25 Sep 2026 12:00:00 -0600</pubDate>
+      <description>Espacios de doble altura en casas de lujo: impacto visual, retos técnicos y cómo planificarlos correctamente.</description>
+      <category>Tendencias</category>
+      <enclosure url="https://sayeghstudio.com/assets/images/projects/temixco.jpg" type="image/jpeg" length="228819" />
+      <media:content url="https://sayeghstudio.com/assets/images/projects/temixco.jpg" type="image/jpeg" medium="image" fileSize="228819" />
+    </item>
+    <item>
+      <title>Baños Spa: Convertir el Baño Principal en una Experiencia de Bienestar</title>
+      <link>https://sayeghstudio.com/blog/tendencias/banos-spa-lujo/</link>
+      <guid isPermaLink="true">https://sayeghstudio.com/blog/tendencias/banos-spa-lujo/</guid>
+      <pubDate>Fri, 25 Sep 2026 12:00:00 -0600</pubDate>
+      <description>Diseña un baño spa de lujo: materiales, elementos clave e iluminación para una experiencia de bienestar total.</description>
+      <category>Tendencias</category>
+      <enclosure url="https://sayeghstudio.com/assets/images/projects/avivia.jpg" type="image/jpeg" length="204733" />
+      <media:content url="https://sayeghstudio.com/assets/images/projects/avivia.jpg" type="image/jpeg" medium="image" fileSize="204733" />
+    </item>
+    <item>
+      <title>Arquitectura Biofílica de Lujo: Integrar Naturaleza sin Perder Sofisticación</title>
+      <link>https://sayeghstudio.com/blog/tendencias/arquitectura-biofila-lujo/</link>
+      <guid isPermaLink="true">https://sayeghstudio.com/blog/tendencias/arquitectura-biofila-lujo/</guid>
+      <pubDate>Fri, 25 Sep 2026 12:00:00 -0600</pubDate>
+      <description>Cómo la arquitectura biofílica eleva el bienestar y el valor de una casa de lujo sin sacrificar sofisticación.</description>
+      <category>Tendencias</category>
+      <enclosure url="https://sayeghstudio.com/assets/images/projects/nuvana.jpg" type="image/jpeg" length="307181" />
+      <media:content url="https://sayeghstudio.com/assets/images/projects/nuvana.jpg" type="image/jpeg" medium="image" fileSize="307181" />
+    </item>
+    <item>
+      <title>Vidrio de Alta Performance: Luz Natural sin Sacrificar Privacidad ni Eficiencia</title>
+      <link>https://sayeghstudio.com/blog/materiales/vidrio-alto-desempenio/</link>
+      <guid isPermaLink="true">https://sayeghstudio.com/blog/materiales/vidrio-alto-desempenio/</guid>
+      <pubDate>Fri, 25 Sep 2026 12:00:00 -0600</pubDate>
+      <description>Cómo el vidrio de alta performance permite maximizar luz natural y eficiencia energética en arquitectura residencial de lujo.</description>
+      <category>Materiales</category>
+      <enclosure url="https://sayeghstudio.com/assets/images/projects/nuvana.jpg" type="image/jpeg" length="307181" />
+      <media:content url="https://sayeghstudio.com/assets/images/projects/nuvana.jpg" type="image/jpeg" medium="image" fileSize="307181" />
+    </item>
+    <item>
+      <title>Maderas Nobles en la Arquitectura de Lujo: Combinaciones que Elevan el Diseño</title>
+      <link>https://sayeghstudio.com/blog/materiales/maderas-nobles-lujo/</link>
+      <guid isPermaLink="true">https://sayeghstudio.com/blog/materiales/maderas-nobles-lujo/</guid>
+      <pubDate>Fri, 25 Sep 2026 12:00:00 -0600</pubDate>
+      <description>Las maderas nobles que definen el lujo contemporáneo y cómo combinarlas con concreto aparente y travertino.</description>
+      <category>Materiales</category>
+      <enclosure url="https://sayeghstudio.com/assets/images/materials/nogal.jpg" type="image/jpeg" length="68438" />
+      <media:content url="https://sayeghstudio.com/assets/images/materials/nogal.jpg" type="image/jpeg" medium="image" fileSize="68438" />
+    </item>
+    <item>
+      <title>Concreto Aparente: La Estética Minimalista que Redefine el Lujo Contemporáneo</title>
+      <link>https://sayeghstudio.com/blog/materiales/concreto-aparente-lujo/</link>
+      <guid isPermaLink="true">https://sayeghstudio.com/blog/materiales/concreto-aparente-lujo/</guid>
+      <pubDate>Fri, 25 Sep 2026 12:00:00 -0600</pubDate>
+      <description>Descubre por qué el concreto aparente es el material insignia del lujo minimalista contemporáneo y cómo se combina con el travertino.</description>
+      <category>Materiales</category>
+      <enclosure url="https://sayeghstudio.com/assets/images/materials/concreto.jpg" type="image/jpeg" length="109978" />
+      <media:content url="https://sayeghstudio.com/assets/images/materials/concreto.jpg" type="image/jpeg" medium="image" fileSize="109978" />
+    </item>
+    <item>
+      <title>Acabados Metálicos de Lujo: Bronce, Latón y Acero Cepillado en Proyectos Residenciales</title>
+      <link>https://sayeghstudio.com/blog/materiales/acabados-metalicos-lujo/</link>
+      <guid isPermaLink="true">https://sayeghstudio.com/blog/materiales/acabados-metalicos-lujo/</guid>
+      <pubDate>Fri, 25 Sep 2026 12:00:00 -0600</pubDate>
+      <description>Guía de acabados metálicos de lujo (bronce, latón, acero cepillado) y cómo integrarlos con travertino y concreto aparente.</description>
+      <category>Materiales</category>
+      <enclosure url="https://sayeghstudio.com/assets/images/projects/piedras_chinas.jpg" type="image/jpeg" length="211705" />
+      <media:content url="https://sayeghstudio.com/assets/images/projects/piedras_chinas.jpg" type="image/jpeg" medium="image" fileSize="211705" />
+    </item>
+  </channel>
+</rss>

@@ -64,3 +64,7 @@
 # apuntan a /aviso-de-privacidad).
 /aviso-de-privacidad     /privacidad/   301!
 /aviso-de-privacidad/    /privacidad/   301!
+
+# Archivos internos del repo: no se sirven.
+/tools/*      /404.html   404!
+/.github/*    /404.html   404!

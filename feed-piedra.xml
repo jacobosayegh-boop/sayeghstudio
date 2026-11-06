@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+  <channel>
+    <title>Sayegh Studio · Piedra natural</title>
+    <link>https://sayeghstudio.com/</link>
+    <description>Arquitectura, remodelación y diseño de interiores de lujo en Ciudad de México, Estado de México, Querétaro y Guanajuato.</description>
+    <language>es-MX</language>
+    <atom:link href="https://sayeghstudio.com/feed-piedra.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Sep 2026 12:00:00 -0600</lastBuildDate>
+    <item>
+      <title>Selladores de Nanosilano: la Ciencia Detrás de la Piedra que no Envejece</title>
+      <link>https://sayeghstudio.com/blog/materiales/nanosilano-ciencia/</link>
+      <guid isPermaLink="true">https://sayeghstudio.com/blog/materiales/nanosilano-ciencia/</guid>
+      <pubDate>Mon, 28 Sep 2026 12:00:00 -0600</pubDate>
+      <description>Cómo un sellador de nanosilano protege travertino y mármol desde adentro, por qué no forma película y cada cuánto conviene resellar según el tránsito.</description>
+      <category>Materiales</category>
+      <enclosure url="https://sayeghstudio.com/assets/images/blog-ai/nanosilano-ciencia/hero.jpg" type="image/jpeg" length="1174866" />
+      <media:content url="https://sayeghstudio.com/assets/images/blog-ai/nanosilano-ciencia/hero.jpg" type="image/jpeg" medium="image" fileSize="1174866" />
+    </item>
+    <item>
+      <title>Travertino en Arquitectura de Lujo: Guía Completa para Proyectos Residenciales</title>
+      <link>https://sayeghstudio.com/blog/materiales/travertino-arquitectura-lujo/</link>
+      <guid isPermaLink="true">https://sayeghstudio.com/blog/materiales/travertino-arquitectura-lujo/</guid>
+      <pubDate>Fri, 25 Sep 2026 12:00:00 -0600</pubDate>
+      <description>Guía completa sobre el travertino en arquitectura residencial de lujo: variedades, aplicaciones, mantenimiento y por qué eleva el valor de una propiedad.</description>
+      <category>Materiales</category>
+      <enclosure url="https://sayeghstudio.com/assets/images/materials/travertino.jpg" type="image/jpeg" length="40264" />
+      <media:content url="https://sayeghstudio.com/assets/images/materials/travertino.jpg" type="image/jpeg" medium="image" fileSize="40264" />
+    </item>
+    <item>
+      <title>Mármol, Travertino y Piedra Natural: Cómo Elegir el Material Correcto para tu Proyecto</title>
+      <link>https://sayeghstudio.com/blog/materiales/marmol-travertino-piedra-natural/</link>
+      <guid isPermaLink="true">https://sayeghstudio.com/blog/materiales/marmol-travertino-piedra-natural/</guid>
+      <pubDate>Fri, 25 Sep 2026 12:00:00 -0600</pubDate>
+      <description>Comparativa experta entre mármol, travertino y piedra natural para elegir el material ideal en tu proyecto de arquitectura de lujo.</description>
+      <category>Materiales</category>
+      <enclosure url="https://sayeghstudio.com/assets/images/materials/marmol.jpg" type="image/jpeg" length="36032" />
+      <media:content url="https://sayeghstudio.com/assets/images/materials/marmol.jpg" type="image/jpeg" medium="image" fileSize="36032" />
+    </item>
+  </channel>
+</rss>

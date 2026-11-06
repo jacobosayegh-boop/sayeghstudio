@@ -661,7 +661,9 @@ if (GA4_Tracking) {
 /* ═══════════════════════════════════════════════════════════════════════════════
    ── PINTEREST TAG ──
    Solo se carga con consentimiento aceptado (misma clave que GA: ga_consent_status).
-   Eventos: pagevisit al cargar, lead al clic hacia via.sayeghstudio.com.
+   Eventos: pagevisit y viewcategory (solo zonas-landing, blog y blog/materiales) al cargar;
+   custom clic_auditoria al clic hacia via.sayeghstudio.com. El evento lead se envía
+   únicamente desde el formulario de via (evita contarlo dos veces).
    ═════════════════════════════════════════════════════════════════════════════ */
 const PinterestTag = (() => {
   const TAG_ID = '2614257025875';
@@ -672,6 +674,17 @@ const PinterestTag = (() => {
     try { return localStorage.getItem(CONSENT_KEY) === 'accepted'; } catch (e) { return false; }
   };
 
+  // Categoría para viewcategory según la ruta; null en cualquier otra página
+  const limpiar = (t) => String(t || '').toLowerCase().replace(/[^a-z0-9-]/g, '').slice(0, 60);
+  const categoria = () => {
+    let m;
+    const ruta = (location.pathname || '').toLowerCase();
+    if ((m = ruta.match(/^\/zonas-landing\/([^/]+)\/?/))) { const s = limpiar(m[1]); return s ? 'zona-' + s : null; }
+    if ((m = ruta.match(/^\/blog\/materiales\/([^/]+)\/?/)) && m[1] !== 'index.html') { const s = limpiar(m[1]); return s ? 'material-' + s : null; }
+    if (/^\/blog(\/|$)/.test(ruta)) return 'blog';
+    return null;
+  };
+
   // Código base oficial de Pinterest
   const cargar = () => {
     if (cargado || !hayConsentimiento()) return;
@@ -680,6 +693,8 @@ const PinterestTag = (() => {
     window.pintrk('load', TAG_ID);
     window.pintrk('page');
     window.pintrk('track', 'pagevisit');
+    const cat = categoria();
+    if (cat) window.pintrk('track', 'viewcategory', { category: cat });
   };
 
   // Al cargar la página, si ya había consentimiento
@@ -690,11 +705,11 @@ const PinterestTag = (() => {
     if (e.target.closest && e.target.closest('#consent-accept')) cargar();
   });
 
-  // Lead: mismo clic que dispara cta_click en GA4
+  // clic_auditoria: mismo clic que dispara cta_click en GA4
   document.addEventListener('click', (e) => {
     if (!cargado || typeof window.pintrk !== 'function') return;
     if (e.target.closest && e.target.closest('a[href*="via.sayeghstudio.com"]')) {
-      window.pintrk('track', 'lead', { lead_type: 'Auditoría de Viabilidad' });
+      window.pintrk('track', 'custom', { event_name: 'clic_auditoria' });
     }
   });
 

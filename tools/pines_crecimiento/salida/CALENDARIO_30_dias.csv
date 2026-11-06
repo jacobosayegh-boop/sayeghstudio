@@ -1,0 +1,86 @@
+fecha,dia,hora_cdmx,hora_utc,tipo,slug,tablero,segmento,bloque,objetivo,responsable,nota
+2026-11-06,viernes,20:30,2026-11-07T02:30,ya programado (otro hilo),,,,,,automático,Pin ya programado en la cuenta; contenido no informado a este hilo.
+2026-11-07,sábado,09:00,,acción manual,,,,,,sesión en la Mac,Revisar en Pinterest > Programados que los 6 de conversión salgan a las 10:30 CDMX.
+2026-11-07,sábado,10:30,2026-11-07T16:30,conversión (ya programado),pin-01-presupuesto,Remodelación de Casas de Lujo CDMX,A+B,conversion,lead,automático,Presupuesto de remodelación: el precio se firma. Enlace a via.sayeghstudio.com con UTM.
+2026-11-07,sábado,11:00,,acción manual,,,,,,coordinador,Fusionar el PR de imágenes de crecimiento y comprobar que una Media URL abre (p. ej. zona-bosques-01.jpg).
+2026-11-07,sábado,12:00,,acción manual,,,,,,sesión en la Mac,Cargar PINES_crecimiento_carga.csv (20 pines) en Pinterest > Crear > Importar contenido. No subir el CSV de 47.
+2026-11-07,sábado,20:00,2026-11-08T02:00,ya programado (otro hilo),,,,,,automático,Pin ya programado en la cuenta; contenido no informado a este hilo.
+2026-11-08,domingo,10:30,2026-11-08T16:30,conversión (ya programado),pin-02-patrimonial,Remodelación de Casas de Lujo CDMX,A+B,conversion,lead,automático,Remodelación patrimonial de lujo en CDMX. Enlace a via.sayeghstudio.com con UTM.
+2026-11-08,domingo,12:00,,acción manual,,,,,,Jacobo,"Validar en el buscador de Pinterest las palabras de los dos tableros nuevos (TABLEROS_nuevos.md, sección 3). Si pasan, crear los tableros y cargar PINES_tableros_nuevos_carga.csv."
+2026-11-08,domingo,19:00,,acción manual,,,,,,Jacobo o sesión en la Mac,Programar a mano video-01 (sale 19:30).
+2026-11-08,domingo,19:30,2026-11-09T01:30,video (serie de otro agente),video-01,Travertino y Piedra Natural en Interiores,A,A_finde,guardado y seguidor,Jacobo o sesión en la Mac (lo produce otro agente),"Ver VIDEO_pines.md; fecha, hora y tablero fijados ahí."
+2026-11-08,domingo,20:00,2026-11-09T02:00,ya programado (otro hilo),,,,,,automático,Pin ya programado en la cuenta; contenido no informado a este hilo.
+2026-11-09,lunes,09:00,,acción manual,,,,,medición,hilo B,"Reporte semanal: llenar impresiones_7d, guardados_7d y clics_7d en CALENDARIO_pines.csv y una fila en METRICAS_semanales.csv."
+2026-11-09,lunes,10:30,2026-11-09T16:30,conversión (ya programado),pin-03-inversion,Presupuesto de Remodelación: Guía para Clientes,A+B,conversion,lead,automático,Viabilidad antes de comprar el terreno. Enlace a via.sayeghstudio.com con UTM.
+2026-11-09,lunes,18:00,,acción manual,,,,,seguidor,Jacobo,Responder comentarios de la semana y mover a su tablero correcto los pines que Instagram dejó en Remodelación (máx. 4 ediciones por hora).
+2026-11-09,lunes,18:30,,acción manual,,,,,seguidor,Jacobo,Guardar 1 o 2 pines propios en el tablero que más lo necesite (repines; tope 30 % de lo publicado en la semana).
+2026-11-09,lunes,19:00,,acción manual,,,,,,hilo B,"Revisar si los feeds RSS pinearon páginas nuevas del sitio; si una página nueva no aparece en 48 h, avisar al hilo A (vigilante)."
+2026-11-09,lunes,20:30,2026-11-10T02:30,ya programado (otro hilo),,,,,,automático,Pin ya programado en la cuenta; contenido no informado a este hilo.
+2026-11-10,martes,09:30,2026-11-10T15:30,imagen (CSV nuevo),zona-bosques-01,Presupuesto de Remodelación: Guía para Clientes,B,B_laboral,clic,automático (CSV),Viabilidad en Bosques de las Lomas
+2026-11-10,martes,10:30,2026-11-10T16:30,conversión (ya programado),pin-04-materiales,Travertino y Piedra Natural en Interiores,A+B,conversion,lead,automático,Travertino en interiores. Enlace a via.sayeghstudio.com con UTM.
+2026-11-10,martes,20:00,2026-11-11T02:00,ya programado (otro hilo),,,,,,automático,Pin ya programado en la cuenta; contenido no informado a este hilo.
+2026-11-10,martes,20:30,2026-11-11T02:30,imagen (CSV nuevo),material-travertino-01,Travertino y Piedra Natural en Interiores,A,A_noche,guardado,automático (CSV),Escalera de travertino
+2026-11-11,miércoles,10:30,2026-11-11T16:30,conversión (ya programado),pin-05-bano,Remodelación de Casas de Lujo CDMX,A+B,conversion,lead,automático,Baño de autor en CDMX. Enlace a via.sayeghstudio.com con UTM.
+2026-11-11,miércoles,20:30,2026-11-12T02:30,ya programado (otro hilo),,,,,,automático,Pin ya programado en la cuenta; contenido no informado a este hilo.
+2026-11-12,jueves,10:30,2026-11-12T16:30,conversión (ya programado),pin-06-zona,Remodelación de Casas de Lujo CDMX,A+B,conversion,lead,automático,Arquitecto en Interlomas. Enlace a via.sayeghstudio.com con UTM.
+2026-11-12,jueves,13:30,2026-11-12T19:30,imagen (CSV nuevo),zona-bosque-real-01,Obra Gris y Proceso de Construcción,B,B_laboral,clic,automático (CSV),Casa en Bosque Real con vista
+2026-11-12,jueves,20:00,2026-11-13T02:00,ya programado (otro hilo),,,,,,automático,Pin ya programado en la cuenta; contenido no informado a este hilo.
+2026-11-12,jueves,20:30,2026-11-13T02:30,imagen (CSV nuevo),material-nogal-01,Acabados de Lujo: Detalles e Instalación,A,A_noche,guardado,automático (CSV),Nogal en cocina
+2026-11-13,viernes,20:30,2026-11-14T02:30,ya programado (otro hilo),,,,,,automático,Pin ya programado en la cuenta; contenido no informado a este hilo.
+2026-11-14,sábado,09:30,,acción manual,,,,,,Jacobo o sesión en la Mac,Programar a mano carrusel-01 (sale 10:00).
+2026-11-14,sábado,10:00,2026-11-14T16:00,carrusel (serie de otro agente),carrusel-01,Travertino y Piedra Natural en Interiores,A,A_finde,guardado y seguidor,Jacobo o sesión en la Mac (lo produce otro agente),"Ver CARRUSEL_pines.md; fecha, hora y tablero fijados ahí."
+2026-11-14,sábado,20:00,2026-11-15T02:00,ya programado (otro hilo),,,,,,automático,Pin ya programado en la cuenta; contenido no informado a este hilo.
+2026-11-15,domingo,19:00,,acción manual,,,,,,Jacobo o sesión en la Mac,Programar a mano video-02 (sale 19:30).
+2026-11-15,domingo,19:30,2026-11-16T01:30,video (serie de otro agente),video-02,Remodelación de Casas de Lujo CDMX,A,A_finde,guardado y seguidor,Jacobo o sesión en la Mac (lo produce otro agente),"Ver VIDEO_pines.md; fecha, hora y tablero fijados ahí."
+2026-11-16,lunes,09:00,,acción manual,,,,,medición,hilo B,"Reporte semanal: llenar impresiones_7d, guardados_7d y clics_7d en CALENDARIO_pines.csv y una fila en METRICAS_semanales.csv."
+2026-11-16,lunes,18:00,,acción manual,,,,,seguidor,Jacobo,Responder comentarios de la semana y mover a su tablero correcto los pines que Instagram dejó en Remodelación (máx. 4 ediciones por hora).
+2026-11-16,lunes,18:30,,acción manual,,,,,seguidor,Jacobo,Guardar 1 o 2 pines propios en el tablero que más lo necesite (repines; tope 30 % de lo publicado en la semana).
+2026-11-16,lunes,19:00,,acción manual,,,,,,hilo B,"Revisar si los feeds RSS pinearon páginas nuevas del sitio; si una página nueva no aparece en 48 h, avisar al hilo A (vigilante)."
+2026-11-16,lunes,21:00,2026-11-17T03:00,"semilla tablero nuevo (CSV aparte, condicionado)",cocina-isla-01,Cocinas de Lujo: Diseño y Remodelación,A,A_noche,guardado y seguidor,automático tras crear tablero,"Isla de cocina en travertino. Solo si el tablero ya existe; si no, se recorre la fecha."
+2026-11-17,martes,09:30,2026-11-17T15:30,imagen (CSV nuevo),zona-interlomas-01,Presupuesto de Remodelación: Guía para Clientes,B,B_laboral,clic,automático (CSV),Remodelación en Interlomas
+2026-11-17,martes,20:30,2026-11-18T02:30,imagen (CSV nuevo),material-cantera-01,Travertino y Piedra Natural en Interiores,A,A_noche,guardado,automático (CSV),Cantera en casonas de Coyoacán
+2026-11-17,martes,21:00,2026-11-18T03:00,"semilla tablero nuevo (CSV aparte, condicionado)",cocina-ventanal-01,Cocinas de Lujo: Diseño y Remodelación,A,A_noche,guardado y seguidor,automático tras crear tablero,"Cocina minimalista cálida. Solo si el tablero ya existe; si no, se recorre la fecha."
+2026-11-18,miércoles,10:30,2026-11-18T16:30,conversión (CSV nuevo),conv-07-cocina,Travertino y Piedra Natural en Interiores,A+B,conversion,lead,automático (CSV),Remodelación de cocina de lujo
+2026-11-18,miércoles,21:00,2026-11-19T03:00,"semilla tablero nuevo (CSV aparte, condicionado)",cocina-bronce-01,Cocinas de Lujo: Diseño y Remodelación,A,A_noche,guardado y seguidor,automático tras crear tablero,"Grifería de bronce en cocina. Solo si el tablero ya existe; si no, se recorre la fecha."
+2026-11-19,jueves,13:30,2026-11-19T19:30,imagen (CSV nuevo),inversion-reventa-01,Presupuesto de Remodelación: Guía para Clientes,B,B_laboral,clic,automático (CSV),Valor de reventa de una casa de autor
+2026-11-19,jueves,20:30,2026-11-20T02:30,imagen (CSV nuevo),zona-polanco-01,Remodelación de Casas de Lujo CDMX,A,A_noche,guardado,automático (CSV),Departamento en Polanco
+2026-11-19,jueves,21:30,2026-11-20T03:30,"semilla tablero nuevo (CSV aparte, condicionado)",cocina-luz-01,Cocinas de Lujo: Diseño y Remodelación,A,A_noche,guardado y seguidor,automático tras crear tablero,"Iluminación de cocina sobre la isla. Solo si el tablero ya existe; si no, se recorre la fecha."
+2026-11-20,viernes,21:00,2026-11-21T03:00,"semilla tablero nuevo (CSV aparte, condicionado)",cocina-salpicadero-01,Cocinas de Lujo: Diseño y Remodelación,A,A_noche,guardado y seguidor,automático tras crear tablero,"Salpicadero de travertino. Solo si el tablero ya existe; si no, se recorre la fecha."
+2026-11-21,sábado,09:00,,acción manual,,,,,clic,hilo B con Fable 5.1,"Revisión del día 21: si los clics salientes de 30 días son menos de 8, rediseñar los pines de conversión (titular y foto) antes de subir frecuencia. Si son 8 o más, mantener 7 por semana."
+2026-11-21,sábado,09:30,,acción manual,,,,,,Jacobo o sesión en la Mac,Programar a mano carrusel-02 (sale 10:00).
+2026-11-21,sábado,10:00,2026-11-21T16:00,carrusel (serie de otro agente),carrusel-02,Presupuesto de Remodelación: Guía para Clientes,A,A_finde,guardado y seguidor,Jacobo o sesión en la Mac (lo produce otro agente),"Ver CARRUSEL_pines.md; fecha, hora y tablero fijados ahí."
+2026-11-21,sábado,21:00,2026-11-22T03:00,"semilla tablero nuevo (CSV aparte, condicionado)",cocina-autor-01,Cocinas de Lujo: Diseño y Remodelación,A,A_finde,guardado y seguidor,automático tras crear tablero,"Cocina de lujo con isla de travertino. Solo si el tablero ya existe; si no, se recorre la fecha."
+2026-11-22,domingo,19:00,,acción manual,,,,,,Jacobo o sesión en la Mac,Programar a mano video-03 (sale 19:30).
+2026-11-22,domingo,19:30,2026-11-23T01:30,video (serie de otro agente),video-03,Concreto Aparente y Minimalismo Cálido,A,A_finde,guardado y seguidor,Jacobo o sesión en la Mac (lo produce otro agente),"Ver VIDEO_pines.md; fecha, hora y tablero fijados ahí."
+2026-11-23,lunes,09:00,,acción manual,,,,,medición,hilo B,"Reporte semanal: llenar impresiones_7d, guardados_7d y clics_7d en CALENDARIO_pines.csv y una fila en METRICAS_semanales.csv."
+2026-11-23,lunes,18:00,,acción manual,,,,,seguidor,Jacobo,Responder comentarios de la semana y mover a su tablero correcto los pines que Instagram dejó en Remodelación (máx. 4 ediciones por hora).
+2026-11-23,lunes,18:30,,acción manual,,,,,seguidor,Jacobo,Guardar 1 o 2 pines propios en el tablero que más lo necesite (repines; tope 30 % de lo publicado en la semana).
+2026-11-23,lunes,19:00,,acción manual,,,,,,hilo B,"Revisar si los feeds RSS pinearon páginas nuevas del sitio; si una página nueva no aparece en 48 h, avisar al hilo A (vigilante)."
+2026-11-23,lunes,21:00,2026-11-24T03:00,"semilla tablero nuevo (CSV aparte, condicionado)",bano-sellado-01,Baños de Lujo en Piedra Natural,A,A_noche,guardado y seguidor,automático tras crear tablero,"Baño de travertino sin manchas. Solo si el tablero ya existe; si no, se recorre la fecha."
+2026-11-24,martes,09:30,2026-11-24T15:30,imagen (CSV nuevo),zona-lomas-01,Presupuesto de Remodelación: Guía para Clientes,B,B_laboral,clic,automático (CSV),Residencia en Lomas de Chapultepec
+2026-11-24,martes,20:30,2026-11-25T02:30,imagen (CSV nuevo),material-tzalam-01,Acabados de Lujo: Detalles e Instalación,A,A_noche,guardado,automático (CSV),Tzalam en interiores
+2026-11-24,martes,21:30,2026-11-25T03:30,"semilla tablero nuevo (CSV aparte, condicionado)",bano-lavabo-01,Baños de Lujo en Piedra Natural,A,A_noche,guardado y seguidor,automático tras crear tablero,"Lavabo volado de nogal y travertino. Solo si el tablero ya existe; si no, se recorre la fecha."
+2026-11-25,miércoles,10:30,2026-11-25T16:30,conversión (CSV nuevo),conv-08-bano,Travertino y Piedra Natural en Interiores,A+B,conversion,lead,automático (CSV),Baño de travertino y nogal
+2026-11-25,miércoles,21:00,2026-11-26T03:00,"semilla tablero nuevo (CSV aparte, condicionado)",bano-nicho-01,Baños de Lujo en Piedra Natural,A,A_noche,guardado y seguidor,automático tras crear tablero,"Remodelación de baño por etapas. Solo si el tablero ya existe; si no, se recorre la fecha."
+2026-11-26,jueves,13:00,,acción manual,,,,,,Jacobo o sesión en la Mac,Programar a mano carrusel-04 (sale 13:30).
+2026-11-26,jueves,13:30,2026-11-26T19:30,carrusel (serie de otro agente),carrusel-04,Presupuesto de Remodelación: Guía para Clientes,B,B_laboral,guardado y seguidor,Jacobo o sesión en la Mac (lo produce otro agente),"Ver CARRUSEL_pines.md; fecha, hora y tablero fijados ahí."
+2026-11-26,jueves,20:30,2026-11-27T02:30,imagen (CSV nuevo),obra-nuvana-01,Obra Gris y Proceso de Construcción,A,A_noche,guardado,automático (CSV),Supervisión de obra residencial
+2026-11-26,jueves,21:30,2026-11-27T03:30,"semilla tablero nuevo (CSV aparte, condicionado)",bano-agua-01,Baños de Lujo en Piedra Natural,A,A_noche,guardado y seguidor,automático tras crear tablero,"Travertino o mármol para el baño. Solo si el tablero ya existe; si no, se recorre la fecha."
+2026-11-27,viernes,21:00,2026-11-28T03:00,"semilla tablero nuevo (CSV aparte, condicionado)",bano-regadera-01,Baños de Lujo en Piedra Natural,A,A_noche,guardado y seguidor,automático tras crear tablero,"Regadera de piedra natural. Solo si el tablero ya existe; si no, se recorre la fecha."
+2026-11-28,sábado,10:00,2026-11-28T16:00,imagen (CSV nuevo),zona-san-miguel-01,Travertino y Piedra Natural en Interiores,A,A_finde,guardado,automático (CSV),Casa en San Miguel de Allende
+2026-11-28,sábado,21:00,2026-11-29T03:00,"semilla tablero nuevo (CSV aparte, condicionado)",bano-spa-01,Baños de Lujo en Piedra Natural,A,A_finde,guardado y seguidor,automático tras crear tablero,"Baño tipo spa con tina de travertino. Solo si el tablero ya existe; si no, se recorre la fecha."
+2026-11-29,domingo,19:00,,acción manual,,,,,,Jacobo o sesión en la Mac,Programar a mano video-04 (sale 19:30).
+2026-11-29,domingo,19:30,2026-11-30T01:30,video (serie de otro agente),video-04,Presupuesto de Remodelación: Guía para Clientes,A,A_finde,guardado y seguidor,Jacobo o sesión en la Mac (lo produce otro agente),"Ver VIDEO_pines.md; fecha, hora y tablero fijados ahí."
+2026-11-30,lunes,09:00,,acción manual,,,,,medición,hilo B,"Reporte semanal: llenar impresiones_7d, guardados_7d y clics_7d en CALENDARIO_pines.csv y una fila en METRICAS_semanales.csv."
+2026-11-30,lunes,18:00,,acción manual,,,,,seguidor,Jacobo,Responder comentarios de la semana y mover a su tablero correcto los pines que Instagram dejó en Remodelación (máx. 4 ediciones por hora).
+2026-11-30,lunes,18:30,,acción manual,,,,,seguidor,Jacobo,Guardar 1 o 2 pines propios en el tablero que más lo necesite (repines; tope 30 % de lo publicado en la semana).
+2026-11-30,lunes,19:00,,acción manual,,,,,,hilo B,"Revisar si los feeds RSS pinearon páginas nuevas del sitio; si una página nueva no aparece en 48 h, avisar al hilo A (vigilante)."
+2026-12-01,martes,09:30,2026-12-01T15:30,imagen (CSV nuevo),material-concreto-01,Obra Gris y Proceso de Construcción,B,B_laboral,clic,automático (CSV),Concreto aparente
+2026-12-01,martes,20:30,2026-12-02T02:30,imagen (CSV nuevo),material-chukum-01,Acabados de Lujo: Detalles e Instalación,A,A_noche,guardado,automático (CSV),Chukum para muros y baños
+2026-12-02,miércoles,10:30,2026-12-02T16:30,conversión (CSV nuevo),conv-09-vestidor,Remodelación de Casas de Lujo CDMX,A+B,conversion,lead,automático (CSV),Walk-in closet de nogal
+2026-12-03,jueves,13:30,2026-12-03T19:30,imagen (CSV nuevo),presupuesto-precio-01,Presupuesto de Remodelación: Guía para Clientes,B,B_laboral,clic,automático (CSV),Presupuesto o precio firmado
+2026-12-03,jueves,20:30,2026-12-04T02:30,imagen (CSV nuevo),material-tadelakt-01,Acabados de Lujo: Detalles e Instalación,A,A_noche,guardado,automático (CSV),Tadelakt en el baño
+2026-12-05,sábado,09:30,,acción manual,,,,,,Jacobo o sesión en la Mac,Programar a mano carrusel-03 (sale 10:00).
+2026-12-05,sábado,10:00,2026-12-05T16:00,carrusel (serie de otro agente),carrusel-03,Remodelación de Casas de Lujo CDMX,A,A_finde,guardado y seguidor,Jacobo o sesión en la Mac (lo produce otro agente),"Ver CARRUSEL_pines.md; fecha, hora y tablero fijados ahí."
+2026-12-06,domingo,19:30,2026-12-07T01:30,imagen (CSV nuevo),zona-coyoacan-01,Remodelación de Casas de Lujo CDMX,A,A_finde,guardado,automático (CSV),Casona en Coyoacán
+2026-12-06,domingo,20:00,,acción manual,,,,,medición,hilo B,"Cierre de 30 días: comparar contra metas del 7-dic (20 clics, 25 guardados, 15 seguidores) y proponer el ritmo de enero."

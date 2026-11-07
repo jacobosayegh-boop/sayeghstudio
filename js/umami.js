@@ -10,8 +10,8 @@
    Inerte hasta que UMAMI_HOST y UMAMI_SITIO tengan valor.
    ═════════════════════════════════════════════════════════════════════════════ */
 (function () {
-  var UMAMI_HOST = '';    // https://<pod>.pikapod.net (sin / final)
-  var UMAMI_SITIO = '';   // id del sitio sayeghstudio.com en Umami
+  var UMAMI_HOST = 'https://unselfish-seal.pikapod.net';
+  var UMAMI_SITIO = '9b853d4a-d3a7-49f4-90b4-55827623c343';   // sitio sayeghstudio.com en Umami
   var DOMINIOS = 'sayeghstudio.com,www.sayeghstudio.com';
   var CLAVE_BANNER = 'ga_consent_status';
   var HOST_VIA = 'via.sayeghstudio.com';

@@ -11,3 +11,8 @@
 /feed*.xml
   Content-Type: application/rss+xml; charset=utf-8
   Cache-Control: public, max-age=3600
+
+# Dossiers en PDF (se envían por correo y WhatsApp; no se indexan en buscadores)
+/dossier/*
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: public, max-age=3600

@@ -65,6 +65,12 @@
 /aviso-de-privacidad     /privacidad/   301!
 /aviso-de-privacidad/    /privacidad/   301!
 
+# Pinterest (spec 026 del repo de automatización): feeds RSS por nicho e imágenes de obra real
+# servidos desde el dominio reclamado. Proxy 200 al flujo «[v2] Pinterest · Feed RSS» del pod.
+# Nichos: casa, inversion, broker, comercial, todos. Reversa: borrar estas dos líneas.
+/pinterest/obra/:nicho    https://masterful-nightingale.pikapod.net/webhook/pin-v2-feed-0001/pin-v2-7c3e9a41b2d8/feed/:nicho   200!
+/pinterest/img/:archivo   https://masterful-nightingale.pikapod.net/webhook/pin-v2-img-0001/pin-v2-7c3e9a41b2d8/img/:archivo   200!
+
 # Archivos internos del repo: no se sirven.
 /tools/*      /404.html   404!
 /.github/*    /404.html   404!

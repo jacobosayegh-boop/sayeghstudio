@@ -1,0 +1,4 @@
+Banco de fondo musical del TikTok de Sayegh Studio (spec 029, 14-11-2026).
+30 pistas instrumentales de 30 s generadas una vez con ACE-Step (código y pesos con licencia MIT, uso comercial permitido) en fal.
+Normalizadas a -20 LUFS, pico -2 dBTP, 44.1 kHz, MP3 128 kbps. Las usa el render del reel solo-TikTok (Preparar Render, F4 v2) bajo la voz.
+Renovar cada 3 meses. No se indexan.

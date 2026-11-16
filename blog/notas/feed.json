@@ -1,0 +1,444 @@
+{
+ "articles": [
+  {
+   "id": "2a13e351-83ad-4b20-958a-1662a13f5217",
+   "title": "Due diligence inmobiliario antes de comprar o remodelar",
+   "slug": "due-diligence-inmobiliario",
+   "excerpt": "El due diligence inmobiliario detecta riesgos legales, técnicos y financieros antes de comprar o remodelar. Proteja capital, plazo y plusvalía real.",
+   "date": "15 de noviembre de 2026",
+   "isoDate": "2026-11-16T02:53:53.839+00:00",
+   "image": "https://sayeghstudio.com/assets/images/blog-notas/due-diligence-inmobiliario.webp",
+   "url": "https://sayeghstudio.com/blog/notas/due-diligence-inmobiliario/"
+  },
+  {
+   "id": "197b3386-3f34-494e-9b3e-f39c21776499",
+   "title": "Guía de costos de renovación con precios firmados",
+   "slug": "guia-costos-renovacion",
+   "excerpt": "Guía de costos de renovación para remodelaciones patrimoniales: alcance, riesgos, precios unitarios y viabilidad financiera con cada cambio firmado.",
+   "date": "13 de noviembre de 2026",
+   "isoDate": "2026-11-14T02:54:19.743+00:00",
+   "image": "https://sayeghstudio.com/assets/images/blog-notas/guia-costos-renovacion.webp",
+   "url": "https://sayeghstudio.com/blog/notas/guia-costos-renovacion/"
+  },
+  {
+   "id": "80a74f58-7bb3-43e6-933e-d3afa92d8006",
+   "title": "Qué cubre la supervisión de una remodelación",
+   "slug": "que-cubre-supervision-remodelacion",
+   "excerpt": "Qué cubre la supervisión de obra: control técnico, costos blindados, calidad certificada, trazabilidad para remodelaciones patrimoniales con cada cambio firmado.",
+   "date": "11 de noviembre de 2026",
+   "isoDate": "2026-11-12T02:53:38.268+00:00",
+   "image": "https://sayeghstudio.com/assets/images/blog-notas/que-cubre-supervision-remodelacion.webp",
+   "url": "https://sayeghstudio.com/blog/notas/que-cubre-supervision-remodelacion/"
+  },
+  {
+   "id": "bd6244f5-45de-4003-8ee3-6324f64a5a06",
+   "title": "Administración versus precio unitario en obra",
+   "slug": "administracion-versus-precio-unitario-obra",
+   "excerpt": "Administración versus precio unitario define el costo real de una obra: controla viabilidad, cambios, calidad certificada y retorno patrimonial medible y verificable.",
+   "date": "9 de noviembre de 2026",
+   "isoDate": "2026-11-10T02:55:08.658+00:00",
+   "image": "https://sayeghstudio.com/assets/images/blog-notas/administracion-versus-precio-unitario-obra.webp",
+   "url": "https://sayeghstudio.com/blog/notas/administracion-versus-precio-unitario-obra/"
+  },
+  {
+   "id": "78b964c2-b660-4b57-9ca8-59e40b6d45f2",
+   "title": "Errores costosos en remodelaciones de alto rigor",
+   "slug": "errores-costosos-en-remodelaciones",
+   "excerpt": "Evita errores costosos en remodelaciones con viabilidad técnica, precios unitarios blindados y control pericial de cada partida de obra.",
+   "date": "7 de noviembre de 2026",
+   "isoDate": "2026-11-08T02:54:18.688+00:00",
+   "image": "https://sayeghstudio.com/assets/images/blog-notas/errores-costosos-en-remodelaciones.webp",
+   "url": "https://sayeghstudio.com/blog/notas/errores-costosos-en-remodelaciones/"
+  },
+  {
+   "id": "876b671a-c28c-49dc-8ea7-7909d7620386",
+   "title": "Guía de ejecución llave en mano ",
+   "slug": "guia-ejecucion-llave-en-mano",
+   "excerpt": "Esta guía de ejecución llave en mano explica cómo blindar alcance, precios unitarios, calidad AAA y ROI desde la viabilidad técnica y financiera real.",
+   "date": "5 de noviembre de 2026",
+   "isoDate": "2026-11-06T02:52:49.097+00:00",
+   "image": "https://sayeghstudio.com/assets/images/blog-notas/guia-ejecucion-llave-en-mano.webp",
+   "url": "https://sayeghstudio.com/blog/notas/guia-ejecucion-llave-en-mano/"
+  },
+  {
+   "id": "54c9deb2-231e-43eb-a180-5cb4185a0d25",
+   "title": "Brutalismo texturizado y diseño japandi residencial",
+   "slug": "brutalismo-texturizado-diseno-japandi-residencial",
+   "excerpt": "Brutalismo texturizado y diseño japandi en residencias exige concreto, madera y luz con rigor constructivo, viabilidad y costos controlados desde obra.",
+   "date": "3 de noviembre de 2026",
+   "isoDate": "2026-11-04T01:21:07.32+00:00",
+   "image": "https://sayeghstudio.com/assets/images/blog-notas/brutalismo-texturizado-diseno-japandi-residencial.webp",
+   "url": "https://sayeghstudio.com/blog/notas/brutalismo-texturizado-diseno-japandi-residencial/"
+  },
+  {
+   "id": "5ec76440-d9db-441d-a5c6-8648fdb174dd",
+   "title": "Ingeniería financiera para remodelar una casa patrimonial",
+   "slug": "ingenieria-financiera-remodelar-casa-patrimonial",
+   "excerpt": "La ingeniería financiera para remodelar una casa patrimonial blinda costos, protege la estructura y convierte cada decisión en plusvalía medible.",
+   "date": "2 de noviembre de 2026",
+   "isoDate": "2026-11-03T01:21:17.431+00:00",
+   "image": "https://sayeghstudio.com/assets/images/blog-notas/ingenieria-financiera-remodelar-casa-patrimonial.webp",
+   "url": "https://sayeghstudio.com/blog/notas/ingenieria-financiera-remodelar-casa-patrimonial/"
+  },
+  {
+   "id": "98b885f6-2860-4f65-8cd7-efdf9809295c",
+   "title": "Maderas naturales que no se deforman en interiores",
+   "slug": "maderas-naturales-que-no-se-deforman-en-interiores",
+   "excerpt": "Conozca las maderas naturales que no se deforman en interiores y los criterios de obra que blindan estabilidad, precisión y plusvalía patrimonial real.",
+   "date": "1 de noviembre de 2026",
+   "isoDate": "2026-11-02T01:21:41.81+00:00",
+   "image": "https://sayeghstudio.com/assets/images/blog-notas/maderas-naturales-que-no-se-deforman-en-interiores.webp",
+   "url": "https://sayeghstudio.com/blog/notas/maderas-naturales-que-no-se-deforman-en-interiores/"
+  },
+  {
+   "id": "3a6523aa-ade7-4518-825b-2fc751252559",
+   "title": "Iluminación cenital y luz rasante en interiores",
+   "slug": "iluminacion-cenital-luz-rasante-interiores",
+   "excerpt": "Iluminación cenital y luz rasante en interiores exige control técnico: revela materiales, protege el confort y sostiene la plusvalía patrimonial con rigor.",
+   "date": "31 de octubre de 2026",
+   "isoDate": "2026-11-01T00:01:47.944+00:00",
+   "image": "https://sayeghstudio.com/assets/images/blog-notas/iluminacion-cenital-luz-rasante-interiores.webp",
+   "url": "https://sayeghstudio.com/blog/notas/iluminacion-cenital-luz-rasante-interiores/"
+  },
+  {
+   "id": "e6714b21-ec3c-4d3b-a3ab-d83f4e49727e",
+   "title": "Aislamiento acústico en casas de lujo sin fallas",
+   "slug": "aislamiento-acustico-casas-lujo",
+   "excerpt": "El aislamiento acústico en casas de lujo exige ingeniería, detalle y control de obra para proteger la paz absoluta y la plusvalía patrimonial real y medible.",
+   "date": "30 de octubre de 2026",
+   "isoDate": "2026-10-31T00:02:06.763+00:00",
+   "image": "https://sayeghstudio.com/assets/images/blog-notas/aislamiento-acustico-casas-lujo.webp",
+   "url": "https://sayeghstudio.com/blog/notas/aislamiento-acustico-casas-lujo/"
+  },
+  {
+   "id": "79ed09b4-be23-4e39-a831-9e8ef745470c",
+   "title": "Cómo detectar sobrecostos antes de iniciar obra",
+   "slug": "como-detectar-sobrecostos-antes-de-iniciar-obra",
+   "excerpt": "Aprende cómo detectar sobrecostos antes de iniciar una remodelación patrimonial con auditoría técnica, precios unitarios y control de viabilidad financiero.",
+   "date": "29 de octubre de 2026",
+   "isoDate": "2026-10-30T02:51:44.767+00:00",
+   "image": "https://sayeghstudio.com/assets/images/blog-notas/como-detectar-sobrecostos-antes-de-iniciar-obra.webp",
+   "url": "https://sayeghstudio.com/blog/notas/como-detectar-sobrecostos-antes-de-iniciar-obra/"
+  },
+  {
+   "id": "b2e9b167-a2d4-419a-b498-582390bfe145",
+   "title": "Confort térmico en remodelación residencial",
+   "slug": "confort-termico-remodelacion-residencial",
+   "excerpt": "Confort térmico en remodelación residencial: materiales, envolvente e instalaciones para reducir cargas y blindar el valor de tu propiedad con rigor.",
+   "date": "28 de octubre de 2026",
+   "isoDate": "2026-10-29T03:43:49.229+00:00",
+   "image": "https://sayeghstudio.com/assets/images/blog-notas/confort-termico-remodelacion-residencial.webp",
+   "url": "https://sayeghstudio.com/blog/notas/confort-termico-remodelacion-residencial/"
+  },
+  {
+   "id": "c9b76dac-6075-44fe-a04c-ea5f011e443e",
+   "title": "Evaluación de viabilidad con el precio firmado antes de excavar",
+   "slug": "evaluacion-de-viabilidad-precio-firmado",
+   "excerpt": "Una evaluación de viabilidad audita estructura, costos y retorno antes de remodelar, para proteger capital, acabados AAA y paz absoluta en obra compleja.",
+   "date": "27 de octubre de 2026",
+   "isoDate": "2026-10-28T02:53:59.398+00:00",
+   "image": "https://sayeghstudio.com/assets/images/blog-notas/evaluacion-de-viabilidad-precio-firmado.webp",
+   "url": "https://sayeghstudio.com/blog/notas/evaluacion-de-viabilidad-precio-firmado/"
+  },
+  {
+   "id": "ba95d33e-6cab-49f9-b769-47431341b062",
+   "title": "Por qué el mármol travertino no envejece",
+   "slug": "por-que-el-marmol-travertino-no-envejece",
+   "excerpt": "Por qué el mármol travertino no envejece: composición, luz, sellado y ejecución pericial para conservar su pátina y plusvalía en obra.",
+   "date": "26 de octubre de 2026",
+   "isoDate": "2026-10-27T03:43:33.394+00:00",
+   "image": "https://sayeghstudio.com/assets/images/blog-notas/por-que-el-marmol-travertino-no-envejece.webp",
+   "url": "https://sayeghstudio.com/blog/notas/por-que-el-marmol-travertino-no-envejece/"
+  },
+  {
+   "id": "9bc60a7c-de6a-47ef-b511-57f84abffad2",
+   "title": "Presupuesto cerrado versus estimaciones abiertas",
+   "slug": "presupuesto-cerrado-versus-estimaciones-abiertas",
+   "excerpt": "Presupuesto cerrado versus estimaciones abiertas: criterios para blindar costos, alcance, contingencias y retorno en una remodelación patrimonial AAA.",
+   "date": "25 de octubre de 2026",
+   "isoDate": "2026-10-26T02:52:48.416+00:00",
+   "image": "https://sayeghstudio.com/assets/images/blog-notas/presupuesto-cerrado-versus-estimaciones-abiertas.webp",
+   "url": "https://sayeghstudio.com/blog/notas/presupuesto-cerrado-versus-estimaciones-abiertas/"
+  },
+  {
+   "id": "70b1c77b-2ad7-405b-ac1c-9380f6a6ed89",
+   "title": "Concreto aparente: resistencia en interiores residenciales",
+   "slug": "resistencia-concreto-aparente-interiores-residenciales",
+   "excerpt": "Evalúa la resistencia del concreto aparente en interiores residenciales: fisuras, humedad, sellado, mantenimiento y viabilidad técnica en obra residencial.",
+   "date": "24 de octubre de 2026",
+   "isoDate": "2026-10-25T00:02:02.751+00:00",
+   "image": "https://sayeghstudio.com/assets/images/blog-notas/resistencia-concreto-aparente-interiores-residenciales.webp",
+   "url": "https://sayeghstudio.com/blog/notas/resistencia-concreto-aparente-interiores-residenciales/"
+  },
+  {
+   "id": "f09f5161-a9ff-4bb4-afa8-117958404329",
+   "title": "Qué incluye una auditoría de viabilidad técnica",
+   "slug": "que-incluye-una-auditoria-de-viabilidad-tecnica",
+   "excerpt": "Descubre qué incluye una auditoría de viabilidad: estructura, costos unitarios, NOMs, riesgos y retorno para remodelar con certeza en capital patrimonial.",
+   "date": "23 de octubre de 2026",
+   "isoDate": "2026-10-24T00:02:17.643+00:00",
+   "image": "https://sayeghstudio.com/assets/images/blog-notas/que-incluye-una-auditoria-de-viabilidad-tecnica.webp",
+   "url": "https://sayeghstudio.com/blog/notas/que-incluye-una-auditoria-de-viabilidad-tecnica/"
+  },
+  {
+   "id": "1d910649-a532-436e-aba2-383ddf86fccc",
+   "title": "Chukum versus microcemento residencial: cuál conviene",
+   "slug": "chukum-versus-microcemento-residencial",
+   "excerpt": "Chukum versus microcemento residencial: compara desempeño, mantenimiento, costos de ciclo de vida y viabilidad técnica para una vivienda premium AAA.",
+   "date": "22 de octubre de 2026",
+   "isoDate": "2026-10-23T03:43:09.596+00:00",
+   "image": "https://sayeghstudio.com/assets/images/blog-notas/chukum-versus-microcemento-residencial.webp",
+   "url": "https://sayeghstudio.com/blog/notas/chukum-versus-microcemento-residencial/"
+  },
+  {
+   "id": "5e6ba71d-70c0-455a-b1d3-c0515084ba34",
+   "title": "Cómo validar la estructura de una vivienda",
+   "slug": "como-validar-estructura-vivienda",
+   "excerpt": "Aprende cómo validar estructura vivienda antes de remodelar: señales, pruebas y dictamen técnico para blindar seguridad, obra y capital con rigor técnico.",
+   "date": "21 de octubre de 2026",
+   "isoDate": "2026-10-22T03:33:26.375+00:00",
+   "image": "https://sayeghstudio.com/assets/images/blog-notas/como-validar-estructura-vivienda.webp",
+   "url": "https://sayeghstudio.com/blog/notas/como-validar-estructura-vivienda/"
+  },
+  {
+   "id": "87d1988a-e9d0-4cb5-8580-c5fa3b8a5fdb",
+   "title": "Sistemas VRF residenciales con rigor técnico",
+   "slug": "sistemas-vrf-residenciales-rigor-tecnico",
+   "excerpt": "Los sistemas VRF residenciales aportan confort por zona y silencio, pero su viabilidad depende de carga térmica, obra, drenaje y control financiero preciso.",
+   "date": "20 de octubre de 2026",
+   "isoDate": "2026-10-21T00:01:35.192+00:00",
+   "image": "https://sayeghstudio.com/assets/images/blog-notas/sistemas-vrf-residenciales-rigor-tecnico.webp",
+   "url": "https://sayeghstudio.com/blog/notas/sistemas-vrf-residenciales-rigor-tecnico/"
+  },
+  {
+   "id": "e8e917e8-9e44-4885-aa16-12545fa2180b",
+   "title": "Cómo auditar un presupuesto constructivo",
+   "slug": "como-auditar-presupuesto-constructivo",
+   "excerpt": "Aprende cómo auditar presupuesto constructivo con rigor técnico: precios unitarios, alcances, riesgos y contingencias para proteger capital y obra.",
+   "date": "19 de octubre de 2026",
+   "isoDate": "2026-10-20T03:40:52.323+00:00",
+   "image": "https://sayeghstudio.com/assets/images/blog-notas/como-auditar-presupuesto-constructivo.webp",
+   "url": "https://sayeghstudio.com/blog/notas/como-auditar-presupuesto-constructivo/"
+  },
+  {
+   "id": "e56f134f-d842-4fc0-b0d1-06c784b10819",
+   "title": "Cuándo recuperar inversión en una remodelación",
+   "slug": "cuando-recuperar-inversion-remodelacion",
+   "excerpt": "Entiende cuándo recuperar inversión en una remodelación: calcula plazo, plusvalía neta y riesgos técnicos antes de comprometer capital con datos.",
+   "date": "18 de octubre de 2026",
+   "isoDate": "2026-10-19T03:51:31.018+00:00",
+   "image": "https://sayeghstudio.com/assets/images/blog-notas/cuando-recuperar-inversion-remodelacion.webp",
+   "url": "https://sayeghstudio.com/blog/notas/cuando-recuperar-inversion-remodelacion/"
+  },
+  {
+   "id": "506141be-07e5-45aa-8463-c901e16b4d24",
+   "title": "Firma de autor y ejecución residencial en Bosque Real",
+   "slug": "firma-autor-ejecucion-residencial-bosque-real",
+   "excerpt": "Firma de arquitectura de autor y ejecución pericial residencial en Bosque Real: auditoría, presupuesto blindado y plusvalía con rigor técnico verificable",
+   "date": "17 de octubre de 2026",
+   "isoDate": "2026-10-18T00:02:07.083+00:00",
+   "image": "https://sayeghstudio.com/assets/images/blog-notas/firma-autor-ejecucion-residencial-bosque-real.webp",
+   "url": "https://sayeghstudio.com/blog/notas/firma-autor-ejecucion-residencial-bosque-real/"
+  },
+  {
+   "id": "8b7506ef-9657-4d7c-9105-609e6ef98647",
+   "title": "Remodelación de lujo con el precio firmado antes de excavar",
+   "slug": "remodelacion-residencial-precio-firmado",
+   "excerpt": "La remodelación residencial de lujo exige auditoría de viabilidad, precios unitarios blindados y supervisión pericial para proteger capital y acabados.",
+   "date": "16 de octubre de 2026",
+   "isoDate": "2026-10-17T01:21:30.346+00:00",
+   "image": "https://sayeghstudio.com/assets/images/blog-notas/remodelacion-residencial-precio-firmado.webp",
+   "url": "https://sayeghstudio.com/blog/notas/remodelacion-residencial-precio-firmado/"
+  },
+  {
+   "id": "88329abe-b8b1-435f-a8c8-ea42b091d3d0",
+   "title": "Hogares inteligentes con control técnico real",
+   "slug": "hogares-inteligentes-control-tecnico-real",
+   "excerpt": "Hogares inteligentes: tecnología, obra y datos para elevar confort, seguridad y plusvalía sin comprometer presupuesto, ejecución ni acabados de lujo.",
+   "date": "15 de octubre de 2026",
+   "isoDate": "2026-10-16T01:21:59.695+00:00",
+   "image": "https://sayeghstudio.com/assets/images/blog-notas/hogares-inteligentes-control-tecnico-real.webp",
+   "url": "https://sayeghstudio.com/blog/notas/hogares-inteligentes-control-tecnico-real/"
+  },
+  {
+   "id": "9fbab223-6679-4c8e-8577-0e50269898a3",
+   "title": "Precios unitarios obra: control real de costos",
+   "slug": "precios-unitarios-obra-control-costos",
+   "excerpt": "Los precios unitarios obra convierten una remodelación en un presupuesto verificable: costos, alcances y riesgos bajo control técnico real de obra.",
+   "date": "14 de octubre de 2026",
+   "isoDate": "2026-10-15T01:21:25.106+00:00",
+   "image": "https://sayeghstudio.com/assets/images/blog-notas/precios-unitarios-obra-control-costos.webp",
+   "url": "https://sayeghstudio.com/blog/notas/precios-unitarios-obra-control-costos/"
+  },
+  {
+   "id": "cf9bff77-6d11-4b85-8000-eb26e8a7e73f",
+   "title": "Cuánto dura una remodelación de alto nivel",
+   "slug": "cuanto-dura-remodelacion-alto-nivel",
+   "excerpt": "Conozca cuánto dura una remodelación de lujo y qué variables definen plazo, costo y plusvalía antes de comprometer capital en México con rigor técnico.",
+   "date": "13 de octubre de 2026",
+   "isoDate": "2026-10-14T01:22:32.42+00:00",
+   "image": "https://sayeghstudio.com/assets/images/blog-notas/cuanto-dura-remodelacion-alto-nivel.webp",
+   "url": "https://sayeghstudio.com/blog/notas/cuanto-dura-remodelacion-alto-nivel/"
+  },
+  {
+   "id": "6c043712-b5d4-45be-929c-ed2b330eef0d",
+   "title": "Dirección de obra con control de costo y calidad",
+   "slug": "direccion-de-obra-control-costo-calidad",
+   "excerpt": "La dirección de obra convierte presupuesto, calidad y calendario en control verificable. Auditoría técnica para remodelar o invertir con datos.",
+   "date": "12 de octubre de 2026",
+   "isoDate": "2026-10-13T01:22:19.586+00:00",
+   "image": "https://sayeghstudio.com/assets/images/blog-notas/direccion-de-obra-control-costo-calidad.webp",
+   "url": "https://sayeghstudio.com/blog/notas/direccion-de-obra-control-costo-calidad/"
+  },
+  {
+   "id": "b731c336-f35d-49d9-8ab9-639ecc874abf",
+   "title": "Diseño y construcción versus arquitecto: qué conviene",
+   "slug": "diseno-y-construccion-versus-arquitecto",
+   "excerpt": "Compare diseño y construcción versus arquitecto: costos, responsabilidades y plusvalía para decidir una remodelación AAA con datos concretos de mercado.",
+   "date": "11 de octubre de 2026",
+   "isoDate": "2026-10-12T03:44:10.268+00:00",
+   "image": "https://sayeghstudio.com/assets/images/blog-notas/diseno-y-construccion-versus-arquitecto.webp",
+   "url": "https://sayeghstudio.com/blog/notas/diseno-y-construccion-versus-arquitecto/"
+  },
+  {
+   "id": "1e7946be-c391-4d74-89dc-32968d441311",
+   "title": "Vivienda wellness: bienestar que sostiene valor",
+   "slug": "vivienda-wellness-bienestar-que-sostiene-valor",
+   "excerpt": "La vivienda wellness exige aire, agua, luz y acústica medibles. Audite viabilidad, costos y plusvalía antes de intervenir una propiedad de alto valor.",
+   "date": "10 de octubre de 2026",
+   "isoDate": "2026-10-11T00:01:54.973+00:00",
+   "image": "https://sayeghstudio.com/assets/images/blog-notas/vivienda-wellness-bienestar-que-sostiene-valor.webp",
+   "url": "https://sayeghstudio.com/blog/notas/vivienda-wellness-bienestar-que-sostiene-valor/"
+  },
+  {
+   "id": "854bb8f3-31a8-4c9e-86ab-2211c253d6b5",
+   "title": "Contrato a precio alzado de obra: control real",
+   "slug": "contrato-precio-alzado-obra",
+   "excerpt": "El contrato precio alzado obra parece dar certeza, pero solo funciona con alcance, planos y exclusiones auditadas antes de firmar.",
+   "date": "9 de octubre de 2026",
+   "isoDate": "2026-10-10T03:52:07.051+00:00",
+   "image": "https://sayeghstudio.com/assets/images/blog-notas/contrato-precio-alzado-obra.webp",
+   "url": "https://sayeghstudio.com/blog/notas/contrato-precio-alzado-obra/"
+  },
+  {
+   "id": "d45dc524-92fb-41df-a6ea-545e22b6ade1",
+   "title": "Acabados residenciales atemporales con valor",
+   "slug": "acabados-residenciales-atemporales",
+   "excerpt": "Los acabados residenciales atemporales protegen valor, reducen correcciones y sostienen la plusvalía con especificación técnica y presupuesto blindado.",
+   "date": "8 de octubre de 2026",
+   "isoDate": "2026-10-09T03:43:55.482+00:00",
+   "image": "https://sayeghstudio.com/assets/images/blog-notas/acabados-residenciales-atemporales.webp",
+   "url": "https://sayeghstudio.com/blog/notas/acabados-residenciales-atemporales/"
+  },
+  {
+   "id": "8b9c1fa9-46bd-49e8-b18d-5d5c62bc75e3",
+   "title": "Arquitectura de lujo con precisión y valor",
+   "slug": "arquitectura-de-lujo-precision-valor",
+   "excerpt": "Arquitectura de lujo exige auditoría de viabilidad, presupuestos blindados y dirección de obra para proteger capital, acabados AAA y plusvalía real medible.",
+   "date": "7 de octubre de 2026",
+   "isoDate": "2026-10-08T00:02:41.481+00:00",
+   "image": "https://sayeghstudio.com/assets/images/blog-notas/arquitectura-de-lujo-precision-valor.webp",
+   "url": "https://sayeghstudio.com/blog/notas/arquitectura-de-lujo-precision-valor/"
+  },
+  {
+   "id": "84ca5a70-0657-4a35-b577-215ff3c2d622",
+   "title": "Cómo aumentar la plusvalía residencial con rigor",
+   "slug": "como-aumentar-plusvalia-residencial",
+   "excerpt": "Aprenda cómo aumentar plusvalía residencial con dirección arquitectónica, ingeniería de valor y ejecución llave en mano para proteger su activo patrimonial.",
+   "date": "6 de octubre de 2026",
+   "isoDate": "2026-10-07T00:00:49.605+00:00",
+   "image": "https://sayeghstudio.com/assets/images/blog-notas/como-aumentar-plusvalia-residencial.webp",
+   "url": "https://sayeghstudio.com/blog/notas/como-aumentar-plusvalia-residencial/"
+  },
+  {
+   "id": "bc54fc45-edd6-46a7-ab73-478d5a34a613",
+   "title": "Mármol travertino para interiores de alto rigor",
+   "slug": "marmol-travertino-para-interiores",
+   "excerpt": "Mármol travertino para interiores: criterios de selección, curado, iluminación y control técnico para resguardar valor, tacto y precisión espacial real.",
+   "date": "5 de octubre de 2026",
+   "isoDate": "2026-10-06T00:00:52.33+00:00",
+   "image": "https://sayeghstudio.com/assets/images/blog-notas/marmol-travertino-para-interiores.webp",
+   "url": "https://sayeghstudio.com/blog/notas/marmol-travertino-para-interiores/"
+  },
+  {
+   "id": "0c8df9f6-5e3a-44b5-8fd6-453b8b0dc3c5",
+   "title": "Tablarroca de alta especificación en residencias AAA",
+   "slug": "tablarroca-de-alta-especificacion-residencias-aaa",
+   "excerpt": "Tablarroca de alta especificación para residencias AAA: ingeniería, plafones e iluminación precisa con control integral de obra y presupuesto validado.",
+   "date": "4 de octubre de 2026",
+   "isoDate": "2026-10-05T00:00:55.523+00:00",
+   "image": "https://sayeghstudio.com/assets/images/blog-notas/tablarroca-de-alta-especificacion-residencias-aaa.webp",
+   "url": "https://sayeghstudio.com/blog/notas/tablarroca-de-alta-especificacion-residencias-aaa/"
+  },
+  {
+   "id": "4047dc84-3cc2-4bb4-98f7-83f3e4d41ecf",
+   "title": "Selladores nanosilanos para mármol en obra AAA",
+   "slug": "selladores-nanosilanos-para-marmol-obra-aaa",
+   "excerpt": "Selladores nanosilanos para mármol: control de absorción, acabado y plusvalía en residencias de alta especificación patrimonial de alto nivel en México.",
+   "date": "3 de octubre de 2026",
+   "isoDate": "2026-10-04T00:01:20.029+00:00",
+   "image": "https://sayeghstudio.com/assets/images/blog-notas/selladores-nanosilanos-para-marmol-obra-aaa.webp",
+   "url": "https://sayeghstudio.com/blog/notas/selladores-nanosilanos-para-marmol-obra-aaa/"
+  },
+  {
+   "id": "1a2543b1-8a10-4d2b-a4c4-8f477bc10695",
+   "title": "Colado de concreto aparente con precisión AAA",
+   "slug": "colado-de-concreto-aparente-precision-aaa",
+   "excerpt": "El colado de concreto aparente exige diseño de mezcla, cimbra y curado controlados para proteger la precisión material y patrimonial de una residencia.",
+   "date": "2 de octubre de 2026",
+   "isoDate": "2026-10-03T00:01:21.472+00:00",
+   "image": "https://sayeghstudio.com/assets/images/blog-notas/colado-de-concreto-aparente-precision-aaa.webp",
+   "url": "https://sayeghstudio.com/blog/notas/colado-de-concreto-aparente-precision-aaa/"
+  },
+  {
+   "id": "7ba93cbf-9c68-4adb-b701-e07f543c378e",
+   "title": "Iluminación wall washer residencial precisa",
+   "slug": "iluminacion-wall-washer-residencial-precisa",
+   "excerpt": "La iluminación wall washer residencial integra óptica, geometría y control térmico para proteger materiales, atmósferas y valor patrimonial de la residencia.",
+   "date": "1 de octubre de 2026",
+   "isoDate": "2026-10-02T00:01:32.838+00:00",
+   "image": "https://sayeghstudio.com/assets/images/blog-notas/iluminacion-wall-washer-residencial-precisa.webp",
+   "url": "https://sayeghstudio.com/blog/notas/iluminacion-wall-washer-residencial-precisa/"
+  },
+  {
+   "id": "bdc85a89-1821-424e-a64c-c8fa8f345e6d",
+   "title": "Arquitectura residencial con privacidad real",
+   "slug": "arquitectura-residencial-con-privacidad",
+   "excerpt": "Arquitectura residencial con privacidad: diseño, ingeniería y ejecución para proteger intimidad, seguridad, valor patrimonial y control operativo integral.",
+   "date": "30 de septiembre de 2026",
+   "isoDate": "2026-10-01T00:01:41.924+00:00",
+   "image": "https://sayeghstudio.com/assets/images/blog-notas/arquitectura-residencial-con-privacidad.webp",
+   "url": "https://sayeghstudio.com/blog/notas/arquitectura-residencial-con-privacidad/"
+  },
+  {
+   "id": "267f9503-bea9-4cf8-9e50-394e66d61ef3",
+   "title": "Diseño sensorial para residencias con rigor técnico",
+   "slug": "diseno-sensorial-para-residencias-rigor-tecnico",
+   "excerpt": "El diseño sensorial para residencias integra luz, materia y acústica con precisión constructiva para proteger la plusvalía y la experiencia cotidiana.",
+   "date": "29 de septiembre de 2026",
+   "isoDate": "2026-09-30T00:02:13.588+00:00",
+   "image": "https://sayeghstudio.com/assets/images/blog-notas/diseno-sensorial-para-residencias-rigor-tecnico.webp",
+   "url": "https://sayeghstudio.com/blog/notas/diseno-sensorial-para-residencias-rigor-tecnico/"
+  },
+  {
+   "id": "016fed71-bc5f-4334-9398-d823cf54ed64",
+   "title": "Cómo evitar vicios ocultos en obra residencial",
+   "slug": "como-evitar-vicios-ocultos-en-obra-residencial",
+   "excerpt": "Cómo evitar vicios ocultos en obra con auditoría técnica, trazabilidad y ejecución pericial para proteger capital, privacidad y plusvalía residencial.",
+   "date": "28 de septiembre de 2026",
+   "isoDate": "2026-09-29T03:52:17.499+00:00",
+   "image": "https://sayeghstudio.com/assets/images/blog-notas/como-evitar-vicios-ocultos-en-obra-residencial.webp",
+   "url": "https://sayeghstudio.com/blog/notas/como-evitar-vicios-ocultos-en-obra-residencial/"
+  },
+  {
+   "id": "41835781-8672-4db8-b39d-0bf640eab1b0",
+   "title": "Auditoría financiera de obra residencial precisa",
+   "slug": "auditoria-financiera-obra-residencial-precisa",
+   "excerpt": "Una auditoría financiera de obra residencial protege capital, controla riesgos y alinea diseño, ejecución y plusvalía con rigor pericial en México élite.",
+   "date": "28 de septiembre de 2026",
+   "isoDate": "2026-09-28T16:08:27.476+00:00",
+   "image": "https://sayeghstudio.com/assets/images/blog-notas/auditoria-financiera-obra-residencial-precisa.webp",
+   "url": "https://sayeghstudio.com/blog/notas/auditoria-financiera-obra-residencial-precisa/"
+  }
+ ]
+}

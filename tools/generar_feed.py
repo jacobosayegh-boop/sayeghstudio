@@ -84,7 +84,8 @@ CATEGORIAS = {
 
 # Rutas excluidas siempre (portada, índices, legales, aliados).
 EXCLUIR_EXACTAS = {"/", "/blog/", "/privacidad/", "/aliados/"}
-EXCLUIR_PREFIJOS = ("/privacidad/", "/aliados/")
+# /blog/notas/: bitácora migrada de Soro (16-11-2026); no entra a Pinterest sin orden de Jacobo.
+EXCLUIR_PREFIJOS = ("/privacidad/", "/aliados/", "/blog/notas/")
 # Índices de categoría del blog: /blog/<cat>/ (dos segmentos exactos).
 RE_INDICE_BLOG = re.compile(r"^/blog/[^/]+/$")
 # Páginas que solo entran si tienen og:image.

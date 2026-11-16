@@ -1,10 +1,10 @@
-// "Recién publicado" siempre con la nota más nueva de la bitácora.
+// "Recién publicado" siempre con la nota más nueva de la bitácora propia (/blog/notas/).
 // Corre en "/" y "/blog/": reescribe lo que hay entre <!-- RECENT_ARTICLES_START --> y
 // <!-- RECENT_ARTICLES_END --> con la última nota. Si la fuente falla, tarda o cambia de formato,
 // se entrega el HTML estático ya desplegado (mismo marcado), sin error visible.
 
-const EMBED = "https://app.trysoro.com/api/embed/cdb974da-4251-40d2-9ad6-3778e1063a87";
-const FEED_ALT = "https://via.sayeghstudio.com/api/soro";
+// Fuente propia desde 16-11-2026 (Soro cancelado): la genera tools/blog-notas/generar.mjs.
+const FEED = "/blog/notas/feed.json";
 const START = "<!-- RECENT_ARTICLES_START -->";
 const END = "<!-- RECENT_ARTICLES_END -->";
 const TIMEOUT_MS = 1500;
@@ -23,40 +23,12 @@ const valid = (a: Article | undefined): a is Article =>
   !!a && typeof a.title === "string" && a.title.length > 0 &&
   /^[a-z0-9][a-z0-9-]*$/i.test(a.slug || "") && !Number.isNaN(Date.parse(a.isoDate));
 
-// Extrae el arreglo JSON de "var SORO_ARTICLES = [ ... ];" contando corchetes (respeta cadenas).
-function parseEmbed(js: string): Article[] {
-  const m = js.match(/var\s+SORO_ARTICLES\s*=\s*\[/);
-  if (!m || m.index === undefined) return [];
-  const open = m.index + m[0].length - 1;
-  let depth = 0, inStr = false, esc_ = false;
-  for (let i = open; i < js.length; i++) {
-    const c = js[i];
-    if (inStr) {
-      if (esc_) esc_ = false;
-      else if (c === "\\") esc_ = true;
-      else if (c === '"') inStr = false;
-    } else if (c === '"') inStr = true;
-    else if (c === "[") depth++;
-    else if (c === "]" && --depth === 0) {
-      try { return JSON.parse(js.slice(open, i + 1)); } catch { return []; }
-    }
-  }
-  return [];
-}
-
-async function newest(): Promise<Article | null> {
+async function newest(origin: string): Promise<Article | null> {
   if (cached && Date.now() - cached.at < TTL_MS) return cached.article;
   const pick = (list: Article[]) =>
     list.filter(valid).sort((a, b) => Date.parse(b.isoDate) - Date.parse(a.isoDate))[0];
   try {
-    const r = await fetch(EMBED, { signal: AbortSignal.timeout(TIMEOUT_MS) });
-    if (r.ok) {
-      const a = pick(parseEmbed(await r.text()));
-      if (a) return (cached = { at: Date.now(), article: a }).article;
-    }
-  } catch { /* se intenta la fuente alterna */ }
-  try {
-    const r = await fetch(FEED_ALT, { signal: AbortSignal.timeout(TIMEOUT_MS) });
+    const r = await fetch(new URL(FEED, origin), { signal: AbortSignal.timeout(TIMEOUT_MS) });
     if (r.ok) {
       const a = pick(((await r.json()) as { articles?: Article[] }).articles || []);
       if (a) return (cached = { at: Date.now(), article: a }).article;
@@ -69,14 +41,14 @@ function card(a: Article, heading: string): string {
   const date = new Intl.DateTimeFormat("es-MX", {
     day: "numeric", month: "long", year: "numeric", timeZone: TZ,
   }).format(new Date(a.isoDate));
-  // La URL viene de un tercero y va dentro de url('...') en un atributo style: se codifican a mano
+  // La URL viene del feed y va dentro de url('...') en un atributo style: se codifican a mano
   // comillas, paréntesis, barra invertida, espacios y control (encodeURIComponent NO codifica ' ( ) ).
   const safeUrl = (u: string) =>
     u.replace(/['"()\\\s<>`\u0000-\u001f]/g, (c) => "%" + c.charCodeAt(0).toString(16).toUpperCase().padStart(2, "0"));
   const img = /^https:\/\/[^\s]+$/.test(a.image || "") && String(a.image).length < 2000
     ? `style="background: url('${esc(safeUrl(String(a.image)))}') center/cover no-repeat;"`
     : "";
-  return `<a href="/blog/?post=${encodeURIComponent(a.slug)}" class="blog-featured-card" role="listitem">
+  return `<a href="/blog/notas/${encodeURIComponent(a.slug)}/" class="blog-featured-card" role="listitem">
             <div class="blog-card-image" ${img}></div>
             <div class="blog-card-body">
               <p class="blog-card-meta">Bitácora de obra · ${esc(date)}</p>
@@ -86,13 +58,13 @@ function card(a: Article, heading: string): string {
           </a>`;
 }
 
-export default async (_request: Request, context: { next: () => Promise<Response> }) => {
+export default async (request: Request, context: { next: () => Promise<Response> }) => {
   const response = await context.next();
   try {
     if (response.status !== 200 || !(response.headers.get("content-type") || "").includes("text/html")) {
       return response;
     }
-    const article = await newest();
+    const article = await newest(new URL(request.url).origin);
     if (!article) return response;
 
     const html = await response.text();

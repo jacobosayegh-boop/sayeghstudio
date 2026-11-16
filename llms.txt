@@ -12,7 +12,7 @@ Sayegh Studio, Bosque de Duraznos 127, Colonia Bosques de las Lomas, Miguel Hida
 - [Aviso de privacidad](https://sayeghstudio.com/privacidad/)
 
 ## Bitácora «Recién publicado»
-- La bitácora de obra se actualiza de forma continua. El artículo más reciente aparece en la sección «Recién publicado» de https://sayeghstudio.com/ y al inicio de https://sayeghstudio.com/blog/. Los artículos de la bitácora se abren en https://sayeghstudio.com/blog/?post=<slug>.
+- La bitácora de obra se actualiza de forma continua. El artículo más reciente aparece en la sección «Recién publicado» de https://sayeghstudio.com/ y al inicio de https://sayeghstudio.com/blog/. Los artículos de la bitácora viven en https://sayeghstudio.com/blog/notas/<slug>/ y el índice completo está en https://sayeghstudio.com/blog/notas/.
 
 ## Zonas de operación
 - [Arquitectura de Lujo en Bosque Real](https://sayeghstudio.com/zonas-landing/bosque-real/): Obra nueva y remodelación en Bosque Real, Huixquilucan: reglamento del desarrollo, lotes en pendiente, licencia municipal y precios unitarios antes de excavar.

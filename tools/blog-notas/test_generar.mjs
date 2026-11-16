@@ -36,6 +36,18 @@ caso("feed propio con la forma que lee la edge function", () => {
   assert.equal(f.articles.length, notas.length);
   for (const a of f.articles) assert.ok(a.title && /^[a-z0-9-]+$/.test(a.slug) && /^https:\/\//.test(a.image) && !Number.isNaN(Date.parse(a.isoDate)));
 });
+caso("notas con difusion: piezas en el sitio y URL absolutas en el feed (las lee el pod)", () => {
+  const f = JSON.parse(leer("blog/notas/feed.json"));
+  for (const x of notas.filter((y) => y.difusion)) {
+    const a = f.articles.find((y) => y.slug === x.slug);
+    for (const k of ["og", "historia", "gbp_imagen"]) {
+      assert.ok(fs.existsSync(path.join(raiz, x.difusion[k].slice(1))), `falta ${k} de ${x.slug}`);
+      assert.match(a.difusion[k], /^https:\/\/sayeghstudio\.com\/assets\/images\/blog-notas\/redes\/.+\.jpg$/);
+    }
+    assert.ok(a.difusion.facebook.includes(`/blog/notas/${x.slug}/`) && a.difusion.gbp.length >= 120);
+    assert.ok(!/https?:|@/.test(a.difusion.gbp), "GBP sin URL ni correo");
+  }
+});
 caso("URL viejas de Soro redirigen", () => {
   const r = leer("_redirects");
   assert.match(r, /^\/blog\/\s+post=:slug\s+\/blog\/notas\/:slug\/\s+301!$/m);

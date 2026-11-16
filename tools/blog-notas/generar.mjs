@@ -121,7 +121,7 @@ function paginaNota(n, i, notas, p) {
     ],
   };
   const relacionadas = [1, 2, 3].map((k) => notas[(i + k) % notas.length]).filter((r) => r.slug !== n.slug);
-  return head({ titulo: n.title, descripcion: n.excerpt, url, imagen: n.image, ldjson: ld, ga: p.ga }) + p.cabecera + `<main>
+  return head({ titulo: n.title, descripcion: n.excerpt, url, imagen: (n.difusion && n.difusion.og) || n.image, ldjson: ld, ga: p.ga }) + p.cabecera + `<main>
   <div class="blog-wrapper">
     <article class="blog-article">
       <h1>${esc(n.title)}</h1>
@@ -176,7 +176,8 @@ export function generar() {
   notas.forEach((n, i) => escribir(`blog/notas/${n.slug}/index.html`, paginaNota(n, i, notas, p)));
   escribir("blog/notas/index.html", indice(notas, p));
   escribir("blog/notas/feed.json", JSON.stringify({
-    articles: notas.map((n) => ({ id: n.id, title: n.title, slug: n.slug, excerpt: n.excerpt, date: fecha(n.isoDate), isoDate: n.isoDate, image: `${SITIO}${n.image}`, url: `${SITIO}/blog/notas/${n.slug}/` })),
+    articles: notas.map((n) => ({ id: n.id, title: n.title, slug: n.slug, excerpt: n.excerpt, date: fecha(n.isoDate), isoDate: n.isoDate, image: `${SITIO}${n.image}`, url: `${SITIO}/blog/notas/${n.slug}/`,
+      ...(n.difusion ? { difusion: { facebook: n.difusion.facebook, gbp: n.difusion.gbp, og: `${SITIO}${n.difusion.og}`, historia: `${SITIO}${n.difusion.historia}`, gbp_imagen: `${SITIO}${n.difusion.gbp_imagen}` } } : {}) })),
   }, null, 1));
 
   // Blog: «Recién publicado» estático (la edge function lo refresca) y las 12 notas más nuevas.

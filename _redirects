@@ -71,6 +71,23 @@
 /pinterest/obra/:nicho    https://masterful-nightingale.pikapod.net/webhook/pin-v2-feed-0001/pin-v2-7c3e9a41b2d8/feed/:nicho   200!
 /pinterest/img/:archivo   https://masterful-nightingale.pikapod.net/webhook/pin-v2-img-0001/pin-v2-7c3e9a41b2d8/img/:archivo   200!
 
+# Bitácora de obra propia (antes Soro).
+# NOTAS_START
+# Generado por tools/blog-notas/generar.mjs: no editar a mano.
+/blog/notas/due-diligence-inmobiliario-sin-sobrecostos/   /blog/notas/due-diligence-inmobiliario/   301!
+/blog/notas/due-diligence-inmobiliario-sin-sobrecostos    /blog/notas/due-diligence-inmobiliario/   301!
+/blog/notas/guia-costos-renovacion-sin-sorpresas/   /blog/notas/guia-costos-renovacion/   301!
+/blog/notas/guia-costos-renovacion-sin-sorpresas    /blog/notas/guia-costos-renovacion/   301!
+/blog/notas/guia-ejecucion-llave-en-mano-sin-sobrecostos/   /blog/notas/guia-ejecucion-llave-en-mano/   301!
+/blog/notas/guia-ejecucion-llave-en-mano-sin-sobrecostos    /blog/notas/guia-ejecucion-llave-en-mano/   301!
+/blog/notas/evaluacion-de-viabilidad-sin-sobrecostos/   /blog/notas/evaluacion-de-viabilidad-precio-firmado/   301!
+/blog/notas/evaluacion-de-viabilidad-sin-sobrecostos    /blog/notas/evaluacion-de-viabilidad-precio-firmado/   301!
+/blog/notas/remodelacion-residencial-de-lujo-sin-sobrecostos/   /blog/notas/remodelacion-residencial-precio-firmado/   301!
+/blog/notas/remodelacion-residencial-de-lujo-sin-sobrecostos    /blog/notas/remodelacion-residencial-precio-firmado/   301!
+/blog/   post=:slug   /blog/notas/:slug/   301!
+/blog    post=:slug   /blog/notas/:slug/   301!
+# NOTAS_END
+
 # Archivos internos del repo: no se sirven.
 /tools/*      /404.html   404!
 /.github/*    /404.html   404!

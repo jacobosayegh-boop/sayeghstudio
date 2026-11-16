@@ -219,7 +219,7 @@ Trabajamos ambos modelos: vivienda unifamiliar para propietario final y proyecto
 
 ## Blog y bitácora de obra
 
-Artículos técnicos en https://sayeghstudio.com/blog/. La sección «Recién publicado» de la home y del blog muestra la nota más reciente de la bitácora (se abre en https://sayeghstudio.com/blog/?post=<slug>).
+Artículos técnicos en https://sayeghstudio.com/blog/. La sección «Recién publicado» de la home y del blog muestra la nota más reciente de la bitácora (se abre en https://sayeghstudio.com/blog/notas/<slug>/; índice completo en https://sayeghstudio.com/blog/notas/).
 
 ### Materiales
 - [Acabados Metálicos de Lujo: Bronce, Latón y Acero Cepillado en Proyectos Residenciales](https://sayeghstudio.com/blog/materiales/acabados-metalicos-lujo/): Guía de acabados metálicos de lujo (bronce, latón, acero cepillado) y cómo integrarlos con travertino y concreto aparente.

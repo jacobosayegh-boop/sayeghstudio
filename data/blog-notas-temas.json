@@ -3,7 +3,9 @@
   "tema": "Dictamen pericial obligatorio",
   "volumen_soro": 900,
   "origen": "soro-calendario",
-  "estado": "pendiente"
+  "estado": "publicado",
+  "slug": "dictamen-estructural-obligatorio-cdmx",
+  "fecha": "2026-11-17"
  },
  {
   "tema": "Remodelación para venta versus renta",

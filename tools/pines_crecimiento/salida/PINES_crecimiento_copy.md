@@ -63,17 +63,6 @@ Leyenda en imagen y descripción de todo render: "Render conceptual de Sayegh St
 - Palabras clave: remodelación en Interlomas, casa en Interlomas, remodelación de fachada, casa en privada, Huixquilucan
 - Descripción (475 car.): Muchas casas de Interlomas nacieron como producto de desarrollador. Convertirlas en una residencia con identidad propia toca fachada, distribución y jardín, siempre dentro del reglamento de la privada. Para un comprador o inversionista, revisar eso antes de firmar evita sorpresas de alcance. La página de Interlomas explica el método. Render conceptual de Sayegh Studio. No corresponde a una obra entregada. Solicite su Auditoría de Viabilidad en sayeghstudio.com/auditoria.
 
-### material-cantera-01
-
-- Martes 17 nov, 20:30 CDMX (2026-11-18T02:30:00 UTC) · público A · bloque A_noche · tablero Travertino y Piedra Natural en Interiores
-- Título (70 car.): Cantera en casonas de Coyoacán: restaurar la piedra original del patio
-- Título corto (30 car.): Cantera en casonas de Coyoacán
-- Texto en la imagen: Cantera / Cantera que ya tiene historia / Restaurar la piedra del patio y dejar que lo nuevo se lea como nuevo.
-- Imagen: `https://sayeghstudio.com/assets/pinterest/crecimiento/material-cantera-01.jpg` (base: assets/images/zonas/coyoacan-casona-patio-cantera-1600.jpg)
-- Enlace: https://sayeghstudio.com/blog/zonas/coyoacan-remodelacion-lujo/?utm_source=pinterest&utm_medium=organic_pin&utm_campaign=materiales&utm_content=material-cantera-01
-- Palabras clave: cantera, cantera para casas, patio de cantera, casona en Coyoacán, piedra natural
-- Descripción (443 car.): La cantera de una casona en Coyoacán ya trae décadas de pátina. Al remodelar conviene restaurarla con piedra de características parecidas y dejar que lo nuevo se lea como nuevo, sin imitar lo antiguo. Muchas de estas fachadas están sujetas a criterios de la alcaldía y del INAH. El artículo sobre remodelación en Coyoacán lo explica en sayeghstudio.com. Render conceptual de Sayegh Studio. No corresponde a una obra entregada. Guarde este pin.
-
 ### conv-07-cocina
 
 - Miércoles 18 nov, 10:30 CDMX (2026-11-18T16:30:00 UTC) · público A+B · bloque conversion · tablero Travertino y Piedra Natural en Interiores
@@ -216,19 +205,6 @@ Leyenda en imagen y descripción de todo render: "Render conceptual de Sayegh St
 - Enlace: https://sayeghstudio.com/blog/tendencias/banos-spa-lujo/?utm_source=pinterest&utm_medium=organic_pin&utm_campaign=materiales&utm_content=material-tadelakt-01
 - Palabras clave: tadelakt, baño de tadelakt, muros sin juntas, aplanado de cal, baño tipo spa
 - Descripción (420 car.): El tadelakt es un aplanado de cal de origen marroquí que se compacta y se pule con piedra hasta lograr un brillo satinado. Bien aplicado y tratado con jabón negro resiste la humedad, por eso se usa en regaderas y muros de baño sin juntas. El artículo de baños tipo spa en sayeghstudio.com explica cómo se piensa un baño principal. Render conceptual de Sayegh Studio. No corresponde a una obra entregada. Guarde este pin.
-
-### zona-coyoacan-01
-
-- Domingo 6 dic, 19:30 CDMX (2026-12-07T01:30:00 UTC) · público A · bloque A_finde · tablero Remodelación de Casas de Lujo CDMX
-- Título (71 car.): Casona en Coyoacán: estancia con vigas de madera restauradas y ventanal
-- Título corto (18 car.): Casona en Coyoacán
-- Texto en la imagen: Coyoacán / Vigas de madera, luz de tarde / Una casona restaurada para vivirse hoy, sin borrar su historia.
-- Imagen: `https://sayeghstudio.com/assets/pinterest/crecimiento/zona-coyoacan-01.jpg` (base: assets/images/zonas/coyoacan-estancia-vigas-madera-1600.jpg)
-- Enlace: https://sayeghstudio.com/zonas-landing/coyoacan/?utm_source=pinterest&utm_medium=organic_pin&utm_campaign=zonas&utm_content=zona-coyoacan-01
-- Palabras clave: casona en Coyoacán, remodelación casa antigua, vigas de madera, restauración de casona, Coyoacán
-- Descripción (417 car.): Las vigas de madera de una casona en Coyoacán se pueden conservar y reforzar en lugar de esconderlas bajo un plafón. Con un ventanal nuevo hacia el jardín, la estancia gana luz sin perder el carácter de la casa. Antes de tocar un muro revisamos INAH, alcaldía y estructura. Vea cómo trabajamos en Coyoacán en sayeghstudio.com. Render conceptual de Sayegh Studio. No corresponde a una obra entregada. Guarde esta idea.
-
-## Semillas de los tableros nuevos
 
 ### cocina-isla-01
 

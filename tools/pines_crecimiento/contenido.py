@@ -130,18 +130,6 @@ PINES = [
          img=dict(src=V('interlomas_exterior.jpg'), pos='18% 78%', zoom=260), marca='render', tono='oscuro', modo='split',
          kicker='Interlomas', titular='Identidad propia dentro de la privada', apoyo='Fachada, distribución y jardín, con reglamento y precio revisados antes.',
          cinta='auditoria'),
-    dict(slug='material-cantera-01', fecha='2026-11-17', hora='20:30', seg='A', bloque='A_noche', tab='travertino',
-         camp='materiales', destino='/blog/zonas/coyoacan-remodelacion-lujo/',
-         t40='Cantera en casonas de Coyoacán',
-         titulo='Cantera en casonas de Coyoacán: restaurar la piedra original del patio',
-         desc=('La cantera de una casona en Coyoacán ya trae décadas de pátina. Al remodelar conviene restaurarla con '
-               'piedra de características parecidas y dejar que lo nuevo se lea como nuevo, sin imitar lo antiguo. '
-               'Muchas de estas fachadas están sujetas a criterios de la alcaldía y del INAH. El artículo sobre '
-               'remodelación en Coyoacán lo explica en sayeghstudio.com. ' + LEYENDA + ' Guarde este pin.'),
-         kw='cantera, cantera para casas, patio de cantera, casona en Coyoacán, piedra natural',
-         img=dict(src=Z('coyoacan-casona-patio-cantera-1600.jpg'), pos='38% center'), marca='render', tono='claro', modo='split',
-         kicker='Cantera', titular='Cantera que ya tiene historia', apoyo='Restaurar la piedra del patio y dejar que lo nuevo se lea como nuevo.',
-         cinta='guardar'),
     dict(slug='conv-07-cocina', fecha='2026-11-18', hora='10:30', seg='A+B', bloque='conversion', tab='travertino',
          camp='conversion_auditoria', destino='/auditoria',
          t40='Remodelación de cocina de lujo',
@@ -165,18 +153,6 @@ PINES = [
          kw='tzalam, madera tzalam, pisos de madera, lambrín de madera, maderas mexicanas',
          img=dict(src=MAT('tzalam.jpg'), pos='center', etiqueta='Tzalam'), marca='ninguna', tono='claro', modo='split',
          kicker='Tzalam', titular='La madera que invita a descalzarse', apoyo='Madera tropical de México, tono miel y vetas oscuras.',
-         cinta='guardar'),
-    dict(slug='zona-coyoacan-01', fecha='2026-12-06', hora='19:30', seg='A', bloque='A_finde', tab='remodelacion',
-         camp='zonas', destino='/zonas-landing/coyoacan/',
-         t40='Casona en Coyoacán',
-         titulo='Casona en Coyoacán: estancia con vigas de madera restauradas y ventanal',
-         desc=('Las vigas de madera de una casona en Coyoacán se pueden conservar y reforzar en lugar de esconderlas bajo '
-               'un plafón. Con un ventanal nuevo hacia el jardín, la estancia gana luz sin perder el carácter de la casa. '
-               'Antes de tocar un muro revisamos INAH, alcaldía y estructura. Vea cómo trabajamos en Coyoacán en '
-               'sayeghstudio.com. ' + LEYENDA + ' Guarde esta idea.'),
-         kw='casona en Coyoacán, remodelación casa antigua, vigas de madera, restauración de casona, Coyoacán',
-         img=dict(src=Z('coyoacan-estancia-vigas-madera-1600.jpg'), pos='45% center'), marca='render', tono='oscuro', modo='split',
-         kicker='Coyoacán', titular='Vigas de madera, luz de tarde', apoyo='Una casona restaurada para vivirse hoy, sin borrar su historia.',
          cinta='guardar'),
     # ------------------------------------------------ semana 3 (23 al 29 de noviembre)
     dict(slug='zona-lomas-01', fecha='2026-11-24', hora='09:30', seg='B', bloque='B_laboral', tab='presupuesto',

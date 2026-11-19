@@ -38,7 +38,6 @@ fecha,dia,hora_cdmx,hora_utc,tipo,slug,tablero,segmento,bloque,objetivo,responsa
 2026-11-16,lunes,19:00,,acción manual,,,,,,hilo B,"Revisar si los feeds RSS pinearon páginas nuevas del sitio; si una página nueva no aparece en 48 h, avisar al hilo A (vigilante)."
 2026-11-16,lunes,21:00,2026-11-17T03:00,"semilla tablero nuevo (CSV aparte, condicionado)",cocina-isla-01,Cocinas de Lujo: Diseño y Remodelación,A,A_noche,guardado y seguidor,automático tras crear tablero,"Isla de cocina en travertino. Solo si el tablero ya existe; si no, se recorre la fecha."
 2026-11-17,martes,09:30,2026-11-17T15:30,imagen (CSV nuevo),zona-interlomas-01,Presupuesto de Remodelación: Guía para Clientes,B,B_laboral,clic,automático (CSV),Remodelación en Interlomas
-2026-11-17,martes,20:30,2026-11-18T02:30,imagen (CSV nuevo),material-cantera-01,Travertino y Piedra Natural en Interiores,A,A_noche,guardado,automático (CSV),Cantera en casonas de Coyoacán
 2026-11-17,martes,21:00,2026-11-18T03:00,"semilla tablero nuevo (CSV aparte, condicionado)",cocina-ventanal-01,Cocinas de Lujo: Diseño y Remodelación,A,A_noche,guardado y seguidor,automático tras crear tablero,"Cocina minimalista cálida. Solo si el tablero ya existe; si no, se recorre la fecha."
 2026-11-18,miércoles,10:30,2026-11-18T16:30,conversión (CSV nuevo),conv-07-cocina,Travertino y Piedra Natural en Interiores,A+B,conversion,lead,automático (CSV),Remodelación de cocina de lujo
 2026-11-18,miércoles,21:00,2026-11-19T03:00,"semilla tablero nuevo (CSV aparte, condicionado)",cocina-bronce-01,Cocinas de Lujo: Diseño y Remodelación,A,A_noche,guardado y seguidor,automático tras crear tablero,"Grifería de bronce en cocina. Solo si el tablero ya existe; si no, se recorre la fecha."
@@ -82,5 +81,4 @@ fecha,dia,hora_cdmx,hora_utc,tipo,slug,tablero,segmento,bloque,objetivo,responsa
 2026-12-03,jueves,20:30,2026-12-04T02:30,imagen (CSV nuevo),material-tadelakt-01,Acabados de Lujo: Detalles e Instalación,A,A_noche,guardado,automático (CSV),Tadelakt en el baño
 2026-12-05,sábado,09:30,,acción manual,,,,,,Jacobo o sesión en la Mac,Programar a mano carrusel-03 (sale 10:00).
 2026-12-05,sábado,10:00,2026-12-05T16:00,carrusel (serie de otro agente),carrusel-03,Remodelación de Casas de Lujo CDMX,A,A_finde,guardado y seguidor,Jacobo o sesión en la Mac (lo produce otro agente),"Ver CARRUSEL_pines.md; fecha, hora y tablero fijados ahí."
-2026-12-06,domingo,19:30,2026-12-07T01:30,imagen (CSV nuevo),zona-coyoacan-01,Remodelación de Casas de Lujo CDMX,A,A_finde,guardado,automático (CSV),Casona en Coyoacán
 2026-12-06,domingo,20:00,,acción manual,,,,,medición,hilo B,"Cierre de 30 días: comparar contra metas del 7-dic (20 clics, 25 guardados, 15 seguidores) y proponer el ritmo de enero."

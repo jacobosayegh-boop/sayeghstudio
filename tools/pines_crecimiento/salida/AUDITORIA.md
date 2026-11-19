@@ -34,11 +34,10 @@ Resultado: 0 errores, 0 avisos
 ## Cambios de la última vuelta
 
 - Las 8 casillas de video y carrusel quedaron con la fecha, la hora, el tablero y el enlace de VIDEO_pines.md y CARRUSEL_pines.md. Este hilo no escribe esos dos archivos.
-- Cuatro pines propios cambiaron de casilla para no chocar con los carruseles:
+- Tres pines propios cambiaron de casilla para no chocar con los carruseles:
   - zona-polanco-01 pasa al jueves 19-nov a las 20:30.
   - obra-nuvana-01 pasa al jueves 26-nov a las 20:30 y cambia al público A.
   - material-tadelakt-01 pasa al jueves 3-dic a las 20:30.
-  - zona-coyoacan-01 pasa al domingo 6-dic a las 19:30.
 - Ajuste de tableros para llegar a 20:
   - zona-bosque-real-01 pasa a Obra Gris, porque su texto trata del corte y el movimiento de tierras.
   - conv-07-cocina pasa a Travertino, y su texto ahora nombra la piedra. No cambió ni su fecha ni su hora.

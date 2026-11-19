@@ -121,7 +121,6 @@ Objetivo: seguidor, guardado, clic o lead (prospecto). Responsable "automático"
 | Hora | Qué sale | Tablero | Público | Objetivo | Quién |
 |---|---|---|---|---|---|
 | 09:30 | imagen (CSV nuevo): `zona-interlomas-01`. Remodelación en Interlomas | Presupuesto de Remodelación: Guía para Clientes | B | clic | automático (CSV) |
-| 20:30 | imagen (CSV nuevo): `material-cantera-01`. Cantera en casonas de Coyoacán | Travertino y Piedra Natural en Interiores | A | guardado | automático (CSV) |
 | 21:00 | semilla tablero nuevo (CSV aparte, condicionado): `cocina-ventanal-01`. Cocina minimalista cálida. Solo si el tablero ya existe; si no, se recorre la fecha. | Cocinas de Lujo: Diseño y Remodelación | A | guardado y seguidor | automático tras crear tablero |
 
 ### Miércoles 18 nov
@@ -259,7 +258,6 @@ Sin publicación programada. Los feeds RSS publican solos si hay página nueva e
 
 | Hora | Qué sale | Tablero | Público | Objetivo | Quién |
 |---|---|---|---|---|---|
-| 19:30 | imagen (CSV nuevo): `zona-coyoacan-01`. Casona en Coyoacán | Remodelación de Casas de Lujo CDMX | A | guardado | automático (CSV) |
 | 20:00 | acción manual. Cierre de 30 días: comparar contra metas del 7-dic (20 clics, 25 guardados, 15 seguidores) y proponer el ritmo de enero. |  |  | medición | hilo B |
 
 ## Feeds automáticos

@@ -345,7 +345,13 @@
   <!-- NOTAS_START -->
   <url>
     <loc>https://sayeghstudio.com/blog/notas/</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sayeghstudio.com/blog/notas/permisos-para-remodelar-una-casa-cdmx/</loc>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -609,7 +615,7 @@
   </url>
   <url>
     <loc>https://sayeghstudio.com/blog/notas/arquitectura-residencial-con-privacidad/</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

@@ -345,7 +345,13 @@
   <!-- NOTAS_START -->
   <url>
     <loc>https://sayeghstudio.com/blog/notas/</loc>
-    <lastmod>2026-11-25</lastmod>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sayeghstudio.com/blog/notas/planear-remodelacion-por-fases-casa-cdmx/</loc>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -609,7 +615,7 @@
   </url>
   <url>
     <loc>https://sayeghstudio.com/blog/notas/colado-de-concreto-aparente-precision-aaa/</loc>
-    <lastmod>2026-10-03</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
